@@ -1,0 +1,105 @@
+---
+import { MessageCircle, Menu, X } from 'lucide-react';
+import { languages, useTranslations } from '../i18n/ui';
+
+interface Props {
+	title: string;
+    lang: string;
+}
+
+const { title, lang } = Astro.props;
+const t = useTranslations(lang as any);
+
+// ALWAYS include the language prefix to match the file structure [lang]
+const navLinks = [
+    { label: t('nav.home'), href: `/${lang}` },
+    { label: t('nav.cars'), href: `/${lang}#cars` },
+    { label: t('nav.locations'), href: `/${lang}/locations` },
+    { label: t('nav.blog'), href: `/${lang}/blog` },
+    { label: t('nav.contact'), href: `/${lang}/contact` },
+];
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Prakash Hyundai Authorized Dealer" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen">
+        
+        <!-- Header -->
+        <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href={`/${lang}`} class="text-[#002C5F] font-bold text-2xl tracking-tighter hover:opacity-80 transition">
+                    PRAKASH<span class="font-light">HYUNDAI</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-8">
+                    {navLinks.map(link => (
+                        <a href={link.href} class="text-sm font-medium text-gray-600 hover:text-[#002C5F] transition-colors">
+                            {link.label}
+                        </a>
+                    ))}
+                </nav>
+                
+                <div class="flex gap-4 items-center">
+                    <!-- Language Switcher -->
+                    <div class="hidden md:flex gap-2 text-xs font-bold bg-gray-50 p-1 rounded-lg">
+                        {Object.entries(languages).map(([code, label]) => (
+                            <a href={`/${code}`} class={`px-3 py-1.5 rounded-md transition-all ${lang === code ? 'bg-white shadow-sm text-[#002C5F]' : 'text-gray-500 hover:text-gray-700'}`}>
+                                {code.toUpperCase()}
+                            </a>
+                        ))}
+                    </div>
+
+                    <a href={`https://wa.me/919876543210`} target="_blank" class="flex items-center gap-2 bg-[#002C5F] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#001f42] transition-colors shadow-lg shadow-blue-900/20">
+                        <MessageCircle size={18} /> <span class="hidden sm:inline">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+		<main class="flex-grow pt-20">
+            <slot />
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#1C1C1C] text-white py-16 mt-auto">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-12 mb-12">
+                    <div class="col-span-2">
+                        <h3 class="text-xl font-bold mb-4">Prakash Hyundai</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Authorized Dealer for Nizamabad & Districts. Providing premium sales and service experience since 2008.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                             {navLinks.map(link => (
+                                <li><a href={link.href} class="hover:text-white transition">{link.label}</a></li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact</h3>
+                        <p class="text-gray-400 text-sm">Hyderabad Road, Dichpally</p>
+                        <p class="text-gray-400 text-sm">Nizamabad, Telangana 503001</p>
+                        <p class="text-gray-400 text-sm mt-2">+91 98765 43210</p>
+                    </div>
+                </div>
+                <div class="text-center text-gray-600 text-sm border-t border-gray-800 pt-8">
+                    &copy; {new Date().getFullYear()} Prakash Hyundai. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+	</body>
+</html>

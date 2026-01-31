@@ -1,0 +1,74 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { useTranslations } from '../../i18n/ui';
+import { MapPin, Phone, Navigation } from 'lucide-react';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'te' } },
+    { params: { lang: 'hi' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as any);
+
+const locations = [
+  {
+    name: "Prakash Hyundai - Nizamabad Main",
+    address: "Hyderabad Road, Dichpally, Nizamabad, Telangana 503001",
+    type: "Showroom & Service",
+    phone: "9876543210",
+  },
+  {
+    name: "Prakash Hyundai - Armoor",
+    address: "NH 44, Perkit, Armoor, Telangana 503224",
+    type: "Sales Outlet",
+    phone: "9876543211",
+  },
+  {
+    name: "Prakash Hyundai - Bodhan",
+    address: "Nizamabad Road, Bodhan, Telangana 503185",
+    type: "Sales Outlet",
+    phone: "9876543212",
+  }
+];
+---
+
+<Layout title="Locations | Prakash Hyundai" lang={lang}>
+  <div class="bg-[#002C5F] text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('loc.title')}</h1>
+      <p class="text-blue-200 text-lg">Visit us at a location near you.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-3 gap-8">
+      {locations.map(loc => (
+        <div class="border border-gray-200 rounded-2xl p-8 hover:shadow-xl transition-all hover:border-blue-200 group bg-white">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-3 bg-blue-50 text-[#002C5F] rounded-lg">
+                    <MapPin size={24} />
+                </div>
+                <span class="text-xs font-bold uppercase tracking-wide bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                    {loc.type}
+                </span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4 text-[#1C1C1C]">{loc.name}</h3>
+            <p class="text-gray-500 mb-8 leading-relaxed">{loc.address}</p>
+            
+            <div class="flex flex-col gap-3">
+                <a href={`tel:${loc.phone}`} class="flex items-center justify-center gap-2 w-full py-3 border border-gray-200 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
+                    <Phone size={18} /> Call Now
+                </a>
+                <button class="flex items-center justify-center gap-2 w-full py-3 bg-[#002C5F] text-white rounded-lg font-semibold hover:bg-[#001f42] transition-colors">
+                    <Navigation size={18} /> Get Directions
+                </button>
+            </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>

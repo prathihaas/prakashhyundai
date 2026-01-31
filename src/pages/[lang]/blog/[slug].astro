@@ -1,0 +1,36 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const paths = [];
+  ['en', 'te', 'hi'].forEach(lang => {
+    posts.forEach(post => {
+      paths.push({ 
+        params: { lang, slug: post.slug }, 
+        props: { post } 
+      });
+    });
+  });
+  return paths;
+}
+
+const { lang } = Astro.params;
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={`${post.data.title} | Prakash Hyundai`} lang={lang}>
+  <article class="max-w-3xl mx-auto px-6 py-20">
+    <header class="mb-12 text-center">
+        <div class="text-sm font-bold text-[#00AAD2] uppercase mb-4 tracking-wider">{post.data.category}</div>
+        <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-6 leading-tight">{post.data.title}</h1>
+        <div class="text-gray-500 font-medium">{new Date(post.data.date).toLocaleDateString()} • {post.data.readTime}</div>
+    </header>
+    
+    <div class="prose prose-lg prose-blue mx-auto prose-headings:font-bold prose-headings:text-[#002C5F] prose-a:text-[#00AAD2]">
+        <Content />
+    </div>
+  </article>
+</Layout>

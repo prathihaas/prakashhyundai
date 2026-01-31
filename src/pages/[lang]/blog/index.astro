@@ -1,0 +1,45 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'te' } },
+    { params: { lang: 'hi' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const t = useTranslations(lang as any);
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout title={`Blog | Prakash Hyundai`} lang={lang}>
+  <div class="bg-[#F5F6F7] py-20">
+    <div class="container mx-auto px-6">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-6">{t('blog.title')}</h1>
+      <p class="text-gray-600 max-w-2xl text-lg">Stay updated with the latest news, car care tips, and automotive trends from the world of Hyundai.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 py-20">
+    <div class="grid md:grid-cols-3 gap-8">
+      {sortedPosts.map(post => (
+         <a href={`/${lang}/blog/${post.slug}`} class="group">
+            <article class="p-8 rounded-2xl border border-gray-100 hover:border-blue-100 hover:shadow-xl transition-all h-full bg-white flex flex-col">
+                <div class="text-xs font-bold text-[#00AAD2] uppercase mb-3">{post.data.category}</div>
+                <h3 class="text-2xl font-bold mb-4 group-hover:text-[#002C5F] transition-colors">{post.data.title}</h3>
+                <p class="text-gray-500 mb-6 leading-relaxed flex-grow">{post.data.excerpt}</p>
+                <div class="pt-6 border-t border-gray-100 flex justify-between items-center text-sm text-gray-400 font-medium">
+                    <span>{new Date(post.data.date).toLocaleDateString()}</span>
+                    <span>{post.data.readTime}</span>
+                </div>
+            </article>
+         </a>
+      ))}
+    </div>
+  </div>
+</Layout>
