@@ -3,7 +3,7 @@ name: "i20 N Line"
 tagline: "It's time to play."
 price: "Starts ₹ 9.21 Lakh*"
 category: "Hatchback"
-image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/i20-N-Line/8339/1631618227509/front-view-118.jpg?impolicy=resize&imwidth=420"
+image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20/Exterior/pc/i20pe_exttab11.jpg"
 features:
   - "Sporty black radiator grille"
   - "Chequered flag design leather seats with N logo"
