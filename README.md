@@ -111,6 +111,20 @@ If port 4321 is already in use, you can specify a different port:
 npm run dev -- --port 3000
 ```
 
+## Security Note
+
+This project uses Astro v4. There are known vulnerabilities in some dependencies, primarily affecting the development server. Since this is a static site that gets built and deployed (not running a dev server in production), these vulnerabilities do not affect the production deployment.
+
+For production use:
+- Always use `npm run build` to generate static files
+- Deploy only the `dist/` folder contents
+- Never run the development server (`npm run dev`) in production
+
+To update to the latest versions (may require code changes):
+```bash
+npm audit fix --force
+```
+
 ## License
 
 © 2026 Prakash Hyundai. All rights reserved.
