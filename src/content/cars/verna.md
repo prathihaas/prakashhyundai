@@ -6,7 +6,7 @@ category: "Sedan"
 image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Verna/Exterior/pc/verna_ext_front.jpg"
 features:
   - "Horizon LED positioning Lamps & DRLs"
-  - "26.03 cm (10.25") HD Audio video navigation system & Digital cluster"
+  - "26.03 cm (10.25\") HD Audio video navigation system & Digital cluster"
   - "Bose Premium Sound 8 Speaker system"
   - "Level 2 ADAS"
   - "Switchable type infotainment & climate controller"

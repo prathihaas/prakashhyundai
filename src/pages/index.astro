@@ -10,7 +10,7 @@ const t = useTranslations(lang);
 
 // Fetch data
 const cars = await getCollection('cars');
-const sortedCars = cars.sort((a, b) => a.data.order - b.data.order).slice(0, 4); 
+const sortedCars = cars.sort((a, b) => a.data.order - b.data.order); 
 const blogs = await getCollection('blog');
 const recentBlogs = blogs.slice(0, 3);
 ---
