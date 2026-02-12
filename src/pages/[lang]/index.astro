@@ -16,7 +16,7 @@ const { lang } = Astro.params;
 const t = useTranslations(lang as any);
 
 const cars = await getCollection('cars');
-const sortedCars = cars.sort((a, b) => a.data.order - b.data.order).slice(0, 4); // Show top 4
+const sortedCars = cars.sort((a, b) => a.data.order - b.data.order); // Show all cars
 const blogs = await getCollection('blog');
 const recentBlogs = blogs.slice(0, 3);
 ---

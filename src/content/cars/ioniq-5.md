@@ -2,7 +2,7 @@
 name: "IONIQ 5"
 tagline: "Power Your World with Hyundai IONIQ 5 Car"
 price: "Starts ₹ 46.30 Lakh*"
-category: "Electric"
+category: "Premium"
 image: "https://cdn.motor1.com/images/mgl/3y1Q1/s1/2022-hyundai-ioniq-5.jpg"
 features:
   - "Vehicle-to-Load (V2L) with up to 3.6kW power"
