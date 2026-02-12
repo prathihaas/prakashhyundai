@@ -87,25 +87,37 @@ const recentBlogs = blogs.slice(0, 3);
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {sortedCars.map(car => (
                 <div class="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300 flex flex-col h-full border border-gray-100">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src={car.data.image} alt={car.data.name} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#002C5F]">
-                            {car.data.category}
-                        </div>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-2xl font-bold mb-1 text-[#1C1C1C]">{car.data.name}</h3>
-                        <p class="text-sm text-gray-500 mb-6 italic">"{car.data.tagline}"</p>
-                        
-                        <div class="mt-auto pt-6 border-t border-gray-100 flex justify-between items-center">
-                            <div>
-                                <p class="text-xs text-gray-400 uppercase font-semibold">Ex-Showroom</p>
-                                <p class="font-bold text-[#002C5F] text-lg">{car.data.price}</p>
+                    <a href={`/${lang}/cars/${car.slug}`} class="flex-1 flex flex-col">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src={car.data.image} alt={car.data.name} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#002C5F]">
+                                {car.data.category}
                             </div>
-                            <a href={`https://wa.me/15557728717?text=I'm interested in the price of ${car.data.name}`} class="w-10 h-10 rounded-full bg-blue-50 text-[#002C5F] flex items-center justify-center hover:bg-[#002C5F] hover:text-white transition-colors">
-                                <MessageCircle size={20} />
-                            </a>
                         </div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-2xl font-bold mb-1 text-[#1C1C1C] group-hover:text-[#002C5F] transition-colors">{car.data.name}</h3>
+                            <p class="text-sm text-gray-500 mb-6 italic">"{car.data.tagline}"</p>
+                            
+                            <div class="mt-auto pt-6 border-t border-gray-100">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div>
+                                        <p class="text-xs text-gray-400 uppercase font-semibold">Ex-Showroom</p>
+                                        <p class="font-bold text-[#002C5F] text-lg">{car.data.price}</p>
+                                    </div>
+                                </div>
+                                <div class="text-sm text-[#002C5F] font-medium group-hover:text-[#00AAD2] transition-colors">
+                                    View Details →
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="px-6 pb-6">
+                        <a href={`https://wa.me/15557728717?text=I'm interested in the price of ${car.data.name}`} 
+                           class="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-blue-50 text-[#002C5F] hover:bg-[#002C5F] hover:text-white transition-colors font-medium"
+                           onclick="event.stopPropagation();">
+                            <MessageCircle size={18} />
+                            Quick Inquiry
+                        </a>
                     </div>
                 </div>
             ))}
