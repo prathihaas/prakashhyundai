@@ -1,0 +1,79 @@
+﻿---
+// SEOHead.astro - Prakash Hyundai (with hreflang en / te / hi)
+const {
+  title = "Prakash Hyundai | Authorized Hyundai Dealer in Nizamabad, Telangana",
+  description = "Prakash Hyundai is an authorized Hyundai dealership in Nizamabad, Telangana 503001. Explore new Hyundai cars, book test drives, and get expert service.",
+  canonical = Astro.url.href,
+  image = "/og-image.jpg",
+} = Astro.props;
+
+const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "https://www.prakashhyundai.com";
+const pagePath = new URL(canonical).pathname.replace(/^\/(en|te|hi)/, "");
+const enUrl = `${baseUrl}/en${pagePath}`;
+const teUrl = `${baseUrl}/te${pagePath}`;
+const hiUrl = `${baseUrl}/hi${pagePath}`;
+---
+<title>{title}</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<!-- hreflang - multilingual versions -->
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="te" href={teUrl} />
+<link rel="alternate" hreflang="hi" href={hiUrl} />
+<link rel="alternate" hreflang="x-default" href={canonical} />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={new URL(image, Astro.site).toString()} />
+<meta property="og:site_name" content="Prakash Hyundai" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:locale:alternate" content="te_IN" />
+<meta property="og:locale:alternate" content="hi_IN" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(image, Astro.site).toString()} />
+
+<!-- Geo Tags -->
+<meta name="geo.region" content="IN-TG" />
+<meta name="geo.placename" content="Nizamabad, Telangana" />
+<meta name="geo.position" content="18.6725;78.0941" />
+<meta name="ICBM" content="18.6725, 78.0941" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Prakash Hyundai",
+  "url": "https://www.prakashhyundai.com",
+  "logo": "https://www.prakashhyundai.com/logo.png",
+  "image": "https://www.prakashhyundai.com/og-image.jpg",
+  "description": "Authorized Hyundai dealership in Nizamabad, Telangana. New Hyundai cars, service, and genuine spare parts.",
+  "telephone": "+91-9052116500",
+  "brand": { "@type": "Brand", "name": "Hyundai" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Nizamabad",
+    "addressLocality": "Nizamabad",
+    "addressRegion": "Telangana",
+    "postalCode": "503001",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 18.6725, "longitude": 78.0941 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00", "closes": "19:00"
+  }],
+  "sameAs": ["https://www.facebook.com/prakashhyundai","https://www.instagram.com/prakashhyundai"]
+})}
+</script>

@@ -1,0 +1,3 @@
+﻿User-agent: *
+Allow: /
+Sitemap: https://www.prakashhyundai.com/sitemap-index.xml
