@@ -4,5 +4,11 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://www.prakashhyundai.com",
-  integrations: [sitemap(), react()],
+  integrations: [
+    sitemap({
+      filter: (page) => Boolean(page),
+      serialize: (item) => item,
+    }),
+    react(),
+  ],
 });
