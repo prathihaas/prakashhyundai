@@ -1,13 +1,17 @@
 ---
 import { MessageCircle, Menu, X } from 'lucide-react';
 import { languages, useTranslations } from '../i18n/ui';
+import SEOHead from '../components/SEOHead.astro';
 
 interface Props {
-	title: string;
-    lang: string;
+	title?: string;
+  description?: string;
+  canonical?: string;
+  image?: string;
+  lang: string;
 }
 
-const { title, lang } = Astro.props;
+const { title, description, canonical, image, lang } = Astro.props;
 const t = useTranslations(lang as any);
 
 // ALWAYS include the language prefix to match the file structure [lang]
@@ -24,28 +28,25 @@ const navLinks = [
 <html lang={lang} class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Prakash Hyundai Authorized Dealer" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/jpeg" href="/favicon.jpg" />
 		<meta name="generator" content={Astro.generator} />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-		<title>{title}</title><!-- Google Tag Manager -->
+		<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
 <!-- End Google Tag Manager -->
+		<SEOHead title={title} description={description} canonical={canonical} image={image} />
 	</head>
-	<body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen"><!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
-<!-- End Google Tag Manager -->
+	<body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52SXCPMR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
         
         <!-- Header -->
         <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
