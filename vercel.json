@@ -1,0 +1,12 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/en", "permanent": false },
+    { "source": "/cars/:slug", "destination": "/en/cars/:slug", "permanent": true },
+    { "source": "/blog/:slug", "destination": "/en/blog/:slug", "permanent": true },
+    { "source": "/about-us", "destination": "/en", "permanent": true },
+    { "source": "/contact-us", "destination": "/en/contact", "permanent": true },
+    { "source": "/santro", "destination": "/en/cars", "permanent": true },
+    { "source": "/tucson", "destination": "/en/cars", "permanent": true },
+    { "source": "/kona-electric", "destination": "/en/cars", "permanent": true }
+  ]
+}
