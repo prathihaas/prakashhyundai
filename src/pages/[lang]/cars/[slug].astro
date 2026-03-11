@@ -52,7 +52,7 @@ const t = useTranslations(lang as any);
             <span class="text-3xl font-bold text-[#002C5F]">{car.data.price}</span>
           </div>
           <div class="flex gap-4 pt-4">
-            <a href={`https://wa.me/15557728717?text=I'm interested in ${car.data.name}. Can you provide more details?`} 
+            <a href={`https://wa.me/919052110303?text=Hi%2C%20I%20am%20interested%20in%20${encodeURIComponent(car.data.name)}.%20Can%20you%20share%20price%20and%20details%3F%20%5BSource%3A%20PHY-Car-Details%5D`} 
                class="flex items-center gap-2 bg-[#002C5F] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#001f42] transition-all shadow-xl shadow-blue-900/20 group">
               <MessageCircle size={20} class="group-hover:scale-110 transition-transform"/>
               {t('hero.cta')}
@@ -99,7 +99,7 @@ const t = useTranslations(lang as any);
       <div class="bg-gradient-to-r from-[#002C5F] to-[#00AAD2] rounded-3xl p-12 text-center text-white">
         <h2 class="text-3xl font-bold mb-4">Interested in {car.data.name}?</h2>
         <p class="text-xl mb-8 text-blue-100">Contact us today for a test drive and best price quote!</p>
-        <a href={`https://wa.me/15557728717?text=I'm interested in ${car.data.name}. Can you arrange a test drive?`} 
+        <a href={`https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20book%20a%20test%20drive%20for%20${encodeURIComponent(car.data.name)}.%20Please%20confirm%20the%20slot.%20%5BSource%3A%20PHY-Car-TestDrive%5D`} 
            class="inline-flex items-center gap-2 bg-white text-[#002C5F] px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all shadow-xl">
           <MessageCircle size={20} />
           Request Test Drive
