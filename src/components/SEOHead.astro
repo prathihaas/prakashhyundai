@@ -4,7 +4,7 @@ const {
   title = "Prakash Hyundai | Authorized Hyundai Dealer in Nizamabad, Telangana",
   description = "Prakash Hyundai is an authorized Hyundai dealership in Nizamabad, Telangana 503001. Explore new Hyundai cars, book test drives, and get expert service.",
   canonical = Astro.url.href,
-  image = "/og-image.svg",
+  image = "/og-image.jpg",
 } = Astro.props;
 
 const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "https://www.prakashhyundai.com";
@@ -16,6 +16,7 @@ const hiUrl = `${baseUrl}/hi${pagePath}`;
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
 <!-- hreflang - multilingual versions -->
 <link rel="alternate" hreflang="en" href={enUrl} />
@@ -29,6 +30,9 @@ const hiUrl = `${baseUrl}/hi${pagePath}`;
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={new URL(image, Astro.site).toString()} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:type" content="image/jpeg" />
 <meta property="og:site_name" content="Prakash Hyundai" />
 <meta property="og:locale" content="en_IN" />
 <meta property="og:locale:alternate" content="te_IN" />
@@ -60,7 +64,7 @@ const hiUrl = `${baseUrl}/hi${pagePath}`;
   "brand": { "@type": "Brand", "name": "Hyundai" },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Nizamabad",
+    "streetAddress": "Hyderabad Road, Dichpally",
     "addressLocality": "Nizamabad",
     "addressRegion": "Telangana",
     "postalCode": "503001",
