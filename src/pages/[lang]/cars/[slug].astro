@@ -24,9 +24,36 @@ const { Content } = await car.render();
 const t = useTranslations(lang as any);
 
 const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052116500.`;
+
+// Extract numeric price from price string like "Starts ₹ 14.49 Lakh*"
+const priceMatch = car.data.price.match(/[\d.]+/);
+const numericPrice = priceMatch ? Math.round(parseFloat(priceMatch[0]) * 100000) : 0;
+
+const carSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": car.data.name,
+  "brand": { "@type": "Brand", "name": "Hyundai" },
+  "image": car.data.image,
+  "description": carDescription,
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "INR",
+    "price": numericPrice,
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "AutoDealer",
+      "name": "Prakash Hyundai",
+      "url": "https://www.prakashhyundai.com"
+    }
+  }
+};
 ---
 
 <Layout title={`${car.data.name} Price in Nizamabad | Prakash Hyundai`} description={carDescription} lang={lang}>
+  <script type="application/ld+json" set:html={JSON.stringify(carSchema)} />
   <div class="min-h-screen bg-gradient-to-b from-[#F5F6F7] to-white">
     <!-- Back Button -->
     <div class="container mx-auto px-6 pt-8">
