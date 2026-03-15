@@ -9,7 +9,7 @@ tags:
   - "Hyundai"
   - "Nizamabad"
   - "AC service"
-featured_image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&q=80&w=800"
+featured_image: "/images/blog/summer-car-care-tips.jpg"
 excerpt: "How to protect your Hyundai from the scorching Nizamabad heat."
 seo_title: "Summer Car Care Tips for Nizamabad Drivers | Prakash Hyundai"
 seo_description: "Keep your Hyundai in top shape during Telangana summers. Cooling system, tyre pressure, and AC tips from Prakash Hyundai service experts in Nizamabad."
