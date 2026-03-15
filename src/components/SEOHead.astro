@@ -1,4 +1,4 @@
-﻿---
+---
 // SEOHead.astro - Prakash Hyundai (with hreflang en / te / hi)
 const {
   title = "Prakash Hyundai | Authorized Hyundai Dealer in Nizamabad, Telangana",
@@ -12,6 +12,37 @@ const pagePath = new URL(canonical).pathname.replace(/^\/(en|te|hi)/, "");
 const enUrl = `${baseUrl}/en${pagePath}`;
 const teUrl = `${baseUrl}/te${pagePath}`;
 const hiUrl = `${baseUrl}/hi${pagePath}`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Prakash Hyundai",
+  "url": "https://www.prakashhyundai.com",
+  "logo": "https://www.prakashhyundai.com/logo.png",
+  "image": "https://www.prakashhyundai.com/og-image.jpg",
+  "description": "Authorized Hyundai dealership in Nizamabad, Telangana. New Hyundai cars, service, and genuine spare parts.",
+  "telephone": "+91-9052116500",
+  "brand": { "@type": "Brand", "name": "Hyundai" },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyderabad Road, Dichpally",
+    "addressLocality": "Nizamabad",
+    "addressRegion": "Telangana",
+    "postalCode": "503001",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 18.6725, "longitude": 78.0941 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "sameAs": [
+    "https://www.facebook.com/prakashhyundai",
+    "https://www.instagram.com/prakashhyundai"
+  ]
+};
 ---
 <title>{title}</title>
 <meta name="description" content={description} />
@@ -50,32 +81,5 @@ const hiUrl = `${baseUrl}/hi${pagePath}`;
 <meta name="geo.position" content="18.6725;78.0941" />
 <meta name="ICBM" content="18.6725, 78.0941" />
 
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{JSON.stringify({
-  "@context": "https://schema.org",
-  "@type": "AutoDealer",
-  "name": "Prakash Hyundai",
-  "url": "https://www.prakashhyundai.com",
-  "logo": "https://www.prakashhyundai.com/logo.png",
-  "image": "https://www.prakashhyundai.com/og-image.jpg",
-  "description": "Authorized Hyundai dealership in Nizamabad, Telangana. New Hyundai cars, service, and genuine spare parts.",
-  "telephone": "+91-9052116500",
-  "brand": { "@type": "Brand", "name": "Hyundai" },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Hyderabad Road, Dichpally",
-    "addressLocality": "Nizamabad",
-    "addressRegion": "Telangana",
-    "postalCode": "503001",
-    "addressCountry": "IN"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 18.6725, "longitude": 78.0941 },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-    "opens": "09:00", "closes": "19:00"
-  }],
-  "sameAs": ["https://www.facebook.com/prakashhyundai","https://www.instagram.com/prakashhyundai"]
-})}
-</script>
+<!-- JSON-LD Structured Data — set:html renders parsed JSON, not literal expression -->
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

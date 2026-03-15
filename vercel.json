@@ -1,6 +1,6 @@
 {
   "redirects": [
-    { "source": "/", "destination": "/en", "permanent": false },
+    { "source": "/", "destination": "/en", "permanent": true },
     { "source": "/cars/:slug", "destination": "/en/cars/:slug", "permanent": true },
     { "source": "/blog/:slug", "destination": "/en/blog/:slug", "permanent": true },
     { "source": "/about-us", "destination": "/en", "permanent": true },
