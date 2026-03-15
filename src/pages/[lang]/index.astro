@@ -19,6 +19,20 @@ const cars = await getCollection('cars');
 const sortedCars = cars.sort((a, b) => a.data.order - b.data.order); // Show all cars
 const blogs = await getCollection('blog');
 const recentBlogs = blogs.slice(0, 3);
+
+const hyRatingSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Prakash Hyundai",
+  "url": "https://www.prakashhyundai.in",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "2915",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+};
 ---
 
 <Layout title="Prakash Hyundai | Authorized Hyundai Dealer in Nizamabad, Telangana" description="Prakash Hyundai is an authorized Hyundai dealership in Nizamabad, Telangana. Explore new Hyundai cars, book test drives, get expert service and genuine parts." lang={lang}>
@@ -147,22 +161,63 @@ const recentBlogs = blogs.slice(0, 3);
   </section>
 
 
-  <!-- Google Reviews CTA -->
+  <!-- Customer Reviews Section -->
+  <script type="application/ld+json" set:html={JSON.stringify(hyRatingSchema)} />
   <section class="py-16 bg-gray-50 border-t border-gray-100">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-black text-[#002C5F] mb-2">What Our Customers Say</h2>
-      <p class="text-gray-600 mb-8 text-lg">Trusted by Nizamabad families for Hyundai cars, genuine service and parts.</p>
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-black text-[#002C5F] mb-2">What Our Customers Say</h2>
+        <p class="text-gray-600 mb-4 text-lg">Trusted by Nizamabad families for Hyundai cars, genuine service and parts.</p>
+        <div class="flex items-center justify-center gap-3 mb-1">
+          <span class="text-yellow-400 text-2xl tracking-tight">★★★★★</span>
+          <span class="text-4xl font-black text-[#002C5F]">4.7</span>
+          <span class="text-gray-500 text-base">/ 5 &nbsp;·&nbsp; <strong class="text-gray-700">2,915+ reviews</strong></span>
+        </div>
+        <p class="text-gray-500 text-sm mt-1">Nizamabad's highest-rated Hyundai dealership</p>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5 mb-8">
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">"Prakash Hyundai showroom is the best in Nizamabad for 15+ years. Quick services, free test drives, certified mechanics, friendly staff, on-time delivery and car wash. Very satisfied!"</p>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-[#002C5F] text-white text-xs flex items-center justify-center font-bold">B</div>
+            <span class="text-sm font-semibold text-gray-700">Bodige</span>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">"Excellent experience with the team. Very happy with Prakash Hyundai treatment in the showroom. Best Hyundai dealer in Nizamabad."</p>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-[#002C5F] text-white text-xs flex items-center justify-center font-bold">S</div>
+            <span class="text-sm font-semibold text-gray-700">Sreenaiah</span>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">"Nice behaviour of the staff. Really love the way they treated us. The entire buying experience was smooth and pleasant."</p>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-[#002C5F] text-white text-xs flex items-center justify-center font-bold">S</div>
+            <span class="text-sm font-semibold text-gray-700">Sree</span>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+          <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-4">"Good service and prompt response. The service team is attentive and gets the job done quickly. Highly recommend!"</p>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-[#002C5F] text-white text-xs flex items-center justify-center font-bold">V</div>
+            <span class="text-sm font-semibold text-gray-700">Venkat</span>
+          </div>
+        </div>
+      </div>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad"
-          target="_blank" rel="noopener noreferrer"
+        <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center gap-3 bg-white border-2 border-gray-200 text-gray-800 px-8 py-4 rounded-xl font-bold hover:border-[#002C5F] hover:bg-blue-50 transition shadow-sm">
           <svg class="w-6 h-6" viewBox="0 0 48 48"><path d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.5 6.9 29.6 5 24 5 13 5 4 14 4 25s9 20 20 20c11 0 20-9 20-20 0-1.3-.1-2.6-.4-3.9z" fill="#FFC107"/><path d="M6.3 15.4l6.6 4.8C14.6 16.2 19 13 24 13c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.5 7 29.6 5 24 5 16.3 5 9.7 9.2 6.3 15.4z" fill="#FF3D00"/><path d="M24 45c5.5 0 10.5-2.1 14.3-5.5l-6.6-5.6C29.7 35.8 27 37 24 37c-5.3 0-9.7-3.3-11.3-8H6.5C9.9 38.9 16.4 45 24 45z" fill="#4CAF50"/><path d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.1-4 5.5l6.6 5.6C37.8 37.9 44 33 44 25c0-1.3-.1-2.6-.4-3.9z" fill="#1976D2"/></svg>
-          Read Our Google Reviews
+          Read All Google Reviews
         </a>
-        <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad"
-          target="_blank" rel="noopener noreferrer"
+        <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center gap-3 bg-[#002C5F] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#001a40] transition shadow-lg">
-          Write a Review
+          ✍ Write a Review
         </a>
       </div>
     </div>
