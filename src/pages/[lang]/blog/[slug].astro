@@ -26,9 +26,28 @@ const {
 } = post.data;
 
 const displayDate = date.toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": seo_title || title,
+  "description": seo_description || excerpt,
+  "image": featured_image || "https://www.prakashhyundai.com/og-image.jpg",
+  "author": { "@type": "Person", "name": author || "Prakash Hyundai Team" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Prakash Hyundai",
+    "logo": { "@type": "ImageObject", "url": "https://www.prakashhyundai.com/logo.png" }
+  },
+  "datePublished": date.toISOString(),
+  "dateModified": date.toISOString(),
+  "url": Astro.url.href,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href }
+};
 ---
 
 <Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt} lang={lang}>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
   <!-- Breadcrumb -->
   <nav class="pt-24 pb-2 max-w-3xl mx-auto px-6">
