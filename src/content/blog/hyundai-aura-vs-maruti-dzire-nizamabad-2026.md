@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Aura vs Maruti Dzire 2026 — Nizamabad Comparison"
 title_te: "హ్యుండాయ్ ఆరా vs మారుతి డిజైర్ 2026 — నిజామాబాద్ పోలిక"
-"2026-02-18"
+date: "2026-02-18"
 author: "Prakash Hyundai Team"
 category: "Comparison"
 tags:

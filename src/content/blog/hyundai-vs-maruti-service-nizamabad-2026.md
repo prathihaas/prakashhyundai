@@ -1,7 +1,7 @@
 ---
 title: "Hyundai vs Maruti After-Sales Service in Nizamabad 2026"
 title_te: "నిజామాబాద్‌లో హ్యుండాయ్ vs మారుతి ఆఫ్టర్-సేల్స్ సర్వీస్ 2026"
-"2026-03-12"
+date: "2026-03-12"
 author: "Prakash Hyundai Team"
 category: "Comparison"
 tags:

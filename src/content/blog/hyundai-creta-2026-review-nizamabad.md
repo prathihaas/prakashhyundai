@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Creta 2026 Full Review — Best SUV in Nizamabad?"
 title_te: "హ్యుండాయ్ క్రేటా 2026 పూర్తి రివ్యూ — నిజామాబాద్‌లో బెస్ట్ SUV?"
-"2026-02-21"
+date: "2026-02-21"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:

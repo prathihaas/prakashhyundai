@@ -1,7 +1,7 @@
 ---
 title: "Car Loan Guide in Nizamabad 2026 — Hyundai Finance Options"
 title_te: "నిజామాబాద్‌లో కార్ లోన్ గైడ్ 2026 — హ్యుండాయ్ ఫైనాన్స్ ఆప్షన్లు"
-"2026-02-13"
+date: "2026-02-13"
 author: "Prakash Hyundai Team"
 category: "Finance"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Grand i10 Nios Review — Best Entry Car in Nizamabad?"
 title_te: "హ్యుండాయ్ గ్రాండ్ i10 నియోస్ రివ్యూ — నిజామాబాద్‌లో బెస్ట్ ఎంట్రీ కార్?"
-"2026-02-27"
+date: "2026-02-27"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:

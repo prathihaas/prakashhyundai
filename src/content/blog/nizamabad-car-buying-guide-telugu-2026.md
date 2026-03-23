@@ -1,7 +1,7 @@
 ---
 title: "నిజామాబాద్‌లో కారు కొనడం ఎలా — 2026 పూర్తి గైడ్"
 title_te: "నిజామాబాద్‌లో కారు కొనడం ఎలా — 2026 పూర్తి గైడ్"
-"2026-03-14"
+date: "2026-03-14"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

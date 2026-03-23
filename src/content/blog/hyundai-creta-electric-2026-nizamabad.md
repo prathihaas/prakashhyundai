@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Creta Electric 2026 — Coming to Nizamabad? Full Preview"
 title_te: "హ్యుండాయ్ క్రేటా ఎలక్ట్రిక్ 2026 — నిజామాబాద్‌కు వస్తుందా? పూర్తి ప్రివ్యూ"
-"2026-02-22"
+date: "2026-02-22"
 author: "Prakash Hyundai Team"
 category: "News"
 tags:
