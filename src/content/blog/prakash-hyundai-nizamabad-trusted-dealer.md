@@ -1,7 +1,7 @@
 ---
 title: "Prakash Hyundai Nizamabad — Your Trusted Hyundai Dealer"
 title_te: "ప్రకాష్ హ్యుండాయ్ నిజామాబాద్ — మీ నమ్మకమైన హ్యుండాయ్ డీలర్"
-date: "2026-03-18"
+"2026-03-17"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

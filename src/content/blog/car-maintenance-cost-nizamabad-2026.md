@@ -1,7 +1,7 @@
 ---
 title: "Car Maintenance Cost in Nizamabad — Hyundai vs Maruti vs Tata 2026"
 title_te: "నిజామాబాద్‌లో కార్ మెయింటెనెన్స్ కాస్ట్ — హ్యుండాయ్ vs మారుతి vs టాటా 2026"
-date: "2026-03-18"
+"2026-02-14"
 author: "Prakash Hyundai Team"
 category: "Tips"
 tags:

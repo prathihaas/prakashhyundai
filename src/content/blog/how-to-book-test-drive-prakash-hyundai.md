@@ -1,7 +1,7 @@
 ---
 title: "How to Book a Test Drive at Prakash Hyundai Nizamabad"
 title_te: "ప్రకాష్ హ్యుండాయ్ నిజామాబాద్‌లో టెస్ట్ డ్రైవ్ ఎలా బుక్ చేయాలి"
-date: "2026-03-18"
+"2026-02-15"
 author: "Prakash Hyundai Team"
 category: "Tips"
 tags:

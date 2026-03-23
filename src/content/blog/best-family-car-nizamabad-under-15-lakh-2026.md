@@ -1,7 +1,7 @@
 ---
 title: "Best Family Car in Nizamabad Under ₹15 Lakh 2026"
 title_te: "నిజామాబాద్‌లో ₹15 లక్షల లోపు బెస్ట్ ఫ్యామిలీ కార్ 2026"
-date: "2026-03-18"
+"2026-02-09"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

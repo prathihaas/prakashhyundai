@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Cars in Nizamabad 2026 — Complete Buyer's Guide"
 title_te: "నిజామాబాద్‌లో హ్యుండాయ్ కార్లు 2026 — పూర్తి కొనుగోలు గైడ్"
-date: "2026-03-18"
+"2026-02-20"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

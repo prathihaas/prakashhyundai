@@ -1,7 +1,7 @@
 ---
 title: "Best SUV Under ₹20 Lakh in Nizamabad 2026 — Top 5 Picks"
 title_te: "నిజామాబాద్‌లో ₹20 లక్షల లోపు బెస్ట్ SUV 2026 — టాప్ 5 పిక్స్"
-date: "2026-03-18"
+"2026-02-11"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

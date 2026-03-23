@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Alcazar Review — 7-Seater Family SUV for Telangana 2026"
 title_te: "హ్యుండాయ్ అల్కాజర్ రివ్యూ — తెలంగాణకు 7-సీటర్ ఫ్యామిలీ SUV 2026"
-date: "2026-03-18"
+"2026-02-17"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:

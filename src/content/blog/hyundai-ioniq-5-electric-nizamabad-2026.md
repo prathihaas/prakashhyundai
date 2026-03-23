@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Ioniq 5 Electric Car — Is It Ready for Nizamabad 2026?"
 title_te: "హ్యుండాయ్ Ioniq 5 ఎలక్ట్రిక్ కార్ — నిజామాబాద్‌కు రెడీగా ఉందా 2026?"
-date: "2026-03-18"
+"2026-03-05"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Venue vs Tata Nexon 2026 — Nizamabad Comparison"
 title_te: "హ్యుండాయ్ వెన్యూ vs టాటా నెక్సాన్ 2026 — నిజామాబాద్ పోలిక"
-date: "2026-03-18"
+"2026-03-10"
 author: "Prakash Hyundai Team"
 category: "Comparison"
 tags:

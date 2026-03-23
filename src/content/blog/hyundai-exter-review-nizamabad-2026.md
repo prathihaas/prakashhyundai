@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Exter Review — Best Micro-SUV for Nizamabad 2026?"
 title_te: "హ్యుండాయ్ ఎక్స్టర్ రివ్యూ — నిజామాబాద్ కోసం బెస్ట్ మైక్రో-SUV 2026?"
-date: "2026-03-18"
+"2026-02-25"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:
