@@ -1,0 +1,373 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return ['en', 'te', 'hi'].map(lang => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Prakash Hyundai — Authorized Hyundai Service Center, Nizamabad",
+  "url": "https://www.prakashhyundai.com/en/service",
+  "telephone": "+91-9052110303",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyderabad Road, Dichpally",
+    "addressLocality": "Nizamabad",
+    "addressRegion": "Telangana",
+    "postalCode": "503001",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:30"
+  }],
+  "brand": { "@type": "Brand", "name": "Hyundai" },
+  "parentOrganization": { "@type": "AutoDealer", "name": "Prakash Hyundai", "url": "https://www.prakashhyundai.com" }
+};
+---
+
+<Layout title="Hyundai Service Center Nizamabad | Prakash Hyundai" description="Authorized Hyundai car service center in Nizamabad. Periodic maintenance, genuine Hyundai parts, AMC plans, denting & painting. Book service at Prakash Hyundai." lang={lang}>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
+  <div class="container mx-auto px-6 py-20">
+
+    <!-- Hero -->
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#002C5F]/10 text-[#002C5F] mb-4">
+        <span class="text-xs font-bold uppercase tracking-wider">Authorized Hyundai Service Center</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4 leading-tight">Authorized Hyundai Service Center <br class="hidden md:block">in Nizamabad</h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-4">Prakash Hyundai is Nizamabad's authorized Hyundai car service center — genuine parts, factory-trained technicians, transparent pricing, and a service experience that matches what you'd expect from a premium brand.</p>
+      <p class="text-gray-500 mb-8">Hyderabad Road, Dichpally, Nizamabad — serving Nizamabad, Kamareddy, Nirmal and surrounding districts.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20car%20service.%20%5BW-PH%5D" target="_blank"
+           class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-7 py-3 rounded-xl font-bold text-lg hover:bg-green-600 transition shadow-lg">
+          Book Service via WhatsApp
+        </a>
+        <a href="tel:+919052110303"
+           class="inline-flex items-center justify-center gap-2 bg-[#002C5F] text-white px-7 py-3 rounded-xl font-bold text-lg hover:bg-[#001f42] transition shadow-lg">
+          Call: 9052110303
+        </a>
+      </div>
+    </div>
+
+    <!-- Why Authorized Service -->
+    <div class="bg-[#F5F6F7] rounded-3xl p-10 mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Why Authorized Hyundai Service?</h2>
+      <p class="text-gray-600 mb-8 max-w-3xl">Hyundai cars come with sophisticated electronics, ADAS features, and complex fuel injection systems that require specialized tools and genuine parts. Here's why Prakash Hyundai is the right choice for every service visit.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-2xl p-6">
+          <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+            <span class="text-[#002C5F] font-bold text-lg">✓</span>
+          </div>
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Genuine Hyundai Parts</h3>
+          <p class="text-gray-600 text-sm">Factory-sourced components with Hyundai India authentication. Genuine parts preserve engine performance, fuel efficiency, and safety system integrity.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6">
+          <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+            <span class="text-[#002C5F] font-bold text-lg">✓</span>
+          </div>
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Hyundai-Certified Technicians</h3>
+          <p class="text-gray-600 text-sm">Our service team is trained and certified by Hyundai Motor India. They work with GDS diagnostic tools on every model from the i10 Nios to Alcazar.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6">
+          <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+            <span class="text-[#002C5F] font-bold text-lg">✓</span>
+          </div>
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Warranty Protection</h3>
+          <p class="text-gray-600 text-sm">Hyundai's 3-year warranty (and extended warranty options) remain valid only with authorized service. Don't risk losing your warranty to an unauthorized shop.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6">
+          <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+            <span class="text-[#002C5F] font-bold text-lg">✓</span>
+          </div>
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Digital Service Records</h3>
+          <p class="text-gray-600 text-sm">Every service logged in Hyundai India's centralized system — boosts resale value and gives the next owner confidence in the car's maintenance history.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6">
+          <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+            <span class="text-[#002C5F] font-bold text-lg">✓</span>
+          </div>
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Transparent Pricing</h3>
+          <p class="text-gray-600 text-sm">Itemized invoice with Hyundai MRP parts pricing and standard labour rates. You approve every item before work begins — no hidden charges.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6">
+          <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+            <span class="text-[#002C5F] font-bold text-lg">✓</span>
+          </div>
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Complimentary Car Wash</h3>
+          <p class="text-gray-600 text-sm">Every vehicle gets a complimentary exterior wash and interior vacuum after service — your Hyundai goes home cleaner than it arrived.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Packages -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Hyundai Service Packages</h2>
+      <p class="text-gray-600 mb-8">We offer three service packages to match every need and budget — from a quick periodic service to a full comprehensive inspection.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="border-2 border-gray-200 rounded-3xl p-8 hover:border-[#002C5F] transition">
+          <h3 class="text-xl font-bold text-[#1C1C1C] mb-2">Basic Service</h3>
+          <p class="text-3xl font-bold text-[#002C5F] mb-1">₹2,499<span class="text-sm font-normal text-gray-500">+</span></p>
+          <p class="text-gray-500 text-sm mb-6">Starting price for small cars (i10 Nios, Grand i10). Sedans & SUVs higher.</p>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Engine oil change (Hyundai approved)</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Oil filter replacement</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Air filter inspection</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Tyre pressure & rotation check</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Brake inspection</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Complimentary car wash</li>
+          </ul>
+        </div>
+        <div class="border-2 border-[#002C5F] rounded-3xl p-8 bg-[#002C5F] text-white">
+          <div class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Most Popular</div>
+          <h3 class="text-xl font-bold mb-2">Standard Service</h3>
+          <p class="text-3xl font-bold text-white mb-1">₹4,499<span class="text-sm font-normal text-white/70">+</span></p>
+          <p class="text-white/60 text-sm mb-6">Starting price for i20, Venue, Verna. Creta & Alcazar higher.</p>
+          <ul class="space-y-3 text-sm text-white/80">
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> All Basic Service items</li>
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Air filter replacement</li>
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Cabin (pollen) filter check</li>
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Battery health check</li>
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> AC performance check</li>
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> Suspension & steering check</li>
+            <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> 25-point inspection</li>
+          </ul>
+        </div>
+        <div class="border-2 border-gray-200 rounded-3xl p-8 hover:border-[#002C5F] transition">
+          <h3 class="text-xl font-bold text-[#1C1C1C] mb-2">Comprehensive Service</h3>
+          <p class="text-3xl font-bold text-[#002C5F] mb-1">₹8,999<span class="text-sm font-normal text-gray-500">+</span></p>
+          <p class="text-gray-500 text-sm mb-6">Full service for all models. Recommended every 30,000 km or 3 years.</p>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> All Standard Service items</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Spark plug replacement</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Coolant flush & refill</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> Brake fluid replacement</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> GDS computerized diagnostics</li>
+            <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> 50-point full inspection</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-sm text-gray-500 mt-4 text-center">* All prices include labour. Parts billed separately at Hyundai India MRP. Obtain exact quote at service booking.</p>
+    </div>
+
+    <!-- Service Schedule -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Hyundai Car Service Schedule</h2>
+      <p class="text-gray-600 mb-6">Hyundai recommends servicing every <strong>10,000 km or 12 months</strong>, whichever comes first. Following this schedule preserves engine life, fuel efficiency, and warranty coverage.</p>
+      <div class="overflow-x-auto rounded-2xl border border-gray-200">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="bg-[#002C5F] text-white">
+              <th class="p-4 text-left text-sm font-bold">Service Interval</th>
+              <th class="p-4 text-left text-sm font-bold">Key Jobs</th>
+              <th class="p-4 text-left text-sm font-bold">Recommended Package</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="p-4 font-semibold">10,000 km / 12 months</td>
+              <td class="p-4 text-sm text-gray-600">Engine oil & filter, tyre rotation, brake check, visual inspection</td>
+              <td class="p-4 text-sm font-bold text-[#002C5F]">Basic Service</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="p-4 font-semibold">20,000 km / 24 months</td>
+              <td class="p-4 text-sm text-gray-600">All 10k items + air filter, cabin filter, AC check, battery, 25-point inspection</td>
+              <td class="p-4 text-sm font-bold text-[#002C5F]">Standard Service</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="p-4 font-semibold">30,000 km / 36 months</td>
+              <td class="p-4 text-sm text-gray-600">All 20k items + spark plugs, coolant, brake fluid, GDS diagnostics</td>
+              <td class="p-4 text-sm font-bold text-[#002C5F]">Comprehensive Service</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="p-4 font-semibold">60,000 km / 60 months</td>
+              <td class="p-4 text-sm text-gray-600">All 30k items + timing belt (if applicable), transmission fluid, full chassis inspection</td>
+              <td class="p-4 text-sm font-bold text-[#002C5F]">Major Service (Quotation)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Services List -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Services Available at Prakash Hyundai</h2>
+      <p class="text-gray-600 mb-6">Our full-facility service center handles everything from routine maintenance to accident repairs and insurance claims.</p>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
+        {[
+          "Engine oil & filter change",
+          "Air filter & cabin filter replacement",
+          "Brake pad & disc inspection/replacement",
+          "AC service & refrigerant recharge",
+          "Tyre rotation & wheel balancing",
+          "Wheel alignment",
+          "Battery check & replacement",
+          "Spark plug replacement",
+          "Coolant flush & refill",
+          "Brake fluid replacement",
+          "GDS computerized diagnostics",
+          "Transmission fluid service",
+          "Suspension & shock absorber check",
+          "Denting & painting (authorized body shop)",
+          "Accident repair & insurance processing",
+          "Genuine Hyundai spare parts",
+          "Annual Maintenance Contract (AMC)",
+          "Windshield replacement",
+          "Door & trim panel repair",
+          "Pre-purchase inspection",
+        ].map(service => (
+          <div class="flex items-center gap-2 bg-[#F5F6F7] rounded-xl p-3 text-sm font-medium text-gray-700">
+            <span class="text-[#002C5F] flex-shrink-0 font-bold">●</span> {service}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Hyundai Models -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Hyundai Cars We Service</h2>
+      <p class="text-gray-600 mb-6">Authorized to service all Hyundai passenger cars sold in India.</p>
+      <div class="flex flex-wrap gap-3">
+        {[
+          "Hyundai Creta", "Hyundai Venue", "Hyundai i20",
+          "Hyundai Grand i10 Nios", "Hyundai Verna", "Hyundai Alcazar",
+          "Hyundai Exter", "Hyundai Tucson", "Hyundai Ioniq 5",
+        ].map(model => (
+          <span class="bg-[#002C5F]/5 border border-[#002C5F]/20 text-[#002C5F] px-4 py-2 rounded-full text-sm font-bold">{model}</span>
+        ))}
+      </div>
+    </div>
+
+    <!-- AMC -->
+    <div class="bg-[#F5F6F7] rounded-3xl p-10 mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Annual Maintenance Contract (AMC)</h2>
+      <p class="text-gray-600 mb-6">A Prakash Hyundai AMC gives you complete peace of mind — all periodic services covered at a fixed annual price with priority scheduling. Ideal for corporate fleets and daily commuters.</p>
+      <div class="grid sm:grid-cols-3 gap-6 mb-6">
+        <div class="bg-white rounded-2xl p-6 text-center">
+          <p class="font-bold text-[#1C1C1C] text-lg">Small Car AMC</p>
+          <p class="text-gray-500 text-sm">i10 Nios, Grand i10</p>
+          <p class="text-3xl font-bold text-[#002C5F] mt-3">₹5,999<span class="text-sm font-normal text-gray-400">/yr</span></p>
+          <p class="text-gray-500 text-xs mt-2">2 services included</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center border-2 border-[#002C5F]">
+          <p class="font-bold text-[#1C1C1C] text-lg">Hatchback / Sedan AMC</p>
+          <p class="text-gray-500 text-sm">i20, Verna, Venue</p>
+          <p class="text-3xl font-bold text-[#002C5F] mt-3">₹8,999<span class="text-sm font-normal text-gray-400">/yr</span></p>
+          <p class="text-gray-500 text-xs mt-2">2 services + priority</p>
+        </div>
+        <div class="bg-white rounded-2xl p-6 text-center">
+          <p class="font-bold text-[#1C1C1C] text-lg">SUV AMC</p>
+          <p class="text-gray-500 text-sm">Creta, Alcazar, Tucson</p>
+          <p class="text-3xl font-bold text-[#002C5F] mt-3">₹12,999<span class="text-sm font-normal text-gray-400">/yr</span></p>
+          <p class="text-gray-500 text-xs mt-2">2 services + 10% parts discount</p>
+        </div>
+      </div>
+      <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20know%20about%20Hyundai%20AMC%20plans%20at%20Prakash%20Hyundai.%20%5BW-PH%5D" target="_blank"
+         class="inline-flex items-center gap-2 bg-[#002C5F] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#001f42] transition">
+        WhatsApp for AMC Details →
+      </a>
+    </div>
+
+    <!-- Location -->
+    <div class="grid lg:grid-cols-2 gap-12 mb-16">
+      <div>
+        <h2 class="text-3xl font-bold text-[#1C1C1C] mb-6">Service Center Location & Hours</h2>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-[#002C5F]/10 rounded-xl flex-shrink-0">
+              <span class="text-[#002C5F] text-xl">📍</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-[#1C1C1C] mb-1">Address</h3>
+              <p class="text-gray-600">Prakash Hyundai<br>Hyderabad Road, Dichpally,<br>Nizamabad, Telangana 503001</p>
+              <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad" target="_blank"
+                 class="text-[#002C5F] font-semibold text-sm mt-2 inline-block hover:underline">Get Directions →</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-[#002C5F]/10 rounded-xl flex-shrink-0">
+              <span class="text-[#002C5F] text-xl">🕐</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-[#1C1C1C] mb-1">Service Hours</h3>
+              <p class="text-gray-600">Monday – Saturday: 9:00 AM – 7:30 PM</p>
+              <p class="text-gray-500 text-sm">Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-green-100 rounded-xl flex-shrink-0">
+              <span class="text-green-700 text-xl">💬</span>
+            </div>
+            <div>
+              <h3 class="font-bold text-[#1C1C1C] mb-1">Book via WhatsApp</h3>
+              <p class="text-gray-600 text-sm">Fastest way to schedule service. Message us and get confirmation within 30 minutes.</p>
+              <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20service%20at%20Prakash%20Hyundai%20Nizamabad.%20%5BW-PH%5D" target="_blank"
+                 class="text-green-700 font-bold text-sm mt-1 inline-block hover:underline">Chat Now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-bold text-[#1C1C1C] mb-6">Areas We Serve</h2>
+        <p class="text-gray-600 mb-4">Customers drive from across the region to service their Hyundai at our authorized center. We're conveniently located on Hyderabad Road, easily accessible from Nizamabad city and surrounding towns.</p>
+        <div class="flex flex-wrap gap-2">
+          {[
+            "Nizamabad", "Kamareddy", "Nirmal", "Armoor", "Balkonda",
+            "Bodhan", "Mancherial", "Jagtial", "Dichpally", "Banswada",
+            "Yellareddy", "Siddipet", "Karimnagar"
+          ].map(area => (
+            <span class="bg-[#002C5F]/5 border border-[#002C5F]/15 text-[#002C5F] px-3 py-1 rounded-full text-sm font-semibold">{area}</span>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-6">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-[#F5F6F7] rounded-2xl p-6">
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Do I need a prior appointment for Hyundai service?</h3>
+          <p class="text-gray-600 text-sm">Walk-ins are accepted but we recommend booking via WhatsApp to secure a priority slot and reduce waiting time. Most bookings receive confirmation within 30 minutes during business hours.</p>
+        </div>
+        <div class="bg-[#F5F6F7] rounded-2xl p-6">
+          <h3 class="font-bold text-[#1C1C1C] mb-2">How long does a Hyundai car service take?</h3>
+          <p class="text-gray-600 text-sm">A Basic Service typically takes 2–3 hours. Standard Service takes 3–4 hours. Comprehensive Service may take a full day depending on parts availability. We'll give you a precise time estimate at drop-off.</p>
+        </div>
+        <div class="bg-[#F5F6F7] rounded-2xl p-6">
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Can you handle accident repair and insurance claims?</h3>
+          <p class="text-gray-600 text-sm">Yes. Our body shop handles denting, painting, and complete accident repair. We work with all major insurance companies (HDFC Ergo, New India, Bajaj Allianz, etc.) and can process cashless claims directly.</p>
+        </div>
+        <div class="bg-[#F5F6F7] rounded-2xl p-6">
+          <h3 class="font-bold text-[#1C1C1C] mb-2">Does service at Prakash Hyundai maintain my warranty?</h3>
+          <p class="text-gray-600 text-sm">Yes. Prakash Hyundai is an authorized Hyundai dealer. All services performed here are logged in Hyundai's system and maintain your vehicle's warranty in full. Unauthorized shops cannot make this guarantee.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="bg-[#002C5F] text-white rounded-3xl p-12 text-center">
+      <h2 class="text-3xl font-bold mb-3">Book Your Hyundai Service Today</h2>
+      <p class="text-white/70 max-w-xl mx-auto mb-8">Genuine parts. Certified technicians. Transparent pricing. Experience Hyundai-standard service right here in Nizamabad.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20service%20at%20Prakash%20Hyundai.%20%5BW-PH%5D" target="_blank"
+           class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-7 py-3 rounded-xl font-bold hover:bg-green-600 transition">
+          WhatsApp to Book
+        </a>
+        <a href="tel:+919052110303"
+           class="inline-flex items-center justify-center gap-2 bg-white text-[#002C5F] px-7 py-3 rounded-xl font-bold hover:bg-gray-100 transition">
+          Call 9052110303
+        </a>
+      </div>
+    </div>
+
+  </div>
+</Layout>
