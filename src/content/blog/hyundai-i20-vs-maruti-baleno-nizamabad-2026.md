@@ -1,7 +1,7 @@
 ---
 title: "Hyundai i20 vs Maruti Baleno 2026 — Which Wins in Nizamabad?"
 title_te: "హ్యుండాయ్ i20 vs మారుతి బలేనో 2026 — నిజామాబాద్‌లో ఏది గెలుస్తుంది?"
-"2026-03-04"
+"2026-03-04"
 author: "Prakash Hyundai Team"
 category: "Comparison"
 tags:

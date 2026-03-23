@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Grand i10 Nios vs Maruti Swift — Nizamabad 2026"
 title_te: "హ్యుండాయ్ గ్రాండ్ i10 నియోస్ vs మారుతి స్విఫ్ట్ — నిజామాబాద్ 2026"
-"2026-02-28"
+"2026-02-28"
 author: "Prakash Hyundai Team"
 category: "Comparison"
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Hyundai i20 2026 Review — Premium Hatchback for Nizamabad"
 title_te: "హ్యుండాయ్ i20 2026 రివ్యూ — నిజామాబాద్ కోసం ప్రీమియం హ్యాచ్‌బ్యాక్"
-"2026-03-01"
+"2026-03-01"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:

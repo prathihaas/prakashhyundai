@@ -1,7 +1,7 @@
 ---
 title: "Best First Car in Nizamabad 2026 — Hyundai's Top Recommendations"
 title_te: "నిజామాబాద్‌లో బెస్ట్ ఫస్ట్ కార్ 2026 — హ్యుండాయ్ సిఫారసులు"
-"2026-02-10"
+"2026-02-10"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:

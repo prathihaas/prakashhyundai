@@ -1,7 +1,7 @@
 ---
 title: "Hyundai Verna 2026 Review — Premium Sedan for Nizamabad Buyers"
 title_te: "హ్యుండాయ్ వెర్నా 2026 రివ్యూ — నిజామాబాద్ కొనుగోలుదారులకు ప్రీమియం సెడాన్"
-"2026-03-11"
+"2026-03-11"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:

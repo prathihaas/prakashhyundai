@@ -1,7 +1,7 @@
 ---
 title: "Petrol vs Diesel vs CNG — Which to Choose in Nizamabad 2026?"
 title_te: "పెట్రోల్ vs డీజిల్ vs CNG — నిజామాబాద్‌లో ఏది ఎంచుకోవాలి 2026?"
-"2026-03-15"
+"2026-03-15"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:
