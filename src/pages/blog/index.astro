@@ -1,24 +1,15 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { useTranslations } from '../../../i18n/ui';
 
-export async function getStaticPaths() {
-  return [
-    { params: { lang: 'en' } },
-    { params: { lang: 'te' } },
-    { params: { lang: 'hi' } },
-  ];
-}
-
-const { lang } = Astro.params;
-const t = useTranslations(lang as any);
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<Layout title="Hyundai Car Tips, Comparisons & Guides | Prakash Hyundai Nizamabad" description="Car buying guides, Hyundai model comparisons, and local driving tips from Prakash Hyundai — authorized Hyundai dealer in Nizamabad, Telangana." lang={lang}>
-
+<Layout
+  title="Hyundai Car Tips, Comparisons & Guides | Prakash Hyundai Nizamabad"
+  description="Car buying guides, Hyundai model comparisons, and local driving tips from Prakash Hyundai — authorized Hyundai dealer in Nizamabad, Telangana."
+>
   <div class="bg-[#F5F6F7] py-24 pt-32">
     <div class="container mx-auto px-6">
       <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4">Car Guides & Tips</h1>
@@ -29,7 +20,7 @@ const sortedPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.
   <div class="container mx-auto px-6 py-20">
     <div class="grid md:grid-cols-3 gap-8">
       {sortedPosts.map(post => (
-        <a href={`/${lang}/blog/${post.slug}`} class="group flex flex-col">
+        <a href={`/blog/${post.slug}`} class="group flex flex-col">
           <article class="rounded-2xl border border-gray-100 hover:border-blue-100 hover:shadow-xl transition-all h-full bg-white flex flex-col overflow-hidden">
             <div class="aspect-video bg-gray-100 overflow-hidden">
               {post.data.featured_image

@@ -1,119 +1,109 @@
 ---
-import { MessageCircle, Menu, X } from 'lucide-react';
-import { languages, useTranslations } from '../i18n/ui';
+import { MessageCircle } from 'lucide-react';
 import SEOHead from '../components/SEOHead.astro';
 
 interface Props {
-	title?: string;
+  title?: string;
   description?: string;
   canonical?: string;
   image?: string;
-  lang: string;
 }
 
-const { title, description, canonical, image, lang } = Astro.props;
-const t = useTranslations(lang as any);
+const { title, description, canonical, image } = Astro.props;
 
-// ALWAYS include the language prefix to match the file structure [lang]
 const navLinks = [
-    { label: t('nav.home'), href: `/${lang}` },
-    { label: t('nav.cars'), href: `/${lang}#cars` },
-    { label: t('nav.locations'), href: `/${lang}/locations` },
-    { label: t('nav.blog'), href: `/${lang}/blog` },
-    { label: t('nav.contact'), href: `/${lang}/contact` },
+  { label: "Home",      href: "/" },
+  { label: "Cars",      href: "/#cars" },
+  { label: "Locations", href: "/locations" },
+  { label: "Service",   href: "/service" },
+  { label: "Blog",      href: "/blog" },
+  { label: "Contact",   href: "/contact" },
 ];
 ---
 
 <!doctype html>
-<html lang={lang} class="scroll-smooth">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/jpeg" href="/favicon.jpg" />
-		<link rel="apple-touch-icon" href="/favicon.jpg" />
-		<meta name="theme-color" content="#002C5F" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-		<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
-<!-- End Google Tag Manager -->
-		<SEOHead title={title} description={description} canonical={canonical} image={image} />
-	</head>
-	<body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen"><!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52SXCPMR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-        
-        <!-- Header -->
-        <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
-            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href={`/${lang}`} class="text-[#002C5F] font-bold text-2xl tracking-tighter hover:opacity-80 transition">
-                    PRAKASH<span class="font-light">HYUNDAI</span>
-                </a>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <link rel="apple-touch-icon" href="/favicon.jpg" />
+    <meta name="theme-color" content="#002C5F" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
+    <!-- End Google Tag Manager -->
+    <SEOHead title={title} description={description} canonical={canonical} image={image} />
+  </head>
+  <body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52SXCPMR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-                <!-- Desktop Nav -->
-                <nav class="hidden md:flex items-center gap-8">
-                    {navLinks.map(link => (
-                        <a href={link.href} class="text-sm font-medium text-gray-600 hover:text-[#002C5F] transition-colors">
-                            {link.label}
-                        </a>
-                    ))}
-                </nav>
-                
-                <div class="flex gap-4 items-center">
-                    <!-- Language Switcher -->
-                    <div class="hidden md:flex gap-2 text-xs font-bold bg-gray-50 p-1 rounded-lg">
-                        {Object.entries(languages).map(([code, label]) => (
-                            <a href={`/${code}`} class={`px-3 py-1.5 rounded-md transition-all ${lang === code ? 'bg-white shadow-sm text-[#002C5F]' : 'text-gray-500 hover:text-gray-700'}`}>
-                                {code.toUpperCase()}
-                            </a>
-                        ))}
-                    </div>
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100 transition-all duration-300">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="text-[#002C5F] font-bold text-2xl tracking-tighter hover:opacity-80 transition">
+          PRAKASH<span class="font-light">HYUNDAI</span>
+        </a>
 
-                    <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20know%20about%20Hyundai%20cars%20in%20Nizamabad.%20%5BW-PH%5D" target="_blank" class="flex items-center gap-2 bg-[#002C5F] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#001f42] transition-colors shadow-lg shadow-blue-900/20">
-                        <MessageCircle size={18} /> <span class="hidden sm:inline">WhatsApp</span>
-                    </a>
-                </div>
-            </div>
-        </header>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8">
+          {navLinks.map(link => (
+            <a href={link.href} class="text-sm font-medium text-gray-600 hover:text-[#002C5F] transition-colors">
+              {link.label}
+            </a>
+          ))}
+        </nav>
 
-		<main class="flex-grow pt-20">
-            <slot />
-        </main>
+        <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20know%20about%20Hyundai%20cars%20in%20Nizamabad.%20%5BW-PH%5D"
+          target="_blank" rel="noopener noreferrer"
+          class="flex items-center gap-2 bg-[#002C5F] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#001f42] transition-colors shadow-lg shadow-blue-900/20">
+          <MessageCircle size={18} /> <span class="hidden sm:inline">WhatsApp</span>
+        </a>
+      </div>
+    </header>
 
-        <!-- Footer -->
-        <footer class="bg-[#1C1C1C] text-white py-16 mt-auto">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-4 gap-12 mb-12">
-                    <div class="col-span-2">
-                        <h3 class="text-xl font-bold mb-4">Prakash Hyundai</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Authorized Dealer for Nizamabad & Districts. Providing premium sales and service experience since 2008.</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                        <ul class="space-y-2 text-sm text-gray-400">
-                             {navLinks.map(link => (
-                                <li><a href={link.href} class="hover:text-white transition">{link.label}</a></li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-4">Contact</h3>
-                        <p class="text-gray-400 text-sm">Hyderabad Road, Dichpally</p>
-                        <p class="text-gray-400 text-sm">Nizamabad, Telangana 503001</p>
-                        <p class="text-gray-400 text-sm mt-2">+91 9052116511</p>
-                    </div>
-                </div>
-                <div class="text-center text-gray-600 text-sm border-t border-gray-800 pt-8">
-                    &copy; {new Date().getFullYear()} Prakash Hyundai. All rights reserved.
-                </div>
-            </div>
-        </footer>
+    <main class="flex-grow pt-20">
+      <slot />
+    </main>
 
-	</body>
+    <!-- Footer -->
+    <footer class="bg-[#1C1C1C] text-white py-16 mt-auto">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+          <div class="col-span-2">
+            <h3 class="text-xl font-bold mb-4">Prakash Hyundai</h3>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm">Authorized Dealer for Nizamabad & Districts. Providing premium Hyundai sales and service experience since 2008.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm text-gray-400">
+              {navLinks.map(link => (
+                <li><a href={link.href} class="hover:text-white transition">{link.label}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact</h3>
+            <p class="text-gray-400 text-sm">Hyderabad Road, Dichpally</p>
+            <p class="text-gray-400 text-sm">Nizamabad, Telangana 503001</p>
+            <p class="text-gray-400 text-sm mt-2">+91 9052110303</p>
+            <p class="text-gray-400 text-sm">+91 9052116511 (Showroom)</p>
+          </div>
+        </div>
+        <div class="text-center text-gray-600 text-sm border-t border-gray-800 pt-8">
+          &copy; {new Date().getFullYear()} Prakash Hyundai. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+  </body>
 </html>

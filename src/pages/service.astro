@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Prakash Hyundai — Authorized Hyundai Service Center, Nizamabad",
+  "url": "https://www.prakashhyundai.com/service",
+  "telephone": "+91-9052110303",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyderabad Road, Dichpally",
+    "addressLocality": "Nizamabad",
+    "addressRegion": "Telangana",
+    "postalCode": "503001",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:30"
+  }],
+  "brand": { "@type": "Brand", "name": "Hyundai" },
+  "parentOrganization": { "@type": "AutoDealer", "name": "Prakash Hyundai", "url": "https://www.prakashhyundai.com" }
+};
+---
+
+<Layout
+  title="Hyundai Service Center Nizamabad | Prakash Hyundai"
+  description="Authorized Hyundai car service center in Nizamabad. Periodic maintenance, genuine Hyundai parts, AMC plans, denting & painting. Book service at Prakash Hyundai."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />
+
+  <div class="container mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#002C5F]/10 text-[#002C5F] mb-4">
+        <span class="text-xs font-bold uppercase tracking-wider">Authorized Hyundai Service Center</span>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4 leading-tight">Authorized Hyundai Service Center<br class="hidden md:block"> in Nizamabad</h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-4">Genuine parts, factory-trained technicians, transparent pricing — Hyundai-standard service in Nizamabad.</p>
+      <p class="text-gray-500 mb-8">Hyderabad Road, Dichpally, Nizamabad — serving Nizamabad, Kamareddy, Nirmal and surrounding districts.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20car%20service.%20%5BW-SVC%5D" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-7 py-3 rounded-xl font-bold text-lg hover:bg-green-600 transition shadow-lg">
+          Book Service via WhatsApp
+        </a>
+        <a href="tel:+919052110303" class="inline-flex items-center justify-center gap-2 bg-[#002C5F] text-white px-7 py-3 rounded-xl font-bold text-lg hover:bg-[#001f42] transition shadow-lg">
+          Call: 9052110303
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-[#F5F6F7] rounded-3xl p-10 mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Why Authorized Hyundai Service?</h2>
+      <p class="text-gray-600 mb-8 max-w-3xl">Hyundai cars require specialized tools and genuine parts. Here's why Prakash Hyundai is the right choice for every service visit.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+        {[
+          { title: "Genuine Hyundai Parts", desc: "Factory-sourced components with Hyundai India authentication. Preserves engine performance, fuel efficiency, and safety system integrity." },
+          { title: "Hyundai-Certified Technicians", desc: "Our service team is trained and certified by Hyundai Motor India. They work with GDS diagnostic tools on every model." },
+          { title: "Warranty Protection", desc: "Hyundai's 3-year warranty remains valid only with authorized service. Don't risk losing your warranty to an unauthorized shop." },
+          { title: "Digital Service Records", desc: "Every service logged in Hyundai India's centralized system — boosts resale value and gives confidence in maintenance history." },
+          { title: "Transparent Pricing", desc: "Itemized invoice with Hyundai MRP parts pricing and standard labour rates. You approve every item before work begins." },
+          { title: "Complimentary Car Wash", desc: "Every vehicle gets a complimentary exterior wash and interior vacuum after service." }
+        ].map(item => (
+          <div class="bg-white rounded-2xl p-6">
+            <div class="w-10 h-10 bg-[#002C5F]/10 rounded-xl flex items-center justify-center mb-3">
+              <span class="text-[#002C5F] font-bold text-lg">✓</span>
+            </div>
+            <h3 class="font-bold text-[#1C1C1C] mb-2">{item.title}</h3>
+            <p class="text-gray-600 text-sm">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-3">Hyundai Service Packages</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="border-2 border-gray-200 rounded-3xl p-8 hover:border-[#002C5F] transition">
+          <h3 class="text-xl font-bold text-[#1C1C1C] mb-2">Basic Service</h3>
+          <p class="text-3xl font-bold text-[#002C5F] mb-1">₹2,499<span class="text-sm font-normal text-gray-500">+</span></p>
+          <p class="text-gray-500 text-sm mb-6">Starting price for small cars.</p>
+          <ul class="space-y-3 text-sm text-gray-600">
+            {["Engine oil change", "Oil filter replacement", "Air filter inspection", "Tyre pressure & rotation check", "Brake inspection", "Complimentary car wash"].map(i => (
+              <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> {i}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="border-2 border-[#002C5F] rounded-3xl p-8 bg-[#002C5F] text-white">
+          <div class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">Most Popular</div>
+          <h3 class="text-xl font-bold mb-2">Standard Service</h3>
+          <p class="text-3xl font-bold mb-1">₹4,499<span class="text-sm font-normal text-white/70">+</span></p>
+          <p class="text-white/60 text-sm mb-6">For i20, Venue, Verna. Creta & Alcazar higher.</p>
+          <ul class="space-y-3 text-sm text-white/80">
+            {["All Basic items", "Air filter replacement", "Cabin filter check", "Battery health check", "AC performance check", "25-point inspection"].map(i => (
+              <li class="flex items-center gap-2"><span class="text-white font-bold">✓</span> {i}</li>
+            ))}
+          </ul>
+        </div>
+        <div class="border-2 border-gray-200 rounded-3xl p-8 hover:border-[#002C5F] transition">
+          <h3 class="text-xl font-bold text-[#1C1C1C] mb-2">Comprehensive</h3>
+          <p class="text-3xl font-bold text-[#002C5F] mb-1">₹8,999<span class="text-sm font-normal text-gray-500">+</span></p>
+          <p class="text-gray-500 text-sm mb-6">Every 30,000 km or 3 years.</p>
+          <ul class="space-y-3 text-sm text-gray-600">
+            {["All Standard items", "Spark plug replacement", "Coolant flush & refill", "Brake fluid replacement", "GDS computerized diagnostics", "50-point full inspection"].map(i => (
+              <li class="flex items-center gap-2"><span class="text-[#002C5F] font-bold">✓</span> {i}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#002C5F] text-white rounded-3xl p-12 text-center">
+      <h2 class="text-3xl font-bold mb-3">Book Your Hyundai Service Today</h2>
+      <p class="text-white/70 max-w-xl mx-auto mb-8">Genuine parts. Certified technicians. Transparent pricing. Nizamabad's authorized Hyundai service center.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20service%20at%20Prakash%20Hyundai.%20%5BW-SVC-CTA%5D" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white px-7 py-3 rounded-xl font-bold hover:bg-green-600 transition">
+          WhatsApp to Book
+        </a>
+        <a href="tel:+919052110303" class="inline-flex items-center justify-center gap-2 bg-white text-[#002C5F] px-7 py-3 rounded-xl font-bold hover:bg-gray-100 transition">
+          Call 9052110303
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

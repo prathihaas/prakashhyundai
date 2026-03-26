@@ -1,12 +1,19 @@
 {
   "redirects": [
     { "source": "/:path*", "has": [{"type": "host", "value": "prakashhyundai.com"}], "destination": "https://www.prakashhyundai.com/:path*", "permanent": true },
-    { "source": "/cars/:slug", "destination": "/en/cars/:slug", "permanent": true },
-    { "source": "/blog/:slug", "destination": "/en/blog/:slug", "permanent": true },
-    { "source": "/about-us", "destination": "/en", "permanent": true },
-    { "source": "/contact-us", "destination": "/en/contact", "permanent": true },
-    { "source": "/santro", "destination": "/en/cars", "permanent": true },
-    { "source": "/tucson", "destination": "/en/cars", "permanent": true },
-    { "source": "/kona-electric", "destination": "/en/cars", "permanent": true }
+    { "source": "/en/cars/:slug", "destination": "/cars/:slug", "permanent": true },
+    { "source": "/en/blog/:slug", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/en/locations", "destination": "/locations", "permanent": true },
+    { "source": "/en/contact", "destination": "/contact", "permanent": true },
+    { "source": "/en/service", "destination": "/service", "permanent": true },
+    { "source": "/en/blog", "destination": "/blog", "permanent": true },
+    { "source": "/en", "destination": "/", "permanent": true },
+    { "source": "/cars/:slug", "destination": "/cars/:slug", "permanent": true },
+    { "source": "/blog/:slug", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/about-us", "destination": "/", "permanent": true },
+    { "source": "/contact-us", "destination": "/contact", "permanent": true },
+    { "source": "/santro", "destination": "/cars", "permanent": true },
+    { "source": "/tucson", "destination": "/cars", "permanent": true },
+    { "source": "/kona-electric", "destination": "/cars", "permanent": true }
   ]
 }

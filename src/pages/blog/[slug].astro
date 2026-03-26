@@ -1,29 +1,15 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data }) => !data.draft);
-  const paths = [];
-  ['en', 'te', 'hi'].forEach(lang => {
-    posts.forEach(post => {
-      paths.push({
-        params: { lang, slug: post.slug },
-        props: { post }
-      });
-    });
-  });
-  return paths;
+  return posts.map(post => ({ params: { slug: post.slug }, props: { post } }));
 }
 
-const { lang } = Astro.params;
 const { post } = Astro.props;
 const { Content } = await post.render();
-const {
-  title, title_te, seo_title, seo_description,
-  featured_image, excerpt, category, readTime, author, tags,
-  date,
-} = post.data;
+const { title, title_te, seo_title, seo_description, featured_image, excerpt, category, readTime, author, tags, date } = post.data;
 
 const displayDate = date.toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
 
@@ -46,15 +32,14 @@ const articleSchema = {
 };
 ---
 
-<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt} lang={lang}>
+<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
-  <!-- Breadcrumb -->
   <nav class="pt-24 pb-2 max-w-3xl mx-auto px-6">
     <div class="flex items-center gap-2 text-xs text-gray-400 font-semibold uppercase tracking-wider">
-      <a href={`/${lang}`} class="hover:text-[#00AAD2] transition">Home</a>
+      <a href="/" class="hover:text-[#00AAD2] transition">Home</a>
       <span>/</span>
-      <a href={`/${lang}/blog`} class="hover:text-[#00AAD2] transition">Blog</a>
+      <a href="/blog" class="hover:text-[#00AAD2] transition">Blog</a>
       <span>/</span>
       <span class="text-gray-600">{category}</span>
     </div>
@@ -62,17 +47,12 @@ const articleSchema = {
 
   <article class="pb-24">
     <div class="max-w-3xl mx-auto px-6">
-
-      <!-- Header -->
       <header class="py-10 text-center">
         <div class="flex items-center justify-center gap-3 mb-5">
-          <span class="text-xs font-bold text-[#00AAD2] uppercase tracking-widest bg-[#00AAD2]/10 px-3 py-1 rounded-full">
-            {category}
-          </span>
+          <span class="text-xs font-bold text-[#00AAD2] uppercase tracking-widest bg-[#00AAD2]/10 px-3 py-1 rounded-full">{category}</span>
           {readTime && <span class="text-xs text-gray-400 font-semibold">{readTime}</span>}
         </div>
         <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-5 leading-tight">{title}</h1>
-        {title_te && <h2 class="text-xl text-gray-400 mb-4">{title_te}</h2>}
         <p class="text-lg text-gray-500 leading-relaxed max-w-2xl mx-auto">{excerpt}</p>
         <div class="flex justify-center gap-6 mt-6 text-sm text-gray-400 font-medium">
           <span>{displayDate}</span>
@@ -80,17 +60,10 @@ const articleSchema = {
         </div>
       </header>
 
-      <!-- Hero image -->
       {featured_image && (
-        <img
-          src={featured_image}
-          alt={title}
-          class="w-full aspect-video object-cover rounded-2xl shadow-xl mb-10"
-          loading="eager"
-        />
+        <img src={featured_image} alt={title} class="w-full aspect-video object-cover rounded-2xl shadow-xl mb-10" loading="eager" />
       )}
 
-      <!-- Tags -->
       {tags && tags.length > 0 && (
         <div class="flex flex-wrap gap-2 mb-8">
           {tags.map(tag => (
@@ -99,7 +72,6 @@ const articleSchema = {
         </div>
       )}
 
-      <!-- Body -->
       <div class="prose prose-lg prose-blue mx-auto
         prose-headings:font-bold prose-headings:text-[#002C5F]
         prose-a:text-[#00AAD2] prose-a:font-semibold
@@ -109,22 +81,21 @@ const articleSchema = {
         <Content />
       </div>
 
-      <!-- CTA -->
       <div class="mt-16 bg-[#002C5F] text-white rounded-2xl p-10 text-center">
         <h3 class="text-2xl font-bold mb-3">Book a Test Drive at Prakash Hyundai</h3>
         <p class="text-blue-200 mb-8">Visit us in Nizamabad — experience any Hyundai model before you buy.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://wa.me/919052110303?text=Hi%2C%20I%20read%20your%20blog%20and%20want%20to%20know%20more%20about%20Hyundai%20cars.%20%5BW-PH%5D" target="_blank"
-             class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-bold hover:bg-green-500 transition">
+          <a href="https://wa.me/919052110303?text=Hi%2C%20I%20read%20your%20blog%20and%20want%20to%20know%20more%20about%20Hyundai%20cars.%20%5BW-BLOG%5D"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-bold hover:bg-green-500 transition">
             WhatsApp Us
           </a>
           <a href="tel:+919052110303"
-             class="inline-flex items-center gap-2 bg-[#00AAD2] text-white px-6 py-3 rounded-full font-bold hover:bg-sky-400 transition">
+            class="inline-flex items-center gap-2 bg-[#00AAD2] text-white px-6 py-3 rounded-full font-bold hover:bg-sky-400 transition">
             Call Now
           </a>
         </div>
       </div>
-
     </div>
   </article>
 </Layout>

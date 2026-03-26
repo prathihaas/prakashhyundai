@@ -1,17 +1,11 @@
 ---
-// SEOHead.astro - Prakash Hyundai (with hreflang en / te / hi)
+// SEOHead.astro — Prakash Hyundai (single-language English only)
 const {
   title = "Prakash Hyundai | Authorized Hyundai Dealer in Nizamabad, Telangana",
   description = "Prakash Hyundai is an authorized Hyundai dealership in Nizamabad, Telangana 503001. Explore new Hyundai cars, book test drives, and get expert service.",
   canonical = Astro.url.href,
   image = "/og-image.jpg",
 } = Astro.props;
-
-const baseUrl = Astro.site?.toString().replace(/\/$/, "") ?? "https://www.prakashhyundai.com";
-const pagePath = new URL(canonical).pathname.replace(/^\/(en|te|hi)/, "");
-const enUrl = `${baseUrl}/en${pagePath}`;
-const teUrl = `${baseUrl}/te${pagePath}`;
-const hiUrl = `${baseUrl}/hi${pagePath}`;
 
 const schema = {
   "@context": "https://schema.org",
@@ -50,12 +44,6 @@ const schema = {
 <link rel="canonical" href={canonical} />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-<!-- hreflang - multilingual versions -->
-<link rel="alternate" hreflang="en" href={enUrl} />
-<link rel="alternate" hreflang="te" href={teUrl} />
-<link rel="alternate" hreflang="hi" href={hiUrl} />
-<link rel="alternate" hreflang="x-default" href={canonical} />
-
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content={title} />
@@ -67,8 +55,6 @@ const schema = {
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:site_name" content="Prakash Hyundai" />
 <meta property="og:locale" content="en_IN" />
-<meta property="og:locale:alternate" content="te_IN" />
-<meta property="og:locale:alternate" content="hi_IN" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -82,5 +68,5 @@ const schema = {
 <meta name="geo.position" content="18.6725;78.0941" />
 <meta name="ICBM" content="18.6725, 78.0941" />
 
-<!-- JSON-LD Structured Data — set:html renders parsed JSON, not literal expression -->
+<!-- JSON-LD Structured Data -->
 <script type="application/ld+json" set:html={JSON.stringify(schema)} />
