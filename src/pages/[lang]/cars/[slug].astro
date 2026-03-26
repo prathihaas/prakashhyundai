@@ -23,7 +23,7 @@ const { car } = Astro.props;
 const { Content } = await car.render();
 const t = useTranslations(lang as any);
 
-const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052116500.`;
+const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052116511.`;
 
 // Extract numeric price from price string like "Starts ₹ 14.49 Lakh*"
 const priceMatch = car.data.price.match(/[\d.]+/);
