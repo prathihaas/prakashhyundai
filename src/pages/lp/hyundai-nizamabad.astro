@@ -1,0 +1,394 @@
+---
+// Google Ads Landing Page — Prakash Hyundai Nizamabad
+// noindex · nofollow · All CTAs go to WhatsApp or Phone (no exit links)
+
+const PHONE     = "tel:+919052110303";
+const WA        = "https://wa.me/919052110303";
+const PHONE_NUM = "9052110303";
+
+const models = [
+  {
+    name: "Hyundai Creta",
+    price: "₹11.11 lakh",
+    tag: "Best Seller",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Creta.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Creta in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai Venue",
+    price: "₹7.94 lakh",
+    tag: "Value Pick",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Venue.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Venue in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai Exter",
+    price: "₹6.13 lakh",
+    tag: "Lowest EMI",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Exter.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Exter in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai i20",
+    price: "₹7.04 lakh",
+    tag: "Premium Hatch",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/i20.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai i20 in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai Grand i10 Nios",
+    price: "₹5.92 lakh",
+    tag: "Family Favourite",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Grand-i10-Nios.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Grand i10 Nios in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai Verna",
+    price: "₹10.90 lakh",
+    tag: "Premium Sedan",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Verna.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Verna in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai Alcazar",
+    price: "₹14.99 lakh",
+    tag: "7-Seater SUV",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Alcazar.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Alcazar in Nizamabad with EMI options. [W-LP]",
+  },
+  {
+    name: "Hyundai Aura",
+    price: "₹6.30 lakh",
+    tag: "Compact Sedan",
+    img: "https://www.hyundaicentralregion.com/wp-content/uploads/2024/10/Aura.jpg",
+    wa_msg: "Hi Prakash Hyundai, I saw your ad. Please share today's best price for Hyundai Aura in Nizamabad with EMI options. [W-LP]",
+  },
+];
+
+const branches = [
+  { name: "Nizamabad Main",   phone: "9052116500" },
+  { name: "Armoor",           phone: "9052116509" },
+  { name: "Bodhan",           phone: "9052116513" },
+  { name: "Banswada",         phone: "9603908891" },
+  { name: "Kamareddy",        phone: "7036219618" },
+  { name: "Adilabad",         phone: "9573863576" },
+];
+
+const lpSchema = {
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Prakash Hyundai",
+  "url": "https://www.prakashhyundai.com",
+  "telephone": "+91-9052110303",
+  "description": "Authorized Hyundai dealer in Nizamabad with 9 showrooms. Best price on Creta, Venue, Exter, i20 and more.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hyderabad Road, Dichpally",
+    "addressLocality": "Nizamabad",
+    "addressRegion": "Telangana",
+    "postalCode": "503001",
+    "addressCountry": "IN"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "2915",
+    "bestRating": "5"
+  }
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the on-road price of Hyundai Creta in Nizamabad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hyundai Creta on-road price in Nizamabad starts from approximately ₹12.5 lakh. WhatsApp 9052110303 for exact current price and offers." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Prakash Hyundai offer home test drives in Nizamabad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes! Free doorstep test drives available across Nizamabad district. WhatsApp 9052110303 to book." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the EMI for Hyundai Exter in Nizamabad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hyundai Exter EMI starts from approximately ₹8,500/month on a 5-year loan through SBI, HDFC, or Axis Bank. Zero down payment available on select schemes." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Prakash Hyundai an authorized dealer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prakash Hyundai is an authorized Hyundai dealer with 9 showrooms across Nizamabad district — rated 4.7 stars by 2,915+ customers." }
+    }
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hyundai Cars in Nizamabad | Best Price + Free Test Drive | Prakash Hyundai</title>
+  <meta name="description" content="Get today's best price on Hyundai Creta, Venue, Exter, i20 in Nizamabad. Free home test drive. EMI from ₹8,500/month. Call Prakash Hyundai: 9052110303." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+  <meta name="theme-color" content="#002C5F" />
+
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
+
+  <!-- Tailwind via CDN for standalone LP (no Astro layout needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hyblue: '#002C5F',
+            hycyan: '#00AAD2',
+          }
+        }
+      }
+    }
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(lpSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+
+    @keyframes flash {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.6; }
+    }
+    .flash-banner { animation: flash 2.2s ease-in-out infinite; }
+
+    @keyframes pulse-cta {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.6); }
+      50%       { box-shadow: 0 0 0 12px rgba(34,197,94,0); }
+    }
+    .pulse-cta { animation: pulse-cta 2s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- GTM noscript -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-52SXCPMR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- STICKY HEADER (logo + phone only — no nav exits) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-black text-xl text-[#002C5F] tracking-tight">
+        PRAKASH<span class="font-light">HYUNDAI</span>
+      </div>
+      <a href={PHONE} class="flex items-center gap-2 bg-[#002C5F] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#001f42] transition">
+        📞 {PHONE_NUM}
+      </a>
+    </div>
+  </header>
+
+  <!-- URGENCY FLASH BANNER -->
+  <div class="flash-banner bg-[#002C5F] text-white text-center py-2 text-xs font-bold tracking-wide mt-[60px]">
+    🔥 LIMITED OFFER: Exchange Bonus + Zero Down Payment EMI — This Month Only. Call {PHONE_NUM}
+  </div>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-b from-[#F0F4F8] to-white py-12 px-4">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="inline-block bg-blue-100 text-[#002C5F] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+        ✅ Authorized Hyundai Dealer · Nizamabad · 9 Showrooms · 4.7★ / 2915+ Reviews
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-black text-[#1C1C1C] leading-tight mb-4">
+        Best Price on Hyundai Cars<br class="hidden sm:block" /> in Nizamabad — Today
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+        Creta, Venue, Exter, i20 &amp; more — get today's ex-showroom price instantly on WhatsApp. Free home test drive. EMI from ₹8,500/month.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I saw your Google Ad. Please share today's best price for Hyundai cars in Nizamabad with EMI options. [W-LP]")}`}
+          target="_blank" rel="noopener noreferrer"
+          class="pulse-cta flex items-center justify-center gap-3 bg-green-600 text-white px-8 py-5 rounded-2xl font-black text-xl hover:bg-green-700 transition">
+          💬 Get Best Price on WhatsApp
+        </a>
+        <a href={PHONE}
+          class="flex items-center justify-center gap-3 bg-[#002C5F] text-white px-8 py-5 rounded-2xl font-black text-xl hover:bg-[#001f42] transition">
+          📞 Call {PHONE_NUM}
+        </a>
+      </div>
+
+      <!-- Trust micro-badges -->
+      <div class="flex flex-wrap justify-center gap-3 text-xs text-gray-500 font-semibold">
+        {["✅ Authorized Dealer", "🏠 Free Home Test Drive", "💳 Zero Down Payment", "📋 All Bank Loans", "🏆 4.7★ Google Rated"].map(b => (
+          <span class="bg-gray-100 px-3 py-1.5 rounded-full">{b}</span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- EMI STRIP -->
+  <div class="bg-[#002C5F] text-white py-4 px-4 text-center">
+    <p class="font-bold text-sm sm:text-base">💰 Hyundai Exter from ₹8,500/month EMI &nbsp;|&nbsp; Creta from ₹18,000/month &nbsp;|&nbsp; Zero Down Payment on Select Models</p>
+    <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to check my EMI eligibility for a Hyundai car in Nizamabad. [W-LP-EMI]")}`}
+      target="_blank" rel="noopener noreferrer"
+      class="inline-block mt-2 text-xs text-hycyan font-bold hover:underline">
+      Check My EMI Eligibility →
+    </a>
+  </div>
+
+  <!-- CAR MODELS GRID -->
+  <section class="py-12 px-4 bg-[#F5F6F7]">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl sm:text-3xl font-black text-center text-[#1C1C1C] mb-2">Hyundai Models Available in Nizamabad</h2>
+      <p class="text-center text-gray-500 text-sm mb-8">Tap any model to get today's price instantly on WhatsApp</p>
+
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {models.map(m => (
+          <a href={`${WA}?text=${encodeURIComponent(m.wa_msg)}`}
+            target="_blank" rel="noopener noreferrer"
+            class="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-green-300 hover:shadow-xl transition-all flex flex-col cursor-pointer">
+            <div class="relative">
+              <img
+                src={m.img}
+                alt={`${m.name} price in Nizamabad`}
+                class="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=400&q=80'"
+              />
+              <span class="absolute top-2 left-2 bg-[#002C5F] text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{m.tag}</span>
+            </div>
+            <div class="p-3 flex-1 flex flex-col">
+              <p class="font-black text-sm text-[#1C1C1C] leading-tight">{m.name}</p>
+              <p class="text-[10px] text-gray-400 uppercase font-semibold mt-1">From (ex-showroom)</p>
+              <p class="font-bold text-[#002C5F] text-sm mb-2">{m.price}</p>
+              <div class="mt-auto">
+                <span class="block w-full text-center py-2 bg-green-600 text-white text-xs font-bold rounded-lg group-hover:bg-green-700 transition">
+                  💬 Get Price
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-8">
+        <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I saw your Google Ad. Please send me the full price list for all Hyundai models in Nizamabad. [W-LP-ALL]")}`}
+          target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition shadow-lg shadow-green-100">
+          💬 Get Complete Price List on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PRAKASH HYUNDAI -->
+  <section class="py-12 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-black text-center text-[#1C1C1C] mb-8">Why Nizamabad Families Choose Prakash Hyundai</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {[
+          { icon: "🏆", title: "4.7★ Rated — 2,915+ Reviews", desc: "Nizamabad's highest-rated Hyundai dealership on Google." },
+          { icon: "✅", title: "Authorized Dealer Since 2008", desc: "15+ years of trusted Hyundai sales and service in Nizamabad." },
+          { icon: "🏠", title: "Free Home Test Drive", desc: "We bring the car to your doorstep — anywhere in Nizamabad district." },
+          { icon: "💳", title: "Zero Down Payment EMI", desc: "SBI, HDFC, Axis, ICICI — instant approval with minimum paperwork." },
+          { icon: "📍", title: "9 Showrooms Near You", desc: "Nizamabad, Armoor, Bodhan, Banswada, Kamareddy and more." },
+          { icon: "🔧", title: "Genuine Parts & Service", desc: "Hyundai-certified technicians and 3-year warranty support." },
+        ].map(item => (
+          <div class="flex gap-4 p-5 bg-gray-50 rounded-2xl border border-gray-100">
+            <span class="text-3xl flex-shrink-0">{item.icon}</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm mb-1">{item.title}</p>
+              <p class="text-gray-500 text-xs leading-relaxed">{item.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- NEAREST BRANCH -->
+  <section class="py-12 px-4 bg-[#F5F6F7]">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-black text-center text-[#1C1C1C] mb-2">Our Showrooms Near You</h2>
+      <p class="text-center text-gray-500 text-sm mb-8">Tap to call the nearest branch directly</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        {branches.map(b => (
+          <a href={`tel:${b.phone}`}
+            class="flex flex-col items-center gap-1.5 p-4 bg-white rounded-xl border border-gray-200 hover:border-[#002C5F] hover:bg-blue-50 transition text-center">
+            <span class="text-2xl">📍</span>
+            <p class="font-bold text-[#002C5F] text-sm">{b.name}</p>
+            <p class="text-xs text-gray-500">{b.phone}</p>
+            <span class="text-xs bg-[#002C5F] text-white px-3 py-1 rounded-full font-semibold mt-1">📞 Call</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-12 px-4 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-black text-center text-[#1C1C1C] mb-8">Common Questions</h2>
+      <div class="space-y-3">
+        {[
+          { q: "What is the on-road price of Hyundai Creta in Nizamabad?", a: "Hyundai Creta starts at approximately ₹12.5 lakh on-road in Nizamabad (base petrol). WhatsApp 9052110303 for exact current pricing and exchange offers." },
+          { q: "Do you offer free test drives at home?", a: "Yes! We offer free doorstep test drives anywhere in Nizamabad district — Armoor, Bodhan, Banswada and more. WhatsApp us to book." },
+          { q: "What EMI can I get for Hyundai Exter?", a: "Hyundai Exter EMI starts from ₹8,500/month (5-year loan, SBI/HDFC). Zero down payment available on select schemes. Call 9052110303 for your EMI quote." },
+          { q: "Is Prakash Hyundai an authorized dealer?", a: "Yes — we are an authorized Hyundai dealer in Nizamabad rated 4.7 stars by 2,915+ customers. 9 showrooms across Nizamabad district." },
+        ].map(item => (
+          <details class="bg-gray-50 rounded-xl border border-gray-200 group overflow-hidden">
+            <summary class="flex items-center justify-between p-4 cursor-pointer font-bold text-sm text-gray-800 hover:text-[#002C5F] transition list-none">
+              <span>{item.q}</span>
+              <span class="text-[#002C5F] text-xl ml-4 flex-shrink-0 group-open:rotate-45 transition-transform">+</span>
+            </summary>
+            <div class="px-4 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+              {item.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA BLOCK -->
+  <section class="py-12 px-4 bg-[#002C5F] text-white text-center">
+    <h2 class="text-2xl sm:text-3xl font-black mb-2">Ready to Drive Your Dream Hyundai?</h2>
+    <p class="text-blue-200 text-sm mb-6">Get today's best price in 30 seconds — no visit needed</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I saw your Google Ad. I am ready to buy. Please share today's best price and offers. [W-LP-CTA]")}`}
+        target="_blank" rel="noopener noreferrer"
+        class="pulse-cta inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-black text-xl transition">
+        💬 WhatsApp for Best Price
+      </a>
+      <a href={PHONE}
+        class="inline-flex items-center justify-center gap-3 bg-white text-[#002C5F] px-8 py-4 rounded-2xl font-black text-xl hover:bg-gray-100 transition">
+        📞 Call {PHONE_NUM}
+      </a>
+    </div>
+    <p class="text-blue-300 text-xs mt-4">Mon–Sat · 9 AM–7 PM · 9 locations across Nizamabad district</p>
+  </section>
+
+  <!-- STICKY BOTTOM BAR (mobile) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white border-t-2 border-gray-200 shadow-2xl p-3 flex gap-3 sm:hidden">
+    <a href={PHONE}
+      class="flex-1 flex items-center justify-center gap-2 bg-[#002C5F] text-white py-3.5 rounded-xl font-black text-sm">
+      📞 Call Now
+    </a>
+    <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I saw your Google Ad. Please share today's best price on Hyundai cars in Nizamabad. [W-LP-BAR]")}`}
+      target="_blank" rel="noopener noreferrer"
+      class="flex items-center justify-center gap-2 bg-green-600 text-white py-3.5 px-5 rounded-xl font-black text-sm" style="flex:2">
+      💬 Get Best Price
+    </a>
+  </div>
+
+  <div class="pb-20 sm:pb-0"></div>
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/:path*", "has": [{"type": "host", "value": "prakashhyundai.com"}], "destination": "https://www.prakashhyundai.com/:path*", "permanent": true },
     { "source": "/cars/:slug", "destination": "/en/cars/:slug", "permanent": true },
     { "source": "/blog/:slug", "destination": "/en/blog/:slug", "permanent": true },
     { "source": "/about-us", "destination": "/en", "permanent": true },
