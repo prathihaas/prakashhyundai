@@ -17,6 +17,7 @@ const blog = defineCollection({
     seo_description: z.string(),               // 120-160 chars — meta description
     readTime: z.string().optional(),            // e.g. "8 min read"
     draft: z.boolean().default(false),          // true = excluded from listings and sitemap
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(), // FAQ schema for rich snippets
   }),
 });
 

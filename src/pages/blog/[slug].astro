@@ -9,9 +9,19 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const { title, title_te, seo_title, seo_description, featured_image, excerpt, category, readTime, author, tags, date } = post.data;
+const { title, title_te, seo_title, seo_description, featured_image, excerpt, category, readTime, author, tags, date, faq } = post.data;
 
 const displayDate = date.toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const faqSchema = faq && faq.length > 0 ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faq.map((item: { q: string; a: string }) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+  }))
+} : null;
 
 const articleSchema = {
   "@context": "https://schema.org",
@@ -32,8 +42,9 @@ const articleSchema = {
 };
 ---
 
-<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt}>
+<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt} canonical={`https://www.prakashhyundai.com/blog/${post.slug}/`}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 
   <nav class="pt-24 pb-2 max-w-3xl mx-auto px-6">
     <div class="flex items-center gap-2 text-xs text-gray-400 font-semibold uppercase tracking-wider">
