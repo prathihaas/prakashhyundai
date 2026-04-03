@@ -42,7 +42,7 @@ const articleSchema = {
 };
 ---
 
-<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt} canonical={`https://www.prakashhyundai.com/blog/${post.slug}/`}>
+<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt} canonical={`https://www.prakashhyundai.com/blog/${post.slug}/`} ogType="article">
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 

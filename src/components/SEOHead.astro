@@ -5,6 +5,7 @@ const {
   description = "Prakash Hyundai is an authorized Hyundai dealership in Nizamabad, Telangana 503001. Explore new Hyundai cars, book test drives, and get expert service.",
   canonical = Astro.url.href,
   image = "/og-image.jpg",
+  ogType = "website",
 } = Astro.props;
 
 const schema = {
@@ -42,10 +43,11 @@ const schema = {
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonical} />
+<link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
 <!-- Open Graph -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />

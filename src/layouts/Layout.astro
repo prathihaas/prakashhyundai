@@ -7,9 +7,10 @@ interface Props {
   description?: string;
   canonical?: string;
   image?: string;
+  ogType?: string;
 }
 
-const { title, description, canonical, image } = Astro.props;
+const { title, description, canonical, image, ogType } = Astro.props;
 
 const navLinks = [
   { label: "Home",      href: "/" },
@@ -39,7 +40,7 @@ const navLinks = [
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
     <!-- End Google Tag Manager -->
-    <SEOHead title={title} description={description} canonical={canonical} image={image} />
+    <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} />
   </head>
   <body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen">
     <!-- Google Tag Manager (noscript) -->
