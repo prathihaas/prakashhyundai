@@ -1,5 +1,5 @@
 ---
-title: "Hyundai Cars in Adilabad 2026 — Prices, EMI & Showroom | Prakash Hyundai"
+title: "Hyundai Cars in Adilabad 2026 — Price, EMI & Showroom"
 title_te: "ఆదిలాబాద్‌లో హ్యుండాయ్ కార్లు 2026 — ధరలు, EMI & షోరూమ్"
 date: "2026-04-05"
 author: "Prakash Hyundai Team"
@@ -10,6 +10,7 @@ tags:
   - "Car Dealer Adilabad"
   - "Hyundai Price Adilabad 2026"
   - "Prakash Hyundai"
+  - "Hyundai Dealer Nizamabad"
 featured_image: "/images/blog/hyundai-cars-adilabad-2026.jpg"
 excerpt: "Looking for a Hyundai car in Adilabad? Get 2026 on-road prices, EMI plans, and test drive details for Creta, Venue, i20 at Prakash Hyundai near you."
 seo_title: "Hyundai Cars in Adilabad 2026 — Price, EMI & Showroom"
@@ -156,4 +157,4 @@ Prakash Hyundai has 9 branches across the region: Nizamabad (main), Adilabad, Ar
 
 **Call: ☎ 9052110303 | WhatsApp: [wa.me/919052110303](https://wa.me/919052110303)**
 
-Browse our full lineup: [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai i20](/cars/i20) | [Hyundai Verna](/cars/verna) | [Hyundai Exter](/cars/exter)
+Browse our full lineup: [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai i20](/cars/i20) | [Hyundai Verna](/cars/verna) | [Hyundai Exter](/cars/exter) | [Hyundai Grand i10 Nios](/cars/grand-i10-nios)

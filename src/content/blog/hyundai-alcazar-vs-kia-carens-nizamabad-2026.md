@@ -1,5 +1,5 @@
 ---
-title: "Hyundai Alcazar vs Kia Carens 2026 — 7-Seater Comparison Nizamabad"
+title: "Hyundai Alcazar vs Kia Carens 2026 — 7-Seater Nizamabad"
 title_te: "హ్యుండాయ్ Alcazar vs కియా Carens 2026 — 7-సీటర్ పోలిక"
 date: "2026-04-07"
 author: "Prakash Hyundai Team"
@@ -149,4 +149,4 @@ Hyundai Alcazar is currently available within 2–4 weeks at Prakash Hyundai Niz
 
 **Call: ☎ 9052110303 | WhatsApp: [wa.me/919052110303](https://wa.me/919052110303)**
 
-See also: [Hyundai Alcazar](/cars/alcazar) | [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue)
+See also: [Hyundai Alcazar](/cars/alcazar) | [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai Grand i10 Nios](/cars/grand-i10-nios)

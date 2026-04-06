@@ -1,5 +1,5 @@
 ---
-title: "Hyundai Cars in Kamareddy 2026 — Creta, Venue, i20 Prices & EMI"
+title: "Hyundai Cars in Kamareddy 2026 — Creta, Venue & i20 Price"
 title_te: "కామారెడ్డిలో హ్యుండాయ్ కార్లు 2026 — Creta, Venue, i20 ధరలు & EMI"
 date: "2026-04-07"
 author: "Prakash Hyundai Team"
@@ -10,6 +10,7 @@ tags:
   - "Creta Kamareddy"
   - "Venue Kamareddy"
   - "Prakash Hyundai Kamareddy"
+  - "Hyundai Dealer Nizamabad"
 featured_image: "/images/blog/hyundai-cars-kamareddy-2026.jpg"
 excerpt: "Hyundai Creta, Venue, i20 prices and EMI in Kamareddy 2026. On-road prices, test drive booking, and Prakash Hyundai branch details for Kamareddy buyers."
 seo_title: "Hyundai Cars Kamareddy 2026 — Creta, Venue, i20 Price & EMI"
@@ -172,4 +173,4 @@ Prakash Hyundai — 9 branches across North Telangana. Nizamabad, Adilabad, Armo
 
 **Call: ☎ 9052110303 | WhatsApp: [wa.me/919052110303](https://wa.me/919052110303)**
 
-Our full lineup: [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai i20](/cars/i20) | [Hyundai Verna](/cars/verna) | [Hyundai Exter](/cars/exter)
+Our full lineup: [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai i20](/cars/i20) | [Hyundai Verna](/cars/verna) | [Hyundai Exter](/cars/exter) | [Hyundai Grand i10 Nios](/cars/grand-i10-nios)

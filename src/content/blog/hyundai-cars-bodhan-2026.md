@@ -10,6 +10,7 @@ tags:
   - "Car Showroom Bodhan"
   - "Hyundai Dealer Near Bodhan"
   - "Prakash Hyundai Bodhan"
+  - "Hyundai Dealer Nizamabad"
 featured_image: "/images/blog/hyundai-cars-bodhan-2026.jpg"
 excerpt: "Nearest Hyundai showroom to Bodhan 2026 — Creta from ₹12.85L, Venue ₹9.20L, EMI from ₹9,800/mo. Prakash Hyundai Bodhan branch for test drives and service."
 seo_title: "Hyundai Cars Bodhan 2026 — Nearest Showroom, Price & EMI"
@@ -153,4 +154,4 @@ Yes. We accept old cars for exchange at competitive valuations. Bring your curre
 
 **Call: ☎ 9052110303 | WhatsApp: [wa.me/919052110303](https://wa.me/919052110303)**
 
-Models to explore: [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai i20](/cars/i20) | [Hyundai Exter](/cars/exter) | [Hyundai Verna](/cars/verna)
+Models to explore: [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai i20](/cars/i20) | [Hyundai Exter](/cars/exter) | [Hyundai Verna](/cars/verna) | [Hyundai Grand i10 Nios](/cars/grand-i10-nios)

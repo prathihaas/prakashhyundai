@@ -172,4 +172,4 @@ Hyundai Creta retains 65–70% after 3 years vs Hyryder's 60–64%. The lack of 
 
 **Call: ☎ 9052110303 | WhatsApp: [wa.me/919052110303](https://wa.me/919052110303)**
 
-See: [Hyundai Creta](/cars/creta) | [Hyundai Verna](/cars/verna) | [Hyundai Alcazar](/cars/alcazar)
+See: [Hyundai Creta](/cars/creta) | [Hyundai Verna](/cars/verna) | [Hyundai Alcazar](/cars/alcazar) | [Hyundai Grand i10 Nios](/cars/grand-i10-nios)

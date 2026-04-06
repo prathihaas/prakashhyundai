@@ -1,5 +1,5 @@
 ---
-title: "Hyundai Alcazar vs Tata Safari vs Mahindra XUV700 Nizamabad 2026"
+title: "Alcazar vs Tata Safari vs Mahindra XUV700 Nizamabad 2026"
 title_te: "హ్యుండాయ్ Alcazar vs Tata Safari vs Mahindra XUV700 నిజామాబాద్ 2026"
 date: "2026-04-15"
 author: "Prakash Hyundai Team"
@@ -148,4 +148,4 @@ Prakash Hyundai has 9 authorized branches across North Telangana — including A
 
 **Call: ☎ 9052110303 | WhatsApp: [wa.me/919052110303](https://wa.me/919052110303)**
 
-Explore: [Hyundai Alcazar](/cars/alcazar) | [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue)
+Explore: [Hyundai Alcazar](/cars/alcazar) | [Hyundai Creta](/cars/creta) | [Hyundai Venue](/cars/venue) | [Hyundai Grand i10 Nios](/cars/grand-i10-nios)
