@@ -10,7 +10,7 @@ tags:
   - "Hyundai Venue Mancherial"
   - "Car Dealer Mancherial"
   - "Prakash Hyundai Mancherial"
-featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
+featured_image: "/images/blog/hyundai-cars-mancherial-2026.jpg"
 excerpt: "Hyundai Creta and Venue on-road prices in Mancherial 2026. EMI plans, test drive booking, and Prakash Hyundai branch details for Mancherial buyers."
 seo_title: "Hyundai Cars Mancherial 2026 — Creta & Venue On-Road Price"
 seo_description: "Hyundai Creta & Venue on-road price in Mancherial 2026. Creta from ₹12.85L, Venue ₹9.20L. EMI from ₹13,800/mo. Prakash Hyundai branch. Call 9052110303."

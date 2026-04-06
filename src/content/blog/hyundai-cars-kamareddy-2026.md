@@ -10,7 +10,7 @@ tags:
   - "Creta Kamareddy"
   - "Venue Kamareddy"
   - "Prakash Hyundai Kamareddy"
-featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
+featured_image: "/images/blog/hyundai-cars-kamareddy-2026.jpg"
 excerpt: "Hyundai Creta, Venue, i20 prices and EMI in Kamareddy 2026. On-road prices, test drive booking, and Prakash Hyundai branch details for Kamareddy buyers."
 seo_title: "Hyundai Cars Kamareddy 2026 — Creta, Venue, i20 Price & EMI"
 seo_description: "Hyundai cars in Kamareddy 2026. Creta from ₹12.85L on-road, Venue ₹9.20L, i20 ₹8.30L. EMI from ₹9,800/mo. Book test drive at Prakash Hyundai. 9052110303."

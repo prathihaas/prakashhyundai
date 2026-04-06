@@ -10,7 +10,7 @@ tags:
   - "Car Dealer Nirmal Telangana"
   - "Hyundai Price Nirmal 2026"
   - "Prakash Hyundai Nirmal"
-featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
+featured_image: "/images/blog/hyundai-cars-nirmal-2026.jpg"
 excerpt: "Hyundai dealer in Nirmal 2026 — best prices, EMI from ₹9,800/mo, on-road Creta ₹12.85L. Prakash Hyundai's Nirmal branch for sales, test drives, and service."
 seo_title: "Hyundai Cars Nirmal 2026 — Dealer, EMI & Best Price Guide"
 seo_description: "Hyundai dealer in Nirmal 2026. Creta ₹12.85L on-road, Venue ₹9.20L, i20 ₹8.30L. EMI plans, test drives, service at Prakash Hyundai Nirmal. 9052110303."

@@ -10,7 +10,7 @@ tags:
   - "compact SUV under 12 lakh Nizamabad"
   - "XUV300 discontinued alternative"
   - "Prakash Hyundai"
-featured_image: "/images/blog/hyundai-car-comparison-2026.jpg"
+featured_image: "/images/blog/hyundai-venue-vs-mahindra-xuv300-comparison-2026.jpg"
 excerpt: "Hyundai Venue vs Mahindra XUV300 in Nizamabad 2026. XUV300 discontinued — parts concerns growing. Venue offers active production, better resale, dealer network."
 seo_title: "Hyundai Venue vs Mahindra XUV300 Nizamabad 2026 — SUV War"
 seo_description: "Venue vs Mahindra XUV300 Nizamabad 2026. XUV300 discontinued, parts availability declining. Venue wins with active production, dealer network, resale. 9052110303."

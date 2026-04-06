@@ -10,7 +10,7 @@ tags:
   - "Car Showroom Bodhan"
   - "Hyundai Dealer Near Bodhan"
   - "Prakash Hyundai Bodhan"
-featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
+featured_image: "/images/blog/hyundai-cars-bodhan-2026.jpg"
 excerpt: "Nearest Hyundai showroom to Bodhan 2026 — Creta from ₹12.85L, Venue ₹9.20L, EMI from ₹9,800/mo. Prakash Hyundai Bodhan branch for test drives and service."
 seo_title: "Hyundai Cars Bodhan 2026 — Nearest Showroom, Price & EMI"
 seo_description: "Hyundai near Bodhan 2026. Creta ₹12.85L on-road, Venue ₹9.20L, i20 ₹8.30L. Nearest Prakash Hyundai showroom. Test drive & EMI plans. Call 9052110303."
