@@ -40,6 +40,15 @@ const navLinks = [
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
     <!-- End Google Tag Manager -->
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSNGNCJTG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3RSNGNCJTG', { allow_google_signals: true, allow_ad_personalization_signals: true });
+    </script>
+    <!-- End GA4 -->
     <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} />
   </head>
   <body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen">
