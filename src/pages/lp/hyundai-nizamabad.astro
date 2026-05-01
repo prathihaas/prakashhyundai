@@ -146,12 +146,20 @@ const faqSchema = {
     gtag('config', 'AW-10833330626');
 
     // Track WhatsApp + phone clicks as conversions (Google Ads + GA4)
+    // Multiple event names fire — one for our internal GA4 dashboards (whatsapp_click, phone_click)
+    // PLUS the names Google Ads conversion actions are already importing from GA4
+    // (Mobile_WhatsApp_Link_Click_Header, Chat_On_WhatApp_Banner_Click).
     document.addEventListener('click', function(e){
       var a = e.target && e.target.closest && e.target.closest('a');
       if (!a) return;
       var href = a.getAttribute('href') || '';
       if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
+        // Internal/standard event for GA4 reporting
         gtag('event', 'whatsapp_click', { event_category: 'engagement', event_label: 'Hyundai LP' });
+        // Google Ads conversion actions (GA4-imported) — must match action names in Google Ads
+        gtag('event', 'Mobile_WhatsApp_Link_Click_Header', { event_category: 'engagement', event_label: 'Hyundai LP' });
+        gtag('event', 'Chat_On_WhatApp_Banner_Click', { event_category: 'engagement', event_label: 'Hyundai LP' });
+        // Generic Google Ads conversion ping (account-level)
         gtag('event', 'conversion', { send_to: 'AW-10833330626' });
       } else if (href.indexOf('tel:') === 0) {
         gtag('event', 'phone_click', { event_category: 'engagement', event_label: 'Hyundai LP' });
