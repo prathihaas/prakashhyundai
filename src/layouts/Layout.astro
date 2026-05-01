@@ -40,33 +40,21 @@ const navLinks = [
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
     <!-- End Google Tag Manager -->
-    <!-- GA4 + Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RSNGNCJTG"></script>
+    <!-- Google Ads conversion firing (GA4 + AW remarketing handled by GTM) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-3RSNGNCJTG', { allow_google_signals: true, allow_ad_personalization_signals: true });
-      gtag('config', 'AW-10833330626');
-
-      // Sitewide WhatsApp + phone click conversion attribution
-      // Fires both standard and Google-Ads-imported event names so conversions count.
       document.addEventListener('click', function(e){
         var a = e.target && e.target.closest && e.target.closest('a');
         if (!a) return;
         var href = a.getAttribute('href') || '';
         if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
-          gtag('event', 'whatsapp_click', { event_category: 'engagement', event_label: 'Hyundai site' });
-          gtag('event', 'Mobile_WhatsApp_Link_Click_Header', { event_category: 'engagement', event_label: 'Hyundai site' });
-          gtag('event', 'Chat_On_WhatApp_Banner_Click', { event_category: 'engagement', event_label: 'Hyundai site' });
           gtag('event', 'conversion', { send_to: 'AW-10833330626' });
         } else if (href.indexOf('tel:') === 0) {
-          gtag('event', 'phone_click', { event_category: 'engagement', event_label: 'Hyundai site' });
           gtag('event', 'conversion', { send_to: 'AW-10833330626' });
         }
       }, false);
     </script>
-    <!-- End GA4 + Google Ads -->
     <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} />
   </head>
   <body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen">
