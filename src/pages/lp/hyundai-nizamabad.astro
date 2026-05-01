@@ -176,6 +176,25 @@ const faqSchema = {
       50%       { box-shadow: 0 0 0 12px rgba(34,197,94,0); }
     }
     .pulse-cta { animation: pulse-cta 2s ease-in-out infinite; }
+
+    /* Mark decorative elements as non-tappable to prevent dead clicks */
+    .no-tap, .no-tap * { pointer-events: none; user-select: none; }
+
+    /* Beautiful card / clickable element feedback */
+    a { transition: transform .18s ease; }
+
+    /* Toast for desktop tel: fallback */
+    #tel-toast {
+      position: fixed; left: 50%; bottom: 96px;
+      transform: translateX(-50%) translateY(20px);
+      background: #002C5F; color: #fff;
+      padding: 12px 18px; border-radius: 12px;
+      font-size: 14px; font-weight: 700;
+      opacity: 0; transition: opacity .2s ease, transform .2s ease;
+      z-index: 9999; pointer-events: none;
+      box-shadow: 0 12px 30px -8px rgba(0,0,0,.4);
+    }
+    #tel-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
   </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
@@ -203,7 +222,7 @@ const faqSchema = {
   <!-- HERO -->
   <section class="bg-gradient-to-b from-[#F0F4F8] to-white py-12 px-4">
     <div class="max-w-5xl mx-auto text-center">
-      <span class="inline-block bg-blue-100 text-[#002C5F] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
+      <span class="no-tap inline-block bg-blue-100 text-[#002C5F] text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">
         ✅ Authorized Hyundai Dealer · Nizamabad · 9 Showrooms · 4.7★ / 2915+ Reviews
       </span>
       <h1 class="text-3xl sm:text-5xl font-black text-[#1C1C1C] leading-tight mb-4">
@@ -388,6 +407,44 @@ const faqSchema = {
   </div>
 
   <div class="pb-20 sm:pb-0"></div>
+
+  <!-- Toast for desktop tel: fallback -->
+  <div id="tel-toast" role="status" aria-live="polite"></div>
+
+  <!-- Desktop tel: fallback — copies the number to clipboard so dead clicks become wins -->
+  <script>
+    (function () {
+      var toast = document.getElementById('tel-toast');
+      var t;
+      function show(msg) {
+        if (!toast) return;
+        toast.textContent = msg;
+        toast.classList.add('show');
+        clearTimeout(t);
+        t = setTimeout(function () { toast.classList.remove('show'); }, 3000);
+      }
+      var isMobile = /Mobi|Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+      document.addEventListener('click', function (e) {
+        var a = e.target && e.target.closest && e.target.closest('a[href^="tel:"]');
+        if (!a) return;
+        if (isMobile) return;
+        e.preventDefault();
+        var num = a.getAttribute('href').replace('tel:', '').replace(/\s+/g, '');
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(num);
+            show('📞 Number copied: ' + num);
+          } else {
+            show('📞 Call us: ' + num);
+          }
+        } catch (err) {
+          show('📞 Call us: ' + num);
+        }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'tel_click_desktop', phone: num });
+      }, false);
+    })();
+  </script>
 
 </body>
 </html>
