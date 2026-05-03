@@ -17,10 +17,14 @@ const PHONE = "tel:+919052110303";
 const hyRatingSchema = {
   "@context": "https://schema.org",
   "@type": "AutoDealer",
+  "@id": "https://www.prakashhyundai.com/#organization",
   "name": "Prakash Hyundai",
   "url": "https://www.prakashhyundai.com",
   "telephone": "+91-9052110303",
   "logo": "https://www.prakashhyundai.com/logo.png",
+  "image": "https://www.prakashhyundai.com/og-image.jpg",
+  "foundingDate": "2008",
+  "brand": { "@type": "Brand", "name": "Hyundai" },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Hyderabad Road, Dichpally",
@@ -29,6 +33,13 @@ const hyRatingSchema = {
     "postalCode": "503001",
     "addressCountry": "IN"
   },
+  "geo": { "@type": "GeoCoordinates", "latitude": 18.6725, "longitude": 78.0941 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.7",
@@ -36,6 +47,37 @@ const hyRatingSchema = {
     "bestRating": "5",
     "worstRating": "1"
   },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Bodige" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Prakash Hyundai showroom is the best in Nizamabad for 15+ years. Quick services, free test drives, certified mechanics, friendly staff, on-time delivery and car wash. Very satisfied!"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sreenaiah" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Excellent experience with the team. Very happy with Prakash Hyundai treatment in the showroom. Best Hyundai dealer in Nizamabad."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sree" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Nice behaviour of the staff. Really love the way they treated us. The entire buying experience was smooth and pleasant."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Venkat" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "Good service and prompt response. The service team is attentive and gets the job done quickly. Highly recommend!"
+    }
+  ],
+  "areaServed": ["Nizamabad", "Kamareddy", "Nirmal", "Armoor", "Balkonda", "Banswada", "Bodhan", "Yellareddy", "Karimnagar", "Telangana"],
+  "sameAs": [
+    "https://www.facebook.com/prakashhyundai",
+    "https://www.instagram.com/prakashhyundai"
+  ],
   "department": [
     {
       "@type": "AutoDealer",
@@ -58,6 +100,42 @@ const hyRatingSchema = {
         "@type": "PostalAddress",
         "streetAddress": "NH 44, Perkit",
         "addressLocality": "Armoor",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "AutoDealer",
+      "name": "Prakash Hyundai — Bodhan",
+      "telephone": "+91-9052116513",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nizamabad Road",
+        "addressLocality": "Bodhan",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "AutoDealer",
+      "name": "Prakash Hyundai — Banswada",
+      "telephone": "+91-9603908891",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nizamabad Road",
+        "addressLocality": "Banswada",
+        "addressRegion": "Telangana",
+        "addressCountry": "IN"
+      }
+    },
+    {
+      "@type": "AutoDealer",
+      "name": "Prakash Hyundai — Kamareddy",
+      "telephone": "+91-7036219618",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Nizamabad Road",
+        "addressLocality": "Kamareddy",
         "addressRegion": "Telangana",
         "addressCountry": "IN"
       }
@@ -107,6 +185,7 @@ const faqSchema = {
   title="Prakash Hyundai Nizamabad | Creta, Venue, i20 Dealer"
   description="Authorized Hyundai dealer in Nizamabad & 8 branches across North Telangana. Best price on Creta, Venue, Exter, i20. Free home test drive. EMI from ₹8,500/mo. Call 9052110303."
   canonical="https://www.prakashhyundai.com/"
+  noOrgSchema={true}
 >
 
   <script type="application/ld+json" set:html={JSON.stringify(hyRatingSchema)} />
@@ -229,7 +308,8 @@ const faqSchema = {
             <a href={`/cars/${car.slug}`} class="flex-1 flex flex-col">
               <div class="h-52 overflow-hidden relative">
                 <img src={car.data.image} alt={`Hyundai ${car.data.name} price in Nizamabad`}
-                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  loading="lazy" decoding="async" />
                 <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#002C5F]">
                   {car.data.category}
                 </div>

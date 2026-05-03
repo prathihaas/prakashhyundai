@@ -12,6 +12,12 @@ const { Content } = await post.render();
 const { title, title_te, seo_title, seo_description, featured_image, excerpt, category, readTime, author, tags, date, faq } = post.data;
 
 const displayDate = date.toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
+const postUrl = `https://www.prakashhyundai.com/blog/${post.slug}/`;
+
+const isBrandAuthor = !author || author.toLowerCase().includes('team') || author.toLowerCase().includes('prakash hyundai');
+const authorSchema = isBrandAuthor
+  ? { "@type": "Organization", "name": "Prakash Hyundai", "url": "https://www.prakashhyundai.com" }
+  : { "@type": "Person", "name": author };
 
 const faqSchema = faq && faq.length > 0 ? {
   "@context": "https://schema.org",
@@ -26,10 +32,11 @@ const faqSchema = faq && faq.length > 0 ? {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
+  "@id": `${postUrl}#article`,
   "headline": seo_title || title,
   "description": seo_description || excerpt,
   "image": featured_image || "https://www.prakashhyundai.com/og-image.jpg",
-  "author": { "@type": "Person", "name": author || "Prakash Hyundai Team" },
+  "author": authorSchema,
   "publisher": {
     "@type": "Organization",
     "name": "Prakash Hyundai",
@@ -37,13 +44,30 @@ const articleSchema = {
   },
   "datePublished": date.toISOString(),
   "dateModified": date.toISOString(),
-  "url": Astro.url.href,
-  "mainEntityOfPage": { "@type": "WebPage", "@id": Astro.url.href }
+  "url": postUrl,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": postUrl }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.prakashhyundai.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.prakashhyundai.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": seo_title || title, "item": postUrl }
+  ]
 };
 ---
 
-<Layout title={seo_title || `${title} | Prakash Hyundai`} description={seo_description || excerpt} canonical={`https://www.prakashhyundai.com/blog/${post.slug}/`} ogType="article">
+<Layout
+  title={seo_title || `${title} | Prakash Hyundai`}
+  description={seo_description || excerpt}
+  canonical={postUrl}
+  ogType="article"
+  noOrgSchema={true}
+>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 
   <nav class="pt-24 pb-2 max-w-3xl mx-auto px-6">
@@ -72,7 +96,7 @@ const articleSchema = {
       </header>
 
       {featured_image && (
-        <img src={featured_image} alt={title} class="w-full aspect-video object-cover rounded-2xl shadow-xl mb-10" loading="eager" />
+        <img src={featured_image} alt={title} class="w-full aspect-video object-cover rounded-2xl shadow-xl mb-10" loading="eager" fetchpriority="high" />
       )}
 
       {tags && tags.length > 0 && (

@@ -11,17 +11,20 @@ export async function getStaticPaths() {
 const { car } = Astro.props;
 const { Content } = await car.render();
 
-const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052116511.`;
+const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052110303.`;
 const priceMatch = car.data.price.match(/[\d.]+/);
 const numericPrice = priceMatch ? Math.round(parseFloat(priceMatch[0]) * 100000) : 0;
+const carPageUrl = `https://www.prakashhyundai.com/cars/${car.slug}`;
 
 const carSchema = {
   "@context": "https://schema.org",
-  "@type": "Product",
+  "@type": ["Product", "Car"],
+  "@id": `${carPageUrl}#product`,
   "name": `Hyundai ${car.data.name}`,
   "brand": { "@type": "Brand", "name": "Hyundai" },
   "image": car.data.image,
   "description": carDescription,
+  "url": carPageUrl,
   "offers": {
     "@type": "Offer",
     "priceCurrency": "INR",
@@ -29,7 +32,13 @@ const carSchema = {
     "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/InStock",
     "itemCondition": "https://schema.org/NewCondition",
-    "seller": { "@type": "AutoDealer", "name": "Prakash Hyundai", "url": "https://www.prakashhyundai.com" }
+    "url": carPageUrl,
+    "seller": {
+      "@type": "AutoDealer",
+      "@id": "https://www.prakashhyundai.com/#organization",
+      "name": "Prakash Hyundai",
+      "url": "https://www.prakashhyundai.com"
+    }
   }
 };
 
@@ -39,12 +48,17 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.prakashhyundai.com/" },
     { "@type": "ListItem", "position": 2, "name": "Cars", "item": "https://www.prakashhyundai.com/#cars" },
-    { "@type": "ListItem", "position": 3, "name": `Hyundai ${car.data.name}`, "item": `https://www.prakashhyundai.com/cars/${car.slug}` }
+    { "@type": "ListItem", "position": 3, "name": `Hyundai ${car.data.name}`, "item": carPageUrl }
   ]
 };
 ---
 
-<Layout title={`Hyundai ${car.data.name} Price in Nizamabad | Prakash Hyundai`} description={carDescription}>
+<Layout
+  title={`Hyundai ${car.data.name} Price in Nizamabad | Prakash Hyundai`}
+  description={carDescription}
+  canonical={carPageUrl}
+  noOrgSchema={true}
+>
   <script type="application/ld+json" set:html={JSON.stringify(carSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
@@ -86,7 +100,13 @@ const breadcrumbSchema = {
         </div>
         <div class="relative">
           <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-            <img src={car.data.image} alt={`Hyundai ${car.data.name} Nizamabad`} class="w-full h-auto object-cover" />
+            <img
+              src={car.data.image}
+              alt={`Hyundai ${car.data.name} Nizamabad`}
+              class="w-full h-auto object-cover"
+              loading="eager"
+              fetchpriority="high"
+            />
           </div>
         </div>
       </div>
