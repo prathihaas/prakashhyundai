@@ -1,9 +1,9 @@
----
+﻿---
 name: "IONIQ 5"
 tagline: "Power Your World with Hyundai IONIQ 5 Car"
-price: "Starts ₹ 46.30 Lakh*"
+price: "Starts â‚¹ 46.30 Lakh*"
 category: "Premium"
-image: "https://cdn.motor1.com/images/mgl/3y1Q1/s1/2022-hyundai-ioniq-5.jpg"
+image: "/images/products/ioniq-5.jpg"
 features:
   - "Vehicle-to-Load (V2L) with up to 3.6kW power"
   - "Level 2 ADAS with 21 features via Hyundai SmartSense"
@@ -22,3 +22,4 @@ The Hyundai IONIQ 5 is an all-electric SUV built on the E-GMP platform, redefini
 - **Mileage:** Incredible driving range (specific figures not detailed)
 - **Charging:** Ultra-fast charging; 10% to 80% in 18 minutes using 350 kW DC charger; depends on charger specification, ambient temperature, etc.
 - **Performance:** 0 to 100 km/h in 7.6 seconds (under testing conditions on a separate test drive/racing track)
+

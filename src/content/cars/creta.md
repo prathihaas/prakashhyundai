@@ -3,7 +3,7 @@ name: "Creta"
 tagline: "Undisputed. Ultimate."
 price: "Starts ₹ 10.79 Lakh*"
 category: "SUV"
-image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Creta/Highlights/mob/cretagalleryb1.jpg"
+image: "/images/products/creta.jpg"
 features:
   - "Wireless Android Auto & Apple CarPlay"
   - "King emblem on the rear"

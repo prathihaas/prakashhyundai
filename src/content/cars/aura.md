@@ -1,9 +1,9 @@
----
+﻿---
 name: "Aura"
 tagline: "Feel the pride"
-price: "Starts ₹ 5.99 Lakh*"
+price: "Starts â‚¹ 5.99 Lakh*"
 category: "Sedan"
-image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Aura/gallery/pc/auragallerypc_1.jpg"
+image: "/images/products/aura.jpg"
 features:
   - "9-inch touchscreen with wireless Android Auto and Apple CarPlay"
   - "Rear AC vents"
@@ -20,3 +20,4 @@ Step into the Hyundai AURA and discover a sedan designed for style, comfort, and
 - **Power:** Smooth, reliable power
 - **Fuel Type:** Petrol and CNG
 - **Mileage:** Optimises fuel consumption (specific figures not detailed)
+

@@ -1,9 +1,9 @@
----
+﻿---
 name: "Verna"
 tagline: "Futuristic. Ferocious."
-price: "Starts ₹ 10.79 Lakh*"
+price: "Starts â‚¹ 10.79 Lakh*"
 category: "Sedan"
-image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/Verna/Exterior/pc/verna_ext_front.jpg"
+image: "/images/products/verna.jpg"
 features:
   - "Horizon LED positioning Lamps & DRLs"
   - "26.03 cm (10.25\") HD Audio video navigation system & Digital cluster"
@@ -18,3 +18,4 @@ The Hyundai Verna features a futuristic and ferocious design with a chiselled ae
 - **Engine:** 1.5 l MPi Petrol, 1.5 l Turbo GDi Petrol
 - **Transmission:** 6-Speed Manual / IVT / 7-Speed DCT
 - **Power:** The 1.5 l Turbo under the hood is a finely tuned beast waiting to be unleashed at the push of a pedal, delivering responsiveness and a thrilling drive.
+

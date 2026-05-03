@@ -1,9 +1,9 @@
----
+﻿---
 name: "Alcazar"
 tagline: "Intelligent. Versatile. Intense."
-price: "Starts ₹ 14.49 Lakh*"
+price: "Starts â‚¹ 14.49 Lakh*"
 category: "SUV"
-image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Alcazar/9246/1753867049043/front-view-118.jpg"
+image: "/images/products/alcazar.jpg"
 features:
   - "Spacious 6 and 7 seater configurations"
   - "Advanced Hyundai SmartSense safety features"
@@ -19,3 +19,4 @@ The Hyundai ALCAZAR is a versatile 6 and 7 seater SUV designed for dynamic lifes
 - **Transmission:** Choice of MT, AT, and DCT
 - **Power:** 160 PS
 - **Fuel Type:** Petrol or diesel
+

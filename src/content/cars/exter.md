@@ -1,9 +1,9 @@
----
+﻿---
 name: "Exter"
 tagline: "Think SUV. Think EXTER."
-price: "Starts ₹ 5.64 Lakh*"
+price: "Starts â‚¹ 5.64 Lakh*"
 category: "SUV"
-image: "https://www.kunhyundai.com/wp-content/uploads/2024/01/exterfront_pc_1.jpg"
+image: "/images/products/exter.jpg"
 features:
   - "Voice-enabled smart electric sunroof"
   - "Dashcam with dual camera"
@@ -19,3 +19,4 @@ Hyundai EXTER Knight symbolizes outdoor, travel and leisure, drawing inspiration
 - **Transmission:** 5-speed Manual (for both petrol and CNG) or Smart Auto AMT (for petrol)
 - **Fuel Type:** Petrol, Bi-Fuel Petrol-CNG
 - **Safety Features:** Over 40 advanced features including ESC, VSM, HAC, TPMS, and dual-camera dashcam
+

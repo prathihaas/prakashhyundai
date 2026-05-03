@@ -1,9 +1,9 @@
----
+﻿---
 name: "i20 N Line"
 tagline: "It's time to play."
-price: "Starts ₹ 9.21 Lakh*"
+price: "Starts â‚¹ 9.21 Lakh*"
 category: "Hatchback"
-image: "https://www.hyundai.com/content/dam/hyundai/in/en/data/find-a-car/i20/Exterior/pc/i20pe_exttab11.jpg"
+image: "/images/products/i20-n-line.jpg"
 features:
   - "Sporty black radiator grille"
   - "Chequered flag design leather seats with N logo"
@@ -19,3 +19,4 @@ With new Hyundai i20 N Line, the world is your playground. Crafted to maximise f
 - **Transmission:** 7-Speed DCT / 6-Speed iMT
 - **Power:** 120 PS
 - **Fuel Type:** Petrol
+

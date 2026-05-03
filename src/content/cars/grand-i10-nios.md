@@ -1,9 +1,9 @@
----
+﻿---
 name: "Grand i10 NIOS"
 tagline: "Add more to life with the new Hyundai GRAND i10 NIOS Car"
-price: "Starts ₹ 5.55 Lakh*"
+price: "Starts â‚¹ 5.55 Lakh*"
 category: "Hatchback"
-image: "https://stimg.cardekho.com/images/carexteriorimages/930x620/Hyundai/Grand-i10-Nios/10096/1684298344769/front-view-118.jpg"
+image: "/images/products/grand-i10-nios.jpg"
 features:
   - "Bold & Stylish Design"
   - "Smart & Innovative Technology with Best-in-segment 20.25 cm Touchscreen Infotainment system with smartphone connectivity"
@@ -18,3 +18,4 @@ Grand i10 NIOS seamlessly combined exuberant design with advanced technology to 
 - **Transmission:** 5-Speed Manual / AMT
 - **Power:** 83 PS (Petrol) / 69 PS (CNG)
 - **Fuel Type:** Petrol / CNG
+
