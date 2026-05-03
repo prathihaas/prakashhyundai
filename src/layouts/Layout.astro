@@ -8,9 +8,10 @@ interface Props {
   canonical?: string;
   image?: string;
   ogType?: string;
+  noOrgSchema?: boolean;
 }
 
-const { title, description, canonical, image, ogType } = Astro.props;
+const { title, description, canonical, image, ogType, noOrgSchema } = Astro.props;
 
 const navLinks = [
   { label: "Home",      href: "/" },
@@ -30,6 +31,11 @@ const navLinks = [
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
     <link rel="apple-touch-icon" href="/favicon.jpg" />
     <meta name="theme-color" content="#002C5F" />
+    <!-- GTM preconnect/dns-prefetch for faster tag loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -40,7 +46,7 @@ const navLinks = [
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
     <!-- End Google Tag Manager -->
-    <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} />
+    <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} noOrgSchema={noOrgSchema} />
   </head>
   <body class="bg-white text-[#1C1C1C] font-sans antialiased flex flex-col min-h-screen">
     <!-- Google Tag Manager (noscript) -->

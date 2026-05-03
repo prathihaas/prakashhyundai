@@ -1,22 +1,25 @@
 ---
-// SEOHead.astro — Prakash Hyundai (single-language English only)
+// SEOHead.astro — Prakash Hyundai
 const {
   title = "Prakash Hyundai | Authorized Hyundai Dealer in Nizamabad, Telangana",
   description = "Prakash Hyundai is an authorized Hyundai dealership in Nizamabad, Telangana 503001. Explore new Hyundai cars, book test drives, and get expert service.",
   canonical = Astro.url.href,
   image = "/og-image.jpg",
   ogType = "website",
+  noOrgSchema = false,
 } = Astro.props;
 
-const schema = {
+const orgSchema = {
   "@context": "https://schema.org",
   "@type": "AutoDealer",
+  "@id": "https://www.prakashhyundai.com/#organization",
   "name": "Prakash Hyundai",
   "url": "https://www.prakashhyundai.com",
   "logo": "https://www.prakashhyundai.com/logo.png",
   "image": "https://www.prakashhyundai.com/og-image.jpg",
   "description": "Authorized Hyundai dealership in Nizamabad, Telangana. New Hyundai cars, service, and genuine spare parts.",
-  "telephone": "+91-9052116511",
+  "foundingDate": "2008",
+  "telephone": "+91-9052110303",
   "brand": { "@type": "Brand", "name": "Hyundai" },
   "address": {
     "@type": "PostalAddress",
@@ -33,11 +36,55 @@ const schema = {
     "opens": "09:00",
     "closes": "19:00"
   }],
-  "areaServed": ["Nizamabad", "Kamareddy", "Nirmal", "Armoor", "Balkonda", "Telangana"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "2915",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Bodige" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Prakash Hyundai showroom is the best in Nizamabad for 15+ years. Quick services, free test drives, certified mechanics, friendly staff, on-time delivery and car wash. Very satisfied!"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sreenaiah" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Excellent experience with the team. Very happy with Prakash Hyundai treatment in the showroom. Best Hyundai dealer in Nizamabad."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sree" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Nice behaviour of the staff. Really love the way they treated us. The entire buying experience was smooth and pleasant."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Venkat" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+      "reviewBody": "Good service and prompt response. The service team is attentive and gets the job done quickly. Highly recommend!"
+    }
+  ],
+  "areaServed": ["Nizamabad", "Kamareddy", "Nirmal", "Armoor", "Balkonda", "Banswada", "Bodhan", "Yellareddy", "Karimnagar", "Telangana"],
   "sameAs": [
     "https://www.facebook.com/prakashhyundai",
     "https://www.instagram.com/prakashhyundai"
   ]
+};
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": canonical,
+  "url": canonical,
+  "name": title,
+  "description": description,
+  "isPartOf": { "@id": "https://www.prakashhyundai.com/#organization" },
+  "inLanguage": "en-IN"
 };
 ---
 <title>{title}</title>
@@ -57,6 +104,7 @@ const schema = {
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:site_name" content="Prakash Hyundai" />
 <meta property="og:locale" content="en_IN" />
+<meta property="og:locale:alternate" content="te_IN" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -70,9 +118,10 @@ const schema = {
 <meta name="geo.position" content="18.6725;78.0941" />
 <meta name="ICBM" content="18.6725, 78.0941" />
 
-<!-- Hreflang — signals English content with x-default fallback -->
+<!-- Hreflang -->
 <link rel="alternate" hreflang="en" href={canonical} />
 <link rel="alternate" hreflang="x-default" href={canonical} />
 
 <!-- JSON-LD Structured Data -->
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+{!noOrgSchema && <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />}
+<script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
