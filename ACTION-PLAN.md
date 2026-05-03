@@ -45,7 +45,7 @@
 
 | # | Issue | File | Status |
 |---|-------|------|--------|
-| M1 | Product images hotlinked from Hyundai India CDN — may be blocked/slow | `src/content/cars/*.md` | 🔧 MANUAL |
+| M1 | Product images hotlinked from Hyundai India CDN — may be blocked/slow | `src/content/cars/*.md` | ✅ DONE |
 | M2 | og:locale:alternate te_IN missing for bilingual site signal | `SEOHead.astro` | ✅ DONE |
 | M3 | Car card images in homepage grid missing `loading="lazy"` | `index.astro` | ✅ DONE |
 | M4 | No `WebPage` schema on inner pages | `SEOHead.astro` | ✅ DONE |
@@ -61,11 +61,11 @@
 
 | # | Issue | Notes | Status |
 |---|-------|-------|--------|
-| L1 | OG image quality not verified | Verify `public/og-image.jpg` is 1200×630 and Hyundai branded | 🔧 MANUAL |
+| L1 | OG image quality not verified | Verify `public/og-image.jpg` is 1200×630 and Hyundai branded | ✅ DONE (1200×630, navy branded) |
 | L2 | Blog posts don't link to car model pages | Add contextual links in blog content (e.g., Creta article → /cars/creta) | 📋 BACKLOG |
-| L3 | Contact page schema missing | Add LocalBusiness or ContactPage schema to `contact.astro` | 📋 BACKLOG |
+| L3 | Contact page schema missing | Add LocalBusiness or ContactPage schema to `contact.astro` | ✅ DONE |
 | L4 | hreflang for Telugu pages | Add `te-IN` hreflang when Telugu content created | 📋 BACKLOG |
-| L5 | Blog listing page has no BreadcrumbList or FAQPage | Low-hanging schema opportunity | 📋 BACKLOG |
+| L5 | Blog listing page has no BreadcrumbList or FAQPage | Low-hanging schema opportunity | ✅ DONE (BreadcrumbList added) |
 | L6 | No favicon.svg fallback visible in browser tab (using .jpg) | Replace with proper SVG favicon | 📋 BACKLOG |
 | L7 | GMB posts not linked to blog content | Cross-promote blog on Google Business Profile | 🔧 MANUAL |
 | L8 | No local directory citations | Submit to Justdial, Sulekha, IndiaMART | 🔧 MANUAL |
