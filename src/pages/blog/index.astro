@@ -4,12 +4,23 @@ import { getCollection } from 'astro:content';
 
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const sortedPosts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.prakashhyundai.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.prakashhyundai.com/blog" }
+  ]
+};
 ---
 
 <Layout
   title="Hyundai Car Tips, Comparisons & Guides | Prakash Hyundai Nizamabad"
   description="Car buying guides, Hyundai model comparisons, and local driving tips from Prakash Hyundai — authorized Hyundai dealer in Nizamabad, Telangana."
+  canonical="https://www.prakashhyundai.com/blog"
 >
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <div class="bg-[#F5F6F7] py-24 pt-32">
     <div class="container mx-auto px-6">
       <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4">Car Guides & Tips</h1>
