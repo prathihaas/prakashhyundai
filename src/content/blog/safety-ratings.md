@@ -14,6 +14,7 @@ excerpt: "Hyundai Verna & Creta scored 5 stars in Global NCAP. What this means f
 seo_title: "Hyundai 5-Star Safety Rating — Safest Cars in Nizamabad 2026 | Prakash Hyundai"
 seo_description: "Hyundai Verna and Creta carry Global NCAP 5-star ratings. See what the safety ratings mean and why Prakash Hyundai is the safest choice in Nizamabad."
 readTime: "5 min read"
+draft: true
 ---
 
 ## Body Structure

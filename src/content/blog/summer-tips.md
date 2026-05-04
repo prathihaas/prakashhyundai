@@ -14,6 +14,7 @@ excerpt: "How to protect your Hyundai in Nizamabad's 45°C summer heat. AC servi
 seo_title: "Summer Car Care — Protect Your Hyundai in Nizamabad 45°C Heat | Prakash Hyundai"
 seo_description: "Keep your Hyundai in top shape during Telangana summers. Cooling system, tyre pressure, and AC tips from Prakash Hyundai service experts in Nizamabad."
 readTime: "3 min read"
+draft: true
 ---
 
 ## 1. Check your AC

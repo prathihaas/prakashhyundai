@@ -7,6 +7,29 @@ export async function getStaticPaths() {
   return posts.map(post => ({ params: { slug: post.slug }, props: { post } }));
 }
 
+function parseFAQ(body: string): { question: string; answer: string }[] {
+  const pairs: { question: string; answer: string }[] = [];
+  const lines = body.split('\n');
+  let i = 0;
+  while (i < lines.length) {
+    const qMatch = lines[i].match(/^\*\*Q:\s*(.+?)\*\*$/);
+    if (qMatch) {
+      const question = qMatch[1].trim();
+      let answer = '';
+      i++;
+      while (i < lines.length && !lines[i].match(/^\*\*Q:/)) {
+        const line = lines[i].trim();
+        if (line && line !== '---') { answer = line; break; }
+        i++;
+      }
+      if (question && answer) pairs.push({ question, answer });
+    } else {
+      i++;
+    }
+  }
+  return pairs;
+}
+
 const { post } = Astro.props;
 const { Content } = await post.render();
 const { title, title_te, seo_title, seo_description, featured_image, excerpt, category, readTime, author, tags, date, faq } = post.data;
@@ -19,13 +42,17 @@ const authorSchema = isBrandAuthor
   ? { "@type": "Organization", "name": "Prakash Hyundai", "url": "https://www.prakashhyundai.com" }
   : { "@type": "Person", "name": author };
 
-const faqSchema = faq && faq.length > 0 ? {
+const faqPairs = faq && faq.length > 0
+  ? faq.map((item: { q: string; a: string }) => ({ question: item.q, answer: item.a }))
+  : parseFAQ(post.body);
+
+const faqSchema = faqPairs.length > 0 ? {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": faq.map((item: { q: string; a: string }) => ({
+  "mainEntity": faqPairs.map(({ question, answer }) => ({
     "@type": "Question",
-    "name": item.q,
-    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+    "name": question,
+    "acceptedAnswer": { "@type": "Answer", "text": answer }
   }))
 } : null;
 
