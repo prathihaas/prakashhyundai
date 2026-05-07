@@ -1,5 +1,5 @@
 {
-  "trailingSlash": false,
+  "trailingSlash": true,
   "cleanUrls": true,
   "headers": [
     {
@@ -34,6 +34,8 @@
   ],
   "redirects": [
     { "source": "/:path*", "has": [{"type": "host", "value": "prakashhyundai.com"}], "destination": "https://www.prakashhyundai.com/:path*", "permanent": true },
+    { "source": "/en", "destination": "/", "permanent": true },
+    { "source": "/en/", "destination": "/", "permanent": true },
     { "source": "/en/:path*", "destination": "/:path*", "permanent": true },
     { "source": "/te/:path*", "destination": "/:path*", "permanent": true },
     { "source": "/hi/:path*", "destination": "/:path*", "permanent": true },

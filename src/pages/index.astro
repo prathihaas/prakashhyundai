@@ -343,11 +343,11 @@ const faqSchema = {
     <div class="container mx-auto px-6">
       <div class="flex justify-between items-end mb-10">
         <h2 class="text-3xl font-bold text-[#1C1C1C]">Car Guides & Tips</h2>
-        <a href="/blog" class="text-[#002C5F] font-bold flex items-center gap-2 hover:gap-3 transition-all text-sm">View All <ArrowRight size={18}/></a>
+        <a href="/blog/" class="text-[#002C5F] font-bold flex items-center gap-2 hover:gap-3 transition-all text-sm">View All <ArrowRight size={18}/></a>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
         {recentBlogs.map(post => (
-          <a href={`/blog/${post.slug}`} class="group">
+          <a href={`/blog/${post.slug}/`} class="group">
             <article class="p-6 rounded-2xl border border-gray-100 hover:border-blue-100 hover:shadow-lg transition-all h-full flex flex-col">
               <div class="text-xs font-bold text-[#00AAD2] uppercase mb-2">{post.data.category}</div>
               <h3 class="text-lg font-bold mb-2 group-hover:text-[#002C5F] transition-colors leading-snug">{post.data.title}</h3>

@@ -31,7 +31,7 @@ const breadcrumbSchema = {
   <div class="container mx-auto px-6 py-20">
     <div class="grid md:grid-cols-3 gap-8">
       {sortedPosts.map(post => (
-        <a href={`/blog/${post.slug}`} class="group flex flex-col">
+        <a href={`/blog/${post.slug}/`} class="group flex flex-col">
           <article class="rounded-2xl border border-gray-100 hover:border-blue-100 hover:shadow-xl transition-all h-full bg-white flex flex-col overflow-hidden">
             <div class="aspect-video bg-gray-100 overflow-hidden">
               {post.data.featured_image
