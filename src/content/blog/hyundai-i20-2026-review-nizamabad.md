@@ -12,8 +12,8 @@ tags:
   - "Best Hatchback Telangana"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Complete Hyundai i20 2026 review for Nizamabad buyers. Premium features, refined ride, sunroof — is it the best hatchback under ₹12 lakh in Telangana?"
-seo_title: "Hyundai i20 2026 Review — Premium Hatchback Nizamabad | Prakash Hyundai"
-seo_description: "Full Hyundai i20 2026 review for Nizamabad, Telangana. Features, mileage, specs, and variant guide. Best hatchback under ₹12 lakh? Find out here."
+seo_title: "Hyundai i20 2026 Review: ₹8.3L Premium Hatch in Nizamabad"
+seo_description: "Hyundai i20 2026 for Nizamabad: ₹8.30L on-road, sunroof, 20 kmpl mileage, 6 airbags, Bose sound. Best premium hatchback? Free test drive + EMI plans."
 readTime: "8 min read"
 ---
 

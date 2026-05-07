@@ -12,8 +12,8 @@ tags:
   - "Exter vs Punch"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Full Hyundai Exter 2026 review for Nizamabad buyers. SUV looks, hatchback price — is the Exter the best micro-SUV under ₹10 lakh in Telangana?"
-seo_title: "Hyundai Exter Review — Best Micro-SUV Nizamabad 2026 | Prakash Hyundai"
-seo_description: "Complete Hyundai Exter 2026 review for Nizamabad. SUV styling, micro size, mileage, features & on-road price in Telangana. Is it better than Tata Punch?"
+seo_title: "Hyundai Exter 2026 Review: ₹6.1L SUV Look, Hatch Price"
+seo_description: "Hyundai Exter 2026 in Nizamabad: ₹6.10L on-road, 19 kmpl, sunroof, 6 airbags, ADAS. SUV looks at hatchback price — beats Tata Punch? Free test drive."
 readTime: "8 min read"
 ---
 

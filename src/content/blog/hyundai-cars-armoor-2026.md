@@ -13,8 +13,8 @@ tags:
   - "Hyundai Dealer Nizamabad"
 featured_image: "/images/blog/hyundai-cars-armoor-2026.jpg"
 excerpt: "Hyundai cars in Armoor 2026 — on-road prices, EMI from ₹9,800/mo, Creta ₹12.85L on-road. Authorized dealer near Armoor. Call Prakash Hyundai today."
-seo_title: "Hyundai Cars Armoor 2026 — On-Road Price, EMI & Test Drive"
-seo_description: "Buy Hyundai in Armoor 2026. Creta starts ₹12.85L on-road, Venue ₹9.20L, i20 ₹8.30L. EMI from ₹9,800/mo. Prakash Hyundai near Armoor. Call 9052110303."
+seo_title: "Hyundai Armoor 2026: Creta ₹12.85L, EMI ₹9,800/mo"
+seo_description: "Hyundai in Armoor: Creta ₹12.85L, Venue ₹9.20L, i20 ₹8.30L, Exter ₹6.10L on-road. EMI from ₹9,800/mo. Free home test drive. Prakash Hyundai. ☎ 9052110303."
 readTime: "8 min read"
 ---
 
