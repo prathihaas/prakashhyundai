@@ -112,5 +112,62 @@ const navLinks = [
       </div>
     </footer>
 
+      <!-- Lead source tracking: stamps WhatsApp links with traffic source (Google Ads vs Organic). Astro needs is:inline. -->
+    <script is:inline>
+    (function () {
+      try {
+        var LS = window.localStorage;
+        var qp = new URLSearchParams(location.search);
+        function classify() {
+          if (LS.getItem('lead_src')) return; // first-touch only
+          var gclid = qp.get('gclid') || qp.get('gbraid') || qp.get('wbraid');
+          var gad = qp.get('gad_source') || qp.get('gclsrc');
+          var um = (qp.get('utm_medium') || '').toLowerCase();
+          var us = (qp.get('utm_source') || '').toLowerCase();
+          var src = null, g = null;
+          if (gclid || gad || um === 'cpc' || um === 'ppc' || um === 'paid') {
+            src = 'gads'; if (gclid) g = gclid.slice(0, 24);
+          } else if (us === 'google') {
+            src = 'org_google';
+          } else if (us) {
+            src = 'utm_' + us.replace(/[^a-z0-9_]/g, '').slice(0, 16);
+          } else {
+            var ref = document.referrer || '';
+            if (/[.\/]google\./i.test(ref)) src = 'org_google';
+            else if (/bing\.|duckduckgo|yahoo\./i.test(ref)) src = 'org_search';
+            else if (/facebook|instagram|fb\.|t\.co|twitter|x\.com/i.test(ref)) src = 'social';
+            else if (ref && ref.indexOf(location.hostname) === -1) src = 'ref';
+            else src = 'direct';
+          }
+          LS.setItem('lead_src', src);
+          if (g) LS.setItem('lead_gclid', g);
+          LS.setItem('lead_lp', (location.pathname || '/').slice(0, 40));
+        }
+        function tagLinks() {
+          var s = LS.getItem('lead_src') || 'direct';
+          var g = LS.getItem('lead_gclid');
+          var tag = ' [wsrc:' + s + (g ? ('|g:' + g) : '') + ']';
+          var links = document.querySelectorAll('a[href*="wa.me"], a[href*="api.whatsapp"]');
+          for (var i = 0; i < links.length; i++) {
+            var a = links[i];
+            if (a.getAttribute('data-wsrc')) continue;
+            var href = a.getAttribute('href'); if (!href) continue;
+            if (href.indexOf('text=') > -1) {
+              href = href.replace(/([?&])text=([^&#]*)/, function (m, p, txt) { return p + 'text=' + txt + encodeURIComponent(tag); });
+            } else {
+              href += (href.indexOf('?') > -1 ? '&' : '?') + 'text=' + encodeURIComponent('Hi' + tag);
+            }
+            a.setAttribute('href', href);
+            a.setAttribute('data-wsrc', '1');
+          }
+        }
+        classify();
+        tagLinks();
+        document.addEventListener('click', tagLinks, true);   // catch links added after load
+        window.addEventListener('load', tagLinks);
+      } catch (e) {}
+    })();
+    </script>
+
   </body>
 </html>
