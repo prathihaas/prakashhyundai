@@ -152,12 +152,15 @@ const navLinks = [
             var a = links[i];
             if (a.getAttribute('data-wsrc')) continue;
             var href = a.getAttribute('href'); if (!href) continue;
-            if (href.indexOf('text=') > -1) {
-              href = href.replace(/([?&])text=([^&#]*)/, function (m, p, txt) { return p + 'text=' + txt + encodeURIComponent(tag); });
-            } else {
-              href += (href.indexOf('?') > -1 ? '&' : '?') + 'text=' + encodeURIComponent('Hi' + tag);
-            }
-            a.setAttribute('href', href);
+            var tm = href.match(/[?&]text=([^&#]*)/);
+            var text = 'Hi';
+            try { text = tm ? decodeURIComponent(tm[1]) : 'Hi'; } catch (de) {}
+            text += tag;
+            a.setAttribute('href', 'https://grow.prk.sh/api/wa/click?c=hyundai'
+              + '&u=' + encodeURIComponent((location.href || '').slice(0, 500))
+              + '&s=' + encodeURIComponent(s)
+              + (g ? '&gclid=' + encodeURIComponent(g) : '')
+              + '&text=' + encodeURIComponent(text));
             a.setAttribute('data-wsrc', '1');
           }
         }
