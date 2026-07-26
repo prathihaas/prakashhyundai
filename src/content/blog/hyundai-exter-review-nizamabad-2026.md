@@ -17,9 +17,7 @@ seo_description: "Hyundai Exter 2026 in Nizamabad: ₹6.10L on-road, 19 kmpl, su
 readTime: "8 min read"
 ---
 
-# Hyundai Exter Review — Best Micro-SUV for Nizamabad 2026?
-
-The micro-SUV segment is one of the fastest growing in India, and Hyundai joined it with the [Exter](/en/cars/exter). Starting at just ₹6.13 lakh, the Exter gives you genuine SUV styling, decent ground clearance, and modern features at a price that overlaps with premium hatchbacks.
+The micro-SUV segment is one of the fastest growing in India, and Hyundai joined it with the [Exter](/cars/exter). Starting at just ₹6.13 lakh, the Exter gives you genuine SUV styling, decent ground clearance, and modern features at a price that overlaps with premium hatchbacks.
 
 For Nizamabad buyers who want the SUV look and feel without the SUV price tag, the Exter is a very compelling option.
 

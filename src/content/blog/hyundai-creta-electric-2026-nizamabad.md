@@ -12,14 +12,12 @@ tags:
   - "EV Coming Nizamabad"
 featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
 excerpt: "Hyundai Creta Electric 2026 preview for Nizamabad buyers. Specs, range, price, and whether it makes sense for Telangana roads and infrastructure in 2026."
-seo_title: "Hyundai Creta Electric 2026 — Coming to Nizamabad? | Prakash Hyundai"
+seo_title: "Hyundai Creta Electric 2026 — Coming to Nizamabad?"
 seo_description: "Full preview of Hyundai Creta Electric 2026 for Nizamabad buyers. Range, price, charging needs & whether this EV SUV makes sense for Telangana roads."
 readTime: "8 min read"
 ---
 
-# Hyundai Creta Electric 2026 — Coming to Nizamabad? Full Preview
-
-The Hyundai Creta Electric is one of the most anticipated cars in India. Building on the immense popularity of the standard [Hyundai Creta](/en/cars/creta), the electric version promises to bring zero-emission driving to the segment that India loves most.
+The Hyundai Creta Electric is one of the most anticipated cars in India. Building on the immense popularity of the standard [Hyundai Creta](/cars/creta), the electric version promises to bring zero-emission driving to the segment that India loves most.
 
 For Nizamabad buyers who know and love the Creta, the electric version raises natural questions: What are the specs? What is the range? Can it work in Nizamabad with the current charging infrastructure? And most importantly — should you wait for it or buy the petrol/diesel Creta now?
 

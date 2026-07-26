@@ -11,13 +11,11 @@ tags:
   - "Best Car Dealer Nizamabad"
   - "Hyundai Showroom Nizamabad"
 featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
-excerpt: "Prakash Hyundai is Nizamabad's trusted authorized Hyundai dealer. Sales, service, finance, and genuine parts for the entire Nizamabad district and surrounding areas."
-seo_title: "Prakash Hyundai Nizamabad — Trusted Authorized Hyundai Dealer | Prakash Hyundai"
-seo_description: "Prakash Hyundai: Nizamabad's authorized Hyundai dealer. All 12 models, EMI options, service centre, genuine parts. Serving Nizamabad district since years. Call now."
+excerpt: "Prakash Hyundai is Nizamabad's trusted authorized Hyundai dealer. Sales, service, finance, and genuine parts for the entire Nizamabad district and"
+seo_title: "Prakash Hyundai Nizamabad — Trusted Authorized Hyundai"
+seo_description: "Prakash Hyundai: Nizamabad's authorized Hyundai dealer. All 12 models, EMI options, service centre, genuine parts. Serving Nizamabad district since years."
 readTime: "7 min read"
 ---
-
-# Prakash Hyundai Nizamabad — Your Trusted Hyundai Dealer
 
 Nizamabad and the surrounding Telangana districts deserve a car dealer that is as reliable as the cars it sells. Prakash Hyundai is the **only authorized Hyundai dealer in Nizamabad** — bringing the complete Hyundai ownership experience directly to your district.
 
@@ -49,18 +47,18 @@ We stock and sell every Hyundai model available in India:
 
 | Model | Type | Price Range |
 |-------|------|------------|
-| [Grand i10 Nios](/en/cars/grand-i10-nios) | Entry Hatchback | ₹5.92L–₹8.98L |
-| [Hyundai Exter](/en/cars/exter) | Micro-SUV | ₹6.13L–₹10.3L |
-| [Hyundai Aura](/en/cars/aura) | Compact Sedan | ₹6.49L–₹9.37L |
-| [Hyundai i20](/en/cars/i20) | Premium Hatchback | ₹7.04L–₹11.65L |
-| [Hyundai Venue](/en/cars/venue) | Compact SUV | ₹7.94L–₹13.62L |
-| [Hyundai Verna](/en/cars/verna) | Premium Sedan | ₹10.89L–₹17.73L |
-| [Hyundai Creta](/en/cars/creta) | Mid-Size SUV | ₹11.11L–₹19.99L |
-| [Venue N-Line](/en/cars/venue-n-line) | Sporty Compact SUV | ₹13.43L–₹16.49L |
-| [i20 N-Line](/en/cars/i20-n-line) | Sporty Hatchback | ₹12.99L–₹15.99L |
-| [Creta N-Line](/en/cars/creta-n-line) | Sporty SUV | ₹16.82L–₹20.06L |
-| [Hyundai Alcazar](/en/cars/alcazar) | 7-Seater SUV | ₹16.78L–₹21L |
-| [Hyundai Ioniq 5](/en/cars/ioniq5) | Electric Car | ₹46.05L |
+| [Grand i10 Nios](/cars/grand-i10-nios) | Entry Hatchback | ₹5.92L–₹8.98L |
+| [Hyundai Exter](/cars/exter) | Micro-SUV | ₹6.13L–₹10.3L |
+| [Hyundai Aura](/cars/aura) | Compact Sedan | ₹6.49L–₹9.37L |
+| [Hyundai i20](/cars/i20) | Premium Hatchback | ₹7.04L–₹11.65L |
+| [Hyundai Venue](/cars/venue) | Compact SUV | ₹7.94L–₹13.62L |
+| [Hyundai Verna](/cars/verna) | Premium Sedan | ₹10.89L–₹17.73L |
+| [Hyundai Creta](/cars/creta) | Mid-Size SUV | ₹11.11L–₹19.99L |
+| [Venue N-Line](/cars/venue-n-line) | Sporty Compact SUV | ₹13.43L–₹16.49L |
+| [i20 N-Line](/cars/i20-n-line) | Sporty Hatchback | ₹12.99L–₹15.99L |
+| [Creta N-Line](/cars/creta-n-line) | Sporty SUV | ₹16.82L–₹20.06L |
+| [Hyundai Alcazar](/cars/alcazar) | 7-Seater SUV | ₹16.78L–₹21L |
+| [Hyundai Ioniq 5](/cars/ioniq5) | Electric Car | ₹46.05L |
 
 *All prices are ex-showroom Nizamabad. On-road prices are 12–15% higher in Telangana.*
 

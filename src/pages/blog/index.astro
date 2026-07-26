@@ -16,7 +16,7 @@ const breadcrumbSchema = {
 ---
 
 <Layout
-  title="Hyundai Car Tips, Comparisons & Guides | Prakash Hyundai Nizamabad"
+  title="Car Guides & Tips | Prakash Hyundai Nizamabad"
   description="Car buying guides, Hyundai model comparisons, and local driving tips from Prakash Hyundai — authorized Hyundai dealer in Nizamabad, Telangana."
   canonical="https://www.prakashhyundai.com/blog"
 >
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
                 <span class="text-xs font-bold text-[#00AAD2] uppercase tracking-widest bg-[#00AAD2]/10 px-2 py-0.5 rounded-full">{post.data.category}</span>
                 {post.data.readTime && <span class="text-xs text-gray-400">{post.data.readTime}</span>}
               </div>
-              <h3 class="text-xl font-bold mb-3 group-hover:text-[#002C5F] transition-colors leading-snug flex-grow">{post.data.title}</h3>
+              <h2 class="text-xl font-bold mb-3 group-hover:text-[#002C5F] transition-colors leading-snug flex-grow">{post.data.title}</h2>
               <p class="text-gray-500 text-sm line-clamp-2 mb-5 leading-relaxed">{post.data.excerpt}</p>
               <div class="pt-4 border-t border-gray-100 text-xs text-gray-400 font-medium">
                 {post.data.date.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}

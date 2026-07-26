@@ -12,14 +12,12 @@ tags:
   - "Best Sedan Telangana"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Full Hyundai Verna 2026 review for Nizamabad buyers. ADAS, turbo engine, panoramic sunroof — the most advanced sedan in its class. Is it worth ₹11–18 lakh?"
-seo_title: "Hyundai Verna 2026 Review — Premium Sedan Nizamabad | Prakash Hyundai"
+seo_title: "Hyundai Verna 2026 Review — Premium Sedan Nizamabad"
 seo_description: "Complete Hyundai Verna 2026 review for Nizamabad, Telangana. Features, turbo engine specs, ADAS, mileage & on-road price. Book test drive at Prakash Hyundai."
 readTime: "8 min read"
 ---
 
-# Hyundai Verna 2026 Review — Premium Sedan for Nizamabad Buyers
-
-The [Hyundai Verna](/en/cars/verna) returned in 2023 with a completely new design and an ambition to dominate the mid-size sedan segment. In 2026, it continues to be the most feature-rich and technologically advanced sedan available in Nizamabad under ₹18 lakh.
+The [Hyundai Verna](/cars/verna) returned in 2023 with a completely new design and an ambition to dominate the mid-size sedan segment. In 2026, it continues to be the most feature-rich and technologically advanced sedan available in Nizamabad under ₹18 lakh.
 
 At a time when the sedan segment is shrinking in India due to SUV popularity, the Verna makes a compelling case for why sedans still matter.
 
