@@ -126,7 +126,7 @@ const navLinks = [
           var us = (qp.get('utm_source') || '').toLowerCase();
           var src = null, g = null;
           if (gclid || gad || um === 'cpc' || um === 'ppc' || um === 'paid') {
-            src = 'gads'; if (gclid) g = gclid.slice(0, 24);
+            src = 'gads'; if (gclid) g = gclid.slice(0, 512);
           } else if (us === 'google') {
             src = 'org_google';
           } else if (us) {
