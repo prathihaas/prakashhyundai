@@ -58,7 +58,7 @@ We stock and sell every Hyundai model available in India:
 | [i20 N-Line](/cars/i20-n-line) | Sporty Hatchback | ₹12.99L–₹15.99L |
 | [Creta N-Line](/cars/creta-n-line) | Sporty SUV | ₹16.82L–₹20.06L |
 | [Hyundai Alcazar](/cars/alcazar) | 7-Seater SUV | ₹16.78L–₹21L |
-| [Hyundai Ioniq 5](/cars/ioniq5) | Electric Car | ₹46.05L |
+| [Hyundai Ioniq 5](/cars/ioniq-5) | Electric Car | ₹46.05L |
 
 *All prices are ex-showroom Nizamabad. On-road prices are 12–15% higher in Telangana.*
 

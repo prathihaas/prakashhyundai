@@ -170,7 +170,7 @@ All 12 Hyundai models are available for test drives including:
 - [Hyundai Verna](/cars/verna)
 - [Hyundai Creta](/cars/creta) and [Creta N-Line](/cars/creta-n-line)
 - [Hyundai Alcazar](/cars/alcazar)
-- [Hyundai Ioniq 5](/cars/ioniq5)
+- [Hyundai Ioniq 5](/cars/ioniq-5)
 
 ---
 
