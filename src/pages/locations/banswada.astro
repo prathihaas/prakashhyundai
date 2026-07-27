@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "AutoDealer",
+  "name": "Prakash Hyundai Banswada",
+  "url": "https://www.prakashhyundai.com/locations/banswada/",
+  "telephone": "+91-9603908891",
+  "brand": "Hyundai",
+  "areaServed": "Banswada, Telangana",
+  "parentOrganization": { "@type": "AutoDealer", "name": "Prakash Hyundai", "url": "https://www.prakashhyundai.com" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Banswada", "addressRegion": "Telangana", "addressCountry": "IN" }
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Where is the Hyundai showroom in Banswada?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Prakash Hyundai's Banswada showroom serves Banswada and surrounding mandals. Call 9603908891 for directions, prices and test drives." } },
+    { "@type": "Question", "name": "Can I get a home test drive in Banswada?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Prakash Hyundai offers free doorstep test drives across Banswada and nearby villages. WhatsApp 9052110303 to book." } },
+    { "@type": "Question", "name": "What is the Hyundai Creta price in Banswada?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Hyundai Creta starts around ₹11.11 lakh ex-showroom. Call 9603908891 or WhatsApp 9052110303 for today's exact on-road price in Banswada with offers." } }
+  ]
+};
+const cars = [
+  { slug: "creta", name: "Creta", price: "₹11.11L" },
+  { slug: "venue", name: "Venue", price: "₹7.94L" },
+  { slug: "exter", name: "Exter", price: "₹6.13L" },
+  { slug: "i20", name: "i20", price: "₹7.04L" },
+  { slug: "grand-i10-nios", name: "Grand i10 Nios", price: "₹5.92L" },
+  { slug: "verna", name: "Verna", price: "₹10.90L" },
+];
+---
+
+<Layout
+  title="Hyundai Showroom Banswada | Prakash Hyundai ☎ 9603908891"
+  description="Authorized Hyundai showroom in Banswada — Creta, Venue, Exter, i20 at today's best price. Free home test drive, EMI from ₹8,500/mo. Call 9603908891."
+  canonical="https://www.prakashhyundai.com/locations/banswada/"
+  noOrgSchema={true}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <section class="bg-gradient-to-b from-[#F0F4F8] to-white pt-28 pb-12 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <nav class="text-xs text-gray-400 mb-4"><a href="/" class="hover:text-[#002C5F]">Home</a> › <a href="/locations" class="hover:text-[#002C5F]">Locations</a> › Banswada</nav>
+      <h1 class="text-3xl sm:text-5xl font-black text-[#1C1C1C] leading-tight mb-4">Hyundai Showroom in Banswada</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+        Prakash Hyundai Banswada — authorized Hyundai sales, service and genuine parts serving Banswada, Bichkunda, Jukkal and the western mandals. Today's best price on WhatsApp, free doorstep test drives.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={`https://wa.me/919052110303?text=${encodeURIComponent("Hi Prakash Hyundai, I am from Banswada. Please share today's best price and offers. [W-LOC-BANSWADA]")}`}
+          target="_blank" rel="noopener noreferrer"
+          class="flex items-center justify-center gap-3 bg-green-600 text-white px-8 py-4 rounded-2xl font-black text-lg hover:bg-green-700 transition">
+          💬 Get Best Price on WhatsApp
+        </a>
+        <a href="tel:+919603908891"
+          class="flex items-center justify-center gap-3 bg-[#002C5F] text-white px-8 py-4 rounded-2xl font-black text-lg hover:bg-[#001f42] transition">
+          📞 Call Banswada Showroom
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-black text-center text-[#1C1C1C] mb-8">Hyundai Cars Available in Banswada</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        {cars.map(c => (
+          <a href={`/cars/${c.slug}`} class="p-5 bg-gray-50 rounded-2xl border border-gray-100 hover:border-[#002C5F]/40 hover:bg-blue-50 transition text-center">
+            <p class="font-black text-[#1C1C1C]">Hyundai {c.name}</p>
+            <p class="text-sm text-gray-500 mt-1">from <span class="font-bold text-[#002C5F]">{c.price}</span></p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 px-4 bg-[#F5F6F7]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-2xl font-black text-center text-[#1C1C1C] mb-6">Why buy your Hyundai in Banswada from us</h2>
+      <ul class="space-y-3 text-gray-600">
+        <li>✅ <strong>Authorized dealer</strong> — 4.7★ rated, 2,915+ Google reviews across our network</li>
+        <li>🏠 <strong>Free home test drive</strong> anywhere in Banswada and nearby villages</li>
+        <li>💳 <strong>EMI from ₹8,500/month</strong> — SBI, HDFC, Axis, ICICI on-the-spot approval</li>
+        <li>🔧 Hyundai-certified service and genuine parts locally in Banswada</li>
+      </ul>
+      <div class="mt-8 text-center text-sm text-gray-500">
+        Other showrooms: <a href="/locations/armoor" class="text-[#002C5F] font-semibold hover:underline">Armoor</a> · <a href="/locations/bodhan" class="text-[#002C5F] font-semibold hover:underline">Bodhan</a> · <a href="/locations/kamareddy" class="text-[#002C5F] font-semibold hover:underline">Kamareddy</a> · <a href="/locations/adilabad" class="text-[#002C5F] font-semibold hover:underline">Adilabad</a> · <a href="/locations" class="text-[#002C5F] font-semibold hover:underline">All locations</a>
+      </div>
+    </div>
+  </section>
+</Layout>
