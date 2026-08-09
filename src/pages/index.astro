@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
-import { MessageCircle, ShieldCheck, Clock, Car, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Clock, Car } from 'lucide-react';
 
 const cars = await getCollection('cars');
 const sortedCars = cars.sort((a, b) => a.data.order - b.data.order);
@@ -13,6 +13,39 @@ const recentBlogs = blogs
 
 const WA    = "https://wa.me/919052110303";
 const PHONE = "tel:+919052110303";
+
+const assurances = [
+  { text: "Authorised Hyundai dealer", href: PHONE, external: false },
+  { text: "Free home test drive", href: `${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a free home test drive. [W-HP-TD]")}`, external: true },
+  { text: "Zero down payment EMI", href: `${WA}?text=${encodeURIComponent("Hi, I want to check EMI eligibility for a Hyundai car. [W-EMI]")}`, external: true },
+  { text: "Genuine parts & service", href: PHONE, external: false },
+  { text: "Finance from all banks", href: `${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to know about finance options. [W-FIN]")}`, external: true },
+  { text: "4.7 / 5 · 2,915+ Google reviews", href: "https://www.google.com/search?q=Prakash+Hyundai+Nizamabad+reviews", external: true },
+];
+
+const showroomDirectory = [
+  { label: "Nizamabad — Dichpally", note: "Main showroom", phone: "+91 9052116511", href: "/contact" },
+  { label: "Armoor",    note: "NH 44, Perkit",   phone: "+91 9052116509", href: "/locations/armoor" },
+  { label: "Bodhan",    note: "Nizamabad Road",  phone: "+91 9052116513", href: "/locations/bodhan" },
+  { label: "Banswada",  note: "Nizamabad Road",  phone: "+91 9603908891", href: "/locations/banswada" },
+  { label: "Kamareddy", note: "Nizamabad Road",  phone: "+91 7036219618", href: "/locations/kamareddy" },
+  { label: "Adilabad",  note: "District outlet", phone: "+91 9052110303", href: "/locations/adilabad" },
+];
+
+const faqs = [
+  { q: "Which Hyundai cars are available in Nizamabad?", a: "Prakash Hyundai stocks the full lineup — Creta, Venue, Exter, i20, Grand i10 Nios, Verna, Aura, Alcazar, i20 N-Line, Creta N-Line and Ioniq 5. All models available for test drive." },
+  { q: "What is the on-road price of Hyundai Creta in Nizamabad?", a: "Hyundai Creta on-road price in Nizamabad ranges from ~₹12.5 lakh (base petrol) to ~₹22 lakh (top diesel). Call 9052110303 for exact current price and offers." },
+  { q: "Does Prakash Hyundai offer home test drives?", a: "Yes! We offer free doorstep test drives across Nizamabad, Armoor, Bodhan, Banswada and surrounding areas. WhatsApp 9052110303 to book." },
+  { q: "What EMI options are available on Hyundai cars in Nizamabad?", a: "EMI available through SBI, HDFC, Axis and other banks. Zero down payment on select models. EMI starts from ₹8,500/month. Call 9052110303 for your quote." },
+  { q: "How many showrooms does Prakash Hyundai have?", a: "We have 9 showrooms across Nizamabad district — Nizamabad main, Armoor, Bodhan, Banswada, Kamareddy, Adilabad, Mancheriyal, Nirmal and Bhainsa." }
+];
+
+const reviews = [
+  { initial: "B", name: "Bodige", text: "Prakash Hyundai showroom is the best in Nizamabad for 15+ years. Quick services, free test drives, certified mechanics, friendly staff, on-time delivery and car wash. Very satisfied!" },
+  { initial: "S", name: "Sreenaiah", text: "Excellent experience with the team. Very happy with Prakash Hyundai treatment in the showroom. Best Hyundai dealer in Nizamabad." },
+  { initial: "S", name: "Sree", text: "Nice behaviour of the staff. Really love the way they treated us. The entire buying experience was smooth and pleasant." },
+  { initial: "V", name: "Venkat", text: "Good service and prompt response. The service team is attentive and gets the job done quickly. Highly recommend!" },
+];
 
 const hyRatingSchema = {
   "@context": "https://schema.org",
@@ -191,250 +224,310 @@ const faqSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(hyRatingSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
-  <!-- Hero Section -->
-  <section class="min-h-[90vh] flex items-center bg-gradient-to-b from-[#F5F6F7] to-white relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-1/2 h-full bg-white skew-x-12 translate-x-20 hidden lg:block opacity-50"></div>
-    <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center relative z-10 pt-10">
-      <div class="space-y-7">
-        <a href={PHONE} class="inline-block px-3 py-1 bg-blue-50 text-[#002C5F] rounded-full font-bold text-xs tracking-widest uppercase border border-blue-100 hover:bg-blue-100 transition">✅ Authorized Dealer · 9 Showrooms · Nizamabad</a>
-        <h1 class="text-4xl lg:text-6xl font-bold leading-[1.1] text-[#1C1C1C]">
-          Hyundai Showroom Nizamabad — Best Price & Free Test Drive
-        </h1>
-        <p class="text-lg text-gray-600 max-w-lg leading-relaxed">
-          Get today's best ex-showroom price on Creta, Venue, Exter, i20 and all Hyundai models. Free home test drive. Easy EMI. Trusted by 2,915+ Nizamabad families.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-3">
-          <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want today's best price on a Hyundai car in Nizamabad. [W-HP]")}`}
-            target="_blank" rel="noopener noreferrer"
-            class="flex items-center justify-center gap-2 bg-green-600 text-white px-7 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition shadow-lg shadow-green-100">
-            💬 Get Best Price on WhatsApp
-          </a>
-          <a href={PHONE}
-            class="flex items-center justify-center gap-2 bg-[#002C5F] text-white px-7 py-4 rounded-xl font-bold text-lg hover:bg-[#001f42] transition shadow-lg shadow-blue-900/20">
-            📞 Call 9052110303
-          </a>
-        </div>
-        <div class="inline-flex items-center gap-3 bg-blue-50 border border-blue-100 rounded-xl px-5 py-3">
-          <span class="text-2xl">💰</span>
-          <div>
-            <p class="font-bold text-[#002C5F] text-sm">Hyundai Exter EMI from ₹8,500/month</p>
-            <p class="text-xs text-gray-500">Zero down payment · Instant approval via SBI, HDFC, Axis</p>
+  <!-- ============================================================
+       HERO — Catalogue opening: quiet type, one photograph, no chrome.
+       ============================================================ -->
+  <section class="bg-paper">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-12 lg:py-20">
+      <div class="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-16">
+        <div>
+          <p class="hy-eyebrow">Authorised dealer · 9 showrooms · Nizamabad</p>
+
+          <h1 class="mt-5 text-[clamp(2rem,4.6vw,3.5rem)] font-light leading-[1.1] tracking-display text-ink">
+            The full Hyundai range,<br class="hidden sm:block" />
+            <span class="font-medium text-hyundai-blue">on the road from Nizamabad.</span>
+          </h1>
+
+          <p class="mt-6 max-w-xl text-base leading-relaxed text-body">
+            Today's best ex-showroom price on Creta, Venue, Exter, i20 and every other model.
+            Free home test drive. Easy EMI. Trusted by 2,915+ Nizamabad families.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want today's best price on a Hyundai car in Nizamabad. [W-HP]")}`}
+              target="_blank" rel="noopener noreferrer" class="hy-btn hy-btn--wa">
+              Best price on WhatsApp
+            </a>
+            <a href={PHONE} class="hy-btn">Call 90521 10303</a>
           </div>
-          <a href={`${WA}?text=${encodeURIComponent("Hi, I want to check EMI eligibility for a Hyundai car in Nizamabad. [W-EMI]")}`}
-            target="_blank" rel="noopener noreferrer"
-            class="text-xs text-[#002C5F] font-bold hover:underline whitespace-nowrap">Check EMI →</a>
+
+          <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-rule pt-6">
+            <div>
+              <p class="text-2xl font-medium text-ink">₹8,500</p>
+              <p class="mt-0.5 text-xs text-body">Exter EMI, per month</p>
+            </div>
+            <div class="hidden sm:block h-10 w-px bg-rule" aria-hidden="true"></div>
+            <div>
+              <p class="text-2xl font-medium text-ink">4.7 / 5</p>
+              <p class="mt-0.5 text-xs text-body">2,915+ Google reviews</p>
+            </div>
+            <div class="hidden sm:block h-10 w-px bg-rule" aria-hidden="true"></div>
+            <a
+              href={`${WA}?text=${encodeURIComponent("Hi, I want to check EMI eligibility for a Hyundai car in Nizamabad. [W-EMI]")}`}
+              target="_blank" rel="noopener noreferrer"
+              class="text-sm text-hyundai-blue underline underline-offset-4 decoration-rule hover:decoration-hyundai-blue transition-colors duration-150">
+              Check EMI eligibility
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="relative">
-        <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10">
+
+        <figure class="relative">
           <img
             src="/images/hero-venue.jpg"
-            class="w-full h-auto object-cover"
-            alt="Hyundai Showroom Nizamabad — Best Price on Creta, Venue, Exter"
-          />
-        </div>
-        <a href="https://www.google.com/search?q=Prakash+Hyundai+Nizamabad+reviews" target="_blank" rel="noopener noreferrer" class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 z-20 flex items-center gap-3 hover:shadow-2xl transition">
-          <div>
-            <div class="text-yellow-400 text-sm">★★★★★</div>
-            <p class="font-black text-[#002C5F] text-xl">4.7</p>
-          </div>
-          <div>
-            <p class="font-bold text-gray-800 text-sm">2,915+ Reviews</p>
-            <p class="text-xs text-gray-500">Nizamabad's #1 Hyundai Dealer</p>
-          </div>
-        </a>
+            alt="Hyundai on the forecourt at Prakash Hyundai, the authorised Hyundai showroom in Nizamabad"
+            class="w-full rounded-sm object-cover"
+            width="1200" height="800"
+            fetchpriority="high" loading="eager" decoding="async" />
+          <figcaption class="mt-3 text-xs text-muted">
+            Hyderabad Road, Dichpally · Mon–Sat, 9 AM – 7 PM
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <!-- Trust Strip -->
-  <section class="py-6 bg-[#002C5F]">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-wrap justify-center gap-6 text-white text-sm font-semibold">
-        {[
-          { text: "✅ Authorized Hyundai Dealer", href: PHONE, external: false },
-          { text: "🏠 Free Home Test Drive", href: `${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a free home test drive. [W-HP-TD]")}`, external: true },
-          { text: "💳 Zero Down Payment EMI", href: `${WA}?text=${encodeURIComponent("Hi, I want to check EMI eligibility for a Hyundai car. [W-EMI]")}`, external: true },
-          { text: "🔧 Genuine Parts & Service", href: PHONE, external: false },
-          { text: "📋 Easy Finance — All Banks", href: `${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to know about finance options. [W-FIN]")}`, external: true },
-          { text: "🏆 4.7★ / 2915+ Google Reviews", href: "https://www.google.com/search?q=Prakash+Hyundai+Nizamabad+reviews", external: true },
-        ].map(b => (
-          <a href={b.href} target={b.external ? "_blank" : undefined} rel={b.external ? "noopener noreferrer" : undefined} class="flex items-center gap-1 hover:underline">{b.text}</a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="grid md:grid-cols-3 gap-8">
-        <a href={PHONE} class="p-8 rounded-2xl bg-gray-50 border border-transparent hover:border-[#002C5F]/30 hover:bg-blue-50 transition-all block">
-          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-[#002C5F] mb-6"><ShieldCheck size={24} /></div>
-          <h2 class="text-xl font-bold mb-3">Trusted Authorized Service</h2>
-          <p class="text-gray-500">Hyundai-certified technicians, genuine parts, and full warranty support at all our locations.</p>
-        </a>
-        <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to know about finance options and delivery timeline. [W-FIN]")}`} target="_blank" rel="noopener noreferrer" class="p-8 rounded-2xl bg-gray-50 border border-transparent hover:border-[#002C5F]/30 hover:bg-blue-50 transition-all block">
-          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-[#002C5F] mb-6"><Clock size={24} /></div>
-          <h2 class="text-xl font-bold mb-3">Fast Delivery & Easy Finance</h2>
-          <p class="text-gray-500">Loan approval in minutes. Drive home your new Hyundai faster with zero paperwork hassle.</p>
-        </a>
-        <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a free home test drive. [W-HP-TD]")}`} target="_blank" rel="noopener noreferrer" class="p-8 rounded-2xl bg-gray-50 border border-transparent hover:border-[#002C5F]/30 hover:bg-blue-50 transition-all block">
-          <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-[#002C5F] mb-6"><Car size={24} /></div>
-          <h2 class="text-xl font-bold mb-3">Free Home Test Drive</h2>
-          <p class="text-gray-500">Test drive any Hyundai at your doorstep — Nizamabad, Armoor, Bodhan, Banswada and beyond.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Cars Grid -->
-  <section id="cars" class="py-20 bg-[#F5F6F7]">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-        <div>
-          <h2 class="text-4xl font-bold text-[#1C1C1C]">Hyundai Cars in Nizamabad</h2>
-          <p class="text-gray-500 mt-2">All models · Best ex-showroom price guaranteed</p>
-        </div>
-        <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, please share price list for all Hyundai cars in Nizamabad. [W-HP-PL]")}`}
-          target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-green-600 text-white px-5 py-3 rounded-xl font-bold text-sm hover:bg-green-700 transition whitespace-nowrap">
-          💬 Get Full Price List
-        </a>
-      </div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {sortedCars.map(car => (
-          <div class="group bg-white rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-blue-900/10 transition-all duration-300 flex flex-col h-full border border-gray-100">
-            <a href={`/cars/${car.slug}`} class="flex-1 flex flex-col">
-              <div class="h-52 overflow-hidden relative">
-                <img src={car.data.image} alt={`Hyundai ${car.data.name} price in Nizamabad`}
-                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  loading="lazy" decoding="async" />
-                <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-[#002C5F]">
-                  {car.data.category}
-                </div>
-              </div>
-              <div class="p-5 flex-1 flex flex-col">
-                <h3 class="text-xl font-bold mb-1 text-[#1C1C1C] group-hover:text-[#002C5F] transition-colors">Hyundai {car.data.name}</h3>
-                <p class="text-xs text-gray-400 uppercase font-semibold mt-auto pt-4">Ex-Showroom Nizamabad</p>
-                <p class="font-bold text-[#002C5F] text-lg">{car.data.price}</p>
-              </div>
+  <!-- ============================================================
+       ASSURANCES — sand band, plain language
+       ============================================================ -->
+  <section class="bg-hyundai-sand">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-5">
+      <ul class="flex flex-wrap items-center gap-x-8 gap-y-2.5 text-sm text-ink2">
+        {assurances.map(a => (
+          <li>
+            <a
+              href={a.href}
+              target={a.external ? "_blank" : undefined}
+              rel={a.external ? "noopener noreferrer" : undefined}
+              class="hover:text-hyundai-blue transition-colors duration-150">
+              {a.text}
             </a>
-            <div class="px-5 pb-5 flex flex-col gap-2">
-              <a href={`${WA}?text=${encodeURIComponent(`Hi Prakash Hyundai, I am interested in the Hyundai ${car.data.name}. Please share today's best price and EMI options in Nizamabad. [W-HP-CAR]`)}`}
-                target="_blank" rel="noopener noreferrer"
-                class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-green-600 text-white hover:bg-green-700 transition font-bold text-sm">
-                💬 Get Best Price
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       THE CATALOGUE
+       ============================================================ -->
+  <section id="cars" class="bg-paper">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-14 lg:py-20">
+      <div class="flex flex-col gap-4 border-b border-rule pb-6 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="hy-eyebrow">The range</p>
+          <h2 class="mt-3 text-[clamp(1.5rem,3vw,2.5rem)] font-light leading-tight tracking-display text-ink">
+            Hyundai cars in Nizamabad
+          </h2>
+          <p class="mt-2 text-sm text-body">All models · ex-showroom price · free test drive at your door</p>
+        </div>
+        <a
+          href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, please share price list for all Hyundai cars in Nizamabad. [W-HP-PL]")}`}
+          target="_blank" rel="noopener noreferrer" class="hy-btn hy-btn--outline self-start sm:self-auto">
+          Full price list
+        </a>
+      </div>
+
+      <ul class="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        {sortedCars.map(car => (
+          <li class="group flex flex-col">
+            <a href={`/cars/${car.slug}`} class="block">
+              <div class="relative overflow-hidden rounded-sm bg-paper2">
+                <img
+                  src={car.data.image}
+                  alt={`Hyundai ${car.data.name} price in Nizamabad`}
+                  class="aspect-[4/3] w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                  loading="lazy" decoding="async" />
+                <span class="absolute left-3 top-3 rounded-sm bg-paper/90 px-2 py-1 text-[10px] font-medium uppercase tracking-eyebrow text-hyundai-blue backdrop-blur">
+                  {car.data.category}
+                </span>
+              </div>
+
+              <h3 class="mt-4 text-lg font-medium leading-snug text-ink transition-colors duration-150 group-hover:text-hyundai-blue">
+                Hyundai {car.data.name}
+              </h3>
+              <p class="mt-2 border-t border-rule pt-2 text-xs uppercase tracking-eyebrow text-muted">Ex-showroom Nizamabad</p>
+              <p class="mt-0.5 text-base font-medium text-hyundai-blue">{car.data.price}</p>
+            </a>
+
+            <div class="mt-4 flex flex-col gap-2">
+              <a
+                href={`${WA}?text=${encodeURIComponent(`Hi Prakash Hyundai, I am interested in the Hyundai ${car.data.name}. Please share today's best price and EMI options in Nizamabad. [W-HP-CAR]`)}`}
+                target="_blank" rel="noopener noreferrer" class="hy-btn hy-btn--wa w-full !min-h-[2.75rem]">
+                Get best price
               </a>
-              <a href={`${WA}?text=${encodeURIComponent(`Hi Prakash Hyundai, I want a free test drive for the Hyundai ${car.data.name} in Nizamabad. [W-HP-TD]`)}`}
-                target="_blank" rel="noopener noreferrer"
-                class="flex items-center justify-center gap-2 w-full py-2 rounded-xl border-2 border-gray-200 text-gray-700 hover:border-[#002C5F] hover:text-[#002C5F] transition font-semibold text-sm">
-                🏎️ Book Test Drive
+              <a
+                href={`${WA}?text=${encodeURIComponent(`Hi Prakash Hyundai, I want a free test drive for the Hyundai ${car.data.name} in Nizamabad. [W-HP-TD]`)}`}
+                target="_blank" rel="noopener noreferrer" class="hy-btn hy-btn--outline w-full !min-h-[2.75rem]">
+                Book test drive
               </a>
             </div>
-          </div>
+          </li>
         ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHAT YOU GET
+       ============================================================ -->
+  <section class="border-y border-rule bg-paper2">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-14 lg:py-20">
+      <div class="grid gap-10 md:grid-cols-3">
+        <a href={PHONE} class="group border-t-2 border-hyundai-blue pt-6 transition-colors duration-150">
+          <ShieldCheck size={26} strokeWidth={1.4} className="text-hyundai-blue" />
+          <h2 class="mt-4 text-xl font-medium text-ink group-hover:text-hyundai-blue transition-colors duration-150">Authorised service</h2>
+          <p class="mt-2 text-sm leading-relaxed text-body">Hyundai-certified technicians, genuine parts and full warranty support at every location.</p>
+        </a>
+        <a
+          href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to know about finance options and delivery timeline. [W-FIN]")}`}
+          target="_blank" rel="noopener noreferrer" class="group border-t-2 border-hyundai-blue pt-6">
+          <Clock size={26} strokeWidth={1.4} className="text-hyundai-blue" />
+          <h2 class="mt-4 text-xl font-medium text-ink group-hover:text-hyundai-blue transition-colors duration-150">Fast delivery, easy finance</h2>
+          <p class="mt-2 text-sm leading-relaxed text-body">Loan approval in minutes through SBI, HDFC, Axis and others. Zero down payment on select models.</p>
+        </a>
+        <a
+          href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a free home test drive. [W-HP-TD]")}`}
+          target="_blank" rel="noopener noreferrer" class="group border-t-2 border-hyundai-blue pt-6">
+          <Car size={26} strokeWidth={1.4} className="text-hyundai-blue" />
+          <h2 class="mt-4 text-xl font-medium text-ink group-hover:text-hyundai-blue transition-colors duration-150">Test drive at your door</h2>
+          <p class="mt-2 text-sm leading-relaxed text-body">Any Hyundai, brought to you — Nizamabad, Armoor, Bodhan, Banswada and beyond.</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Recent Blogs -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-      <div class="flex justify-between items-end mb-10">
-        <h2 class="text-3xl font-bold text-[#1C1C1C]">Car Guides & Tips</h2>
-        <a href="/blog/" class="text-[#002C5F] font-bold flex items-center gap-2 hover:gap-3 transition-all text-sm">View All <ArrowRight size={18}/></a>
+  <!-- ============================================================
+       SHOWROOM DIRECTORY
+       ============================================================ -->
+  <section class="bg-paper">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-14 lg:py-20">
+      <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] lg:gap-16">
+        <div>
+          <p class="hy-eyebrow">Where to find us</p>
+          <h2 class="mt-3 text-[clamp(1.5rem,3vw,2.5rem)] font-light leading-tight tracking-display text-ink">
+            Nine showrooms across the district
+          </h2>
+          <p class="mt-4 max-w-md text-sm leading-relaxed text-body">
+            Sales, service and genuine parts from Nizamabad out to Adilabad, Mancheriyal,
+            Nirmal and Bhainsa.
+          </p>
+          <a href="/locations" class="hy-btn hy-btn--outline mt-7">All locations</a>
+        </div>
+
+        <ul class="border-t border-rule">
+          {showroomDirectory.map(s => (
+            <li>
+              <a href={s.href} class="hy-row-link">
+                <span class="min-w-0">
+                  <span class="block text-base text-ink">{s.label}</span>
+                  <span class="block text-xs text-muted">{s.note}</span>
+                </span>
+                <span class="shrink-0 text-sm text-body">{s.phone}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GUIDES
+       ============================================================ -->
+  <section class="border-t border-rule bg-paper">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-14 lg:py-20">
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="hy-eyebrow">Reading</p>
+          <h2 class="mt-3 text-[clamp(1.5rem,3vw,2.25rem)] font-light leading-tight tracking-display text-ink">Car guides &amp; tips</h2>
+        </div>
+        <a href="/blog/" class="hy-btn hy-btn--outline self-start sm:self-auto">All guides</a>
+      </div>
+
+      <ul class="mt-10 border-t border-rule">
         {recentBlogs.map(post => (
-          <a href={`/blog/${post.slug}/`} class="group">
-            <article class="p-6 rounded-2xl border border-gray-100 hover:border-blue-100 hover:shadow-lg transition-all h-full flex flex-col">
-              <div class="text-xs font-bold text-[#00AAD2] uppercase mb-2">{post.data.category}</div>
-              <h3 class="text-lg font-bold mb-2 group-hover:text-[#002C5F] transition-colors leading-snug">{post.data.title}</h3>
-              <p class="text-gray-500 text-sm mb-4 line-clamp-2 flex-grow">{post.data.excerpt}</p>
-              <div class="text-xs text-gray-400 font-medium">{new Date(post.data.date).toLocaleDateString()} · {post.data.readTime}</div>
-            </article>
-          </a>
+          <li class="border-b border-rule">
+            <a href={`/blog/${post.slug}/`} class="group grid gap-2 py-6 sm:grid-cols-[minmax(0,180px)_minmax(0,1fr)_auto] sm:items-baseline sm:gap-8">
+              <span class="text-xs font-medium uppercase tracking-eyebrow text-hyundai-active">{post.data.category}</span>
+              <span class="min-w-0">
+                <span class="block text-lg font-medium leading-snug text-ink transition-colors duration-150 group-hover:text-hyundai-blue">{post.data.title}</span>
+                <span class="mt-1 block text-sm text-body line-clamp-2">{post.data.excerpt}</span>
+              </span>
+              <span class="text-xs text-muted whitespace-nowrap">{new Date(post.data.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })} · {post.data.readTime}</span>
+            </a>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="py-20 bg-[#F5F6F7]">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <h2 class="text-3xl font-bold text-[#1C1C1C] mb-10 text-center">Frequently Asked Questions</h2>
-      <div class="space-y-4">
-        {[
-          { q: "Which Hyundai cars are available in Nizamabad?", a: "Prakash Hyundai stocks the full lineup — Creta, Venue, Exter, i20, Grand i10 Nios, Verna, Aura, Alcazar, i20 N-Line, Creta N-Line and Ioniq 5. All models available for test drive." },
-          { q: "What is the on-road price of Hyundai Creta in Nizamabad?", a: "Hyundai Creta on-road price in Nizamabad ranges from ~₹12.5 lakh (base petrol) to ~₹22 lakh (top diesel). Call 9052110303 for exact current price and offers." },
-          { q: "Does Prakash Hyundai offer home test drives?", a: "Yes! We offer free doorstep test drives across Nizamabad, Armoor, Bodhan, Banswada and surrounding areas. WhatsApp 9052110303 to book." },
-          { q: "What EMI options are available on Hyundai cars in Nizamabad?", a: "EMI available through SBI, HDFC, Axis and other banks. Zero down payment on select models. EMI starts from ₹8,500/month. Call 9052110303 for your quote." },
-          { q: "How many showrooms does Prakash Hyundai have?", a: "We have 9 showrooms across Nizamabad district — Nizamabad main, Armoor, Bodhan, Banswada, Kamareddy, Adilabad, Mancheriyal, Nirmal and Bhainsa." }
-        ].map(item => (
-          <details class="bg-white rounded-xl border border-gray-200 overflow-hidden group">
-            <summary class="flex items-center justify-between p-5 cursor-pointer font-bold text-gray-800 hover:text-[#002C5F] transition-colors list-none">
-              <span>{item.q}</span>
-              <span class="text-[#002C5F] text-xl ml-4 flex-shrink-0 group-open:rotate-45 transition-transform">+</span>
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="bg-hyundai-sand">
+    <div class="mx-auto max-w-4xl px-5 sm:px-8 py-14 lg:py-20">
+      <h2 class="text-[clamp(1.5rem,3vw,2.25rem)] font-light leading-tight tracking-display text-ink">Frequently asked questions</h2>
+      <div class="mt-8 border-t border-hyundai-sand2">
+        {faqs.map(item => (
+          <details class="group border-b border-hyundai-sand2">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-base font-medium text-ink [&::-webkit-details-marker]:hidden">
+              <span class="min-w-0">{item.q}</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" class="shrink-0 text-hyundai-blue transition-transform duration-200 ease-out group-open:rotate-45"><path d="M12 5v14M5 12h14"/></svg>
             </summary>
-            <div class="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">{item.a}</div>
+            <p class="pb-5 text-sm leading-relaxed text-ink2">{item.a}</p>
           </details>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- Reviews -->
-  <section class="py-16 bg-white border-t border-gray-100">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-black text-[#002C5F] mb-2">What Our Customers Say</h2>
-        <div class="flex items-center justify-center gap-3 mb-1">
-          <span class="text-yellow-400 text-2xl">★★★★★</span>
-          <span class="text-4xl font-black text-[#002C5F]">4.7</span>
-          <span class="text-gray-500 text-base">/ 5 &nbsp;·&nbsp; <strong class="text-gray-700">2,915+ reviews</strong></span>
-        </div>
+  <!-- ============================================================
+       REVIEWS
+       ============================================================ -->
+  <section class="bg-paper">
+    <div class="mx-auto max-w-[1400px] px-5 sm:px-8 py-14 lg:py-20">
+      <div class="flex flex-wrap items-baseline gap-x-5 gap-y-1">
+        <h2 class="text-[clamp(1.5rem,3vw,2.25rem)] font-light leading-tight tracking-display text-ink">What our customers say</h2>
+        <p class="text-sm text-body">4.7 / 5 · 2,915+ reviews</p>
       </div>
-      <div class="grid sm:grid-cols-2 gap-5 mb-8">
-        {[
-          { initial: "B", name: "Bodige", text: "Prakash Hyundai showroom is the best in Nizamabad for 15+ years. Quick services, free test drives, certified mechanics, friendly staff, on-time delivery and car wash. Very satisfied!" },
-          { initial: "S", name: "Sreenaiah", text: "Excellent experience with the team. Very happy with Prakash Hyundai treatment in the showroom. Best Hyundai dealer in Nizamabad." },
-          { initial: "S", name: "Sree", text: "Nice behaviour of the staff. Really love the way they treated us. The entire buying experience was smooth and pleasant." },
-          { initial: "V", name: "Venkat", text: "Good service and prompt response. The service team is attentive and gets the job done quickly. Highly recommend!" },
-        ].map(r => (
-          <div class="bg-gray-50 rounded-xl p-5 border border-gray-100">
-            <div class="text-yellow-400 text-lg mb-2">★★★★★</div>
-            <p class="text-gray-700 text-sm leading-relaxed mb-4">"{r.text}"</p>
-            <div class="flex items-center gap-2">
-              <div class="w-8 h-8 rounded-full bg-[#002C5F] text-white text-xs flex items-center justify-center font-bold">{r.initial}</div>
-              <span class="text-sm font-semibold text-gray-700">{r.name}</span>
-            </div>
-          </div>
+
+      <ul class="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        {reviews.map(r => (
+          <li class="border-t border-rule pt-5">
+            <p class="flex items-center gap-1" aria-label="5 out of 5">
+              {Array.from({ length: 5 }).map(() => (
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="text-hyundai-active"><path d="m12 2 3 6.5 7 .9-5 4.9 1.2 7L12 18l-6.2 3.3L7 14.3 2 9.4l7-.9L12 2Z"/></svg>
+              ))}
+            </p>
+            <blockquote class="mt-3 text-sm leading-relaxed text-body">{r.text}</blockquote>
+            <p class="mt-4 text-sm font-medium text-ink">{r.name}</p>
+          </li>
         ))}
-      </div>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad" target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-white border-2 border-gray-200 text-gray-800 px-8 py-4 rounded-xl font-bold hover:border-[#002C5F] hover:bg-blue-50 transition shadow-sm text-sm">
-          📖 Read All Google Reviews
+      </ul>
+
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+        <a href="https://www.google.com/maps/search/Prakash+Hyundai+Nizamabad" target="_blank" rel="noopener noreferrer" class="hy-btn hy-btn--outline">
+          Read all Google reviews
         </a>
-        <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a test drive and get today's best price. [W-HP-REV]")}`}
-          target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-[#002C5F] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#001a40] transition shadow-lg text-sm">
-          💬 Book Test Drive on WhatsApp
+        <a
+          href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a test drive and get today's best price. [W-HP-REV]")}`}
+          target="_blank" rel="noopener noreferrer" class="hy-btn">
+          Book a test drive
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Sticky Mobile Bottom Bar -->
-  <div class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-200 shadow-2xl p-3 flex gap-3 sm:hidden">
-    <a href={PHONE} class="flex-1 flex items-center justify-center gap-2 bg-[#002C5F] text-white py-3 rounded-xl font-bold text-sm">📞 Call</a>
-    <a href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want today's best price on a Hyundai car in Nizamabad. [W-HP-BAR]")}`}
-      target="_blank" rel="noopener noreferrer"
-      class="flex items-center justify-center gap-2 bg-green-600 text-white py-3 px-5 rounded-xl font-bold text-sm" style="flex:2">
-      💬 Get Best Price
+  <!-- Sticky mobile action bar -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 grid grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)] gap-2 border-t border-rule bg-paper p-2.5 sm:hidden">
+    <a href={PHONE} class="hy-btn">Call</a>
+    <a
+      href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want today's best price on a Hyundai car in Nizamabad. [W-HP-BAR]")}`}
+      target="_blank" rel="noopener noreferrer" class="hy-btn hy-btn--wa">
+      Get best price
     </a>
   </div>
-  <div class="pb-20 sm:pb-0"></div>
+  <div class="h-20 sm:hidden" aria-hidden="true"></div>
 
 </Layout>

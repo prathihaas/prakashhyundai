@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-08-09T21:53:49.743Z",
+        "reason": "Stand-in for licensed Hyundai Sans, tuned to Hyundai weight/tracking; user-confirmed choice"
+      }
+    ]
+  }
+}

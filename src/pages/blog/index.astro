@@ -21,9 +21,9 @@ const breadcrumbSchema = {
   canonical="https://www.prakashhyundai.com/blog"
 >
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-  <div class="bg-[#F5F6F7] py-24 pt-32">
+  <div class="bg-[#F5F6F7] py-24 pt-12">
     <div class="container mx-auto px-6">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1C1C1C] mb-4">Car Guides & Tips</h1>
+      <h1 class="text-4xl md:text-5xl font-bold text-[#000000] mb-4">Car Guides & Tips</h1>
       <p class="text-gray-600 max-w-2xl text-lg">Honest Hyundai reviews, buying guides, and local driving advice from the Prakash Hyundai team in Nizamabad.</p>
     </div>
   </div>
@@ -41,7 +41,7 @@ const breadcrumbSchema = {
             </div>
             <div class="p-6 flex flex-col flex-grow">
               <div class="flex items-center gap-2 mb-3">
-                <span class="text-xs font-bold text-[#00AAD2] uppercase tracking-widest bg-[#00AAD2]/10 px-2 py-0.5 rounded-full">{post.data.category}</span>
+                <span class="text-xs font-bold text-[#00A1C7] uppercase tracking-widest bg-[#00A1C7]/10 px-2 py-0.5 rounded-full">{post.data.category}</span>
                 {post.data.readTime && <span class="text-xs text-gray-400">{post.data.readTime}</span>}
               </div>
               <h2 class="text-xl font-bold mb-3 group-hover:text-[#002C5F] transition-colors leading-snug flex-grow">{post.data.title}</h2>

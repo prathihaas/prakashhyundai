@@ -1,0 +1,226 @@
+/* Impeccable + Hallmark · macrostructure: Catalogue · nav: N9 Edge-aligned · footer: Ft4 Multi-location grid
+ * theme: studied-DNA (source: hyundai.com/in/en)
+ * paper #FFFFFF light · display Inter 300/500 tracked +0.5px sentence-case · accent Hyundai Blue #002C5F (cool)
+ * tone: restrained-premium · mode: Persuade
+ * Brand facts taken from computed styles on Hyundai Motor India:
+ *   Hyundai Blue 002C5F · active blue 00A1C7 · sand E4DCD3 / CFC8C2 · body grey 767676
+ *   headings run at weight 400–500 with 0.5–0.7px tracking, never black/bold
+ * Typeface note: Hyundai Sans is licensed and self-hosted by Hyundai. Inter stands in,
+ *   tuned to Hyundai's weight and tracking behaviour. Swap --font-display/--font-body
+ *   to "HyundaiSansHead"/"HyundaiSansText" when licensed files are available.
+ * Differs from the Honda build on paper band (white vs grey) and accent hue (cool vs warm);
+ * differs from the Prakash Motors build on display style and accent hue.
+ */
+
+:root {
+  /* ---- Brand: Hyundai ---- */
+  --color-hy-blue: #002c5f;
+  --color-hy-blue-deep: #001c3d;
+  --color-hy-active: #00a1c7;
+  --color-hy-sand: #e4dcd3;
+  --color-hy-sand-2: #cfc8c2;
+  --color-hy-tint: #eef3f8;
+
+  /* ---- Surface + text ---- */
+  --color-paper: #ffffff;
+  --color-paper-2: #f5f6f7;
+  --color-ink: #000000;
+  --color-ink-2: #303030;
+  --color-body: #767676;
+  --color-muted: #9a9a9a;
+  --color-rule: #e0e0e0;
+  --color-rule-strong: #c4c4c4;
+  --color-focus: #00a1c7;
+
+  --color-whatsapp: #25d366;
+  --color-whatsapp-deep: #1da851;
+
+  /* ---- Type ---- */
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Fluid at the top of the scale, fixed below. The ceilings are declared
+     explicitly so the scale's full range is legible from the token file. */
+  --text-display: clamp(2.25rem, 5vw, 3.75rem); /* 36 → 60px */
+  --text-5xl: 3rem;
+  --text-4xl: 2.5rem;
+  --text-3xl: clamp(1.5rem, 2.8vw, 2.25rem); /* 24 → 36px */
+  --text-2xl: 1.375rem;
+  --text-xl: 1.125rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Hyundai's signature: light weight, open tracking, sentence case. */
+  --weight-display: 500;
+  --weight-display-light: 300;
+  --track-display: 0.012em;
+  --track-eyebrow: 0.16em;
+
+  /* ---- Space (4pt) ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+
+  /* ---- Radius: Hyundai is near-flat ---- */
+  --radius: 2px;
+  --radius-chip: 999px;
+
+  /* ---- Motion ---- */
+  --dur-fast: 140ms;
+  --dur-base: 260ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-in: cubic-bezier(0.5, 0, 0.9, 0.4);
+  --ease-in-out: cubic-bezier(0.6, 0, 0.2, 1);
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-body);
+  background: var(--color-paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: var(--weight-display);
+  letter-spacing: var(--track-display);
+  color: var(--color-ink);
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+:where(a, button, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+  transition: none;
+}
+
+/* ---------- Eyebrow ---------- */
+
+.hy-eyebrow {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: var(--track-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-hy-active);
+}
+
+/* ---------- Buttons: flat, wide, quiet ---------- */
+
+.hy-btn {
+  --btn-bg: var(--color-hy-blue);
+  --btn-fg: #ffffff;
+  --btn-bd: var(--color-hy-blue);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  min-height: 3rem;
+  padding: 0.75rem 1.75rem;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  border: 1px solid var(--btn-bd);
+  border-radius: var(--radius);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.hy-btn:hover,
+.hy-btn.is-hover {
+  --btn-bg: var(--color-hy-blue-deep);
+  --btn-bd: var(--color-hy-blue-deep);
+}
+
+.hy-btn:active,
+.hy-btn.is-active {
+  transform: translateY(1px);
+}
+
+.hy-btn[disabled],
+.hy-btn.is-disabled {
+  --btn-bg: var(--color-rule);
+  --btn-fg: var(--color-muted);
+  --btn-bd: var(--color-rule);
+  cursor: not-allowed;
+}
+
+.hy-btn--outline {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-hy-blue);
+  --btn-bd: var(--color-rule-strong);
+}
+
+.hy-btn--outline:hover,
+.hy-btn--outline.is-hover {
+  --btn-bg: transparent;
+  --btn-bd: var(--color-hy-blue);
+}
+
+.hy-btn--wa {
+  --btn-bg: var(--color-whatsapp);
+  --btn-fg: #ffffff;
+  --btn-bd: var(--color-whatsapp);
+}
+
+.hy-btn--wa:hover,
+.hy-btn--wa.is-hover {
+  --btn-bg: var(--color-whatsapp-deep);
+  --btn-bd: var(--color-whatsapp-deep);
+}
+
+@media (max-width: 400px) {
+  .hy-btn {
+    padding: 0.75rem 1.125rem;
+    font-size: var(--text-xs);
+  }
+}
+
+/* ---------- Catalogue row link ---------- */
+
+.hy-row-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-rule);
+  color: var(--color-ink);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+
+.hy-row-link:hover {
+  color: var(--color-hy-blue);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
