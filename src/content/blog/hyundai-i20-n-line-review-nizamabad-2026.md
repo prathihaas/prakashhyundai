@@ -12,7 +12,7 @@ tags:
   - "N-Line Cars 2026"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Full Hyundai i20 N-Line 2026 review for Nizamabad buyers. Hot hatch performance, N-Line styling, real-world mileage — is it the most exciting car under ₹16L?"
-seo_title: "Hyundai i20 N-Line Review 2026 Nizamabad — Hot Hatch!"
+seo_title: "i20 N Line 2026: 161mm Clearance, Price, Real Review"
 seo_description: "Complete i20 N-Line 2026 review for Nizamabad, Telangana. Performance, N-Line features, mileage & on-road price. The hottest hatchback under ₹16 lakh?"
 readTime: "8 min read"
 ---

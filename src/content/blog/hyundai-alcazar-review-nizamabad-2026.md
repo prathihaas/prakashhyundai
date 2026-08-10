@@ -12,8 +12,8 @@ tags:
   - "Best 7 Seater Car"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Full Hyundai Alcazar review for large Telangana families. 7-seater SUV, 3 row comfort, specs, mileage, and why it suits Nizamabad's joint family lifestyle."
-seo_title: "Hyundai Alcazar Review — 7-Seater SUV Nizamabad 2026"
-seo_description: "Complete Hyundai Alcazar 2026 review for Nizamabad. 7-seater family SUV specs, real-world comfort, mileage & on-road price in Telangana. Book test drive"
+seo_title: "Alcazar 2026: 200mm Ground Clearance, 7-Seat Review"
+seo_description: "Hyundai Alcazar 2026 review for Nizamabad: 200mm ground clearance, real 7-seat space, mileage and on-road price in Telangana. Book a test drive."
 readTime: "9 min read"
 ---
 
