@@ -2,6 +2,7 @@
 title: "Hyundai Exter Review — Best Micro-SUV for Nizamabad 2026?"
 title_te: "హ్యుండాయ్ ఎక్స్టర్ రివ్యూ — నిజామాబాద్ కోసం బెస్ట్ మైక్రో-SUV 2026?"
 date: "2026-02-25"
+updated: "2026-08-31"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:
@@ -11,9 +12,9 @@ tags:
   - "Best Car Under 10 Lakh"
   - "Exter vs Punch"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
-excerpt: "Full Hyundai Exter 2026 review for Nizamabad buyers. SUV looks, hatchback price — is the Exter the best micro-SUV under ₹10 lakh in Telangana?"
-seo_title: "Hyundai Exter 2026: Ground Clearance, Safety & Price"
-seo_description: "Hyundai Exter 2026: 185mm ground clearance, 6 airbags standard, ₹6.1L+, 19 kmpl. Full Nizamabad review — specs, safety, price, Exter vs Punch."
+excerpt: "Is the Hyundai Exter 2026 the best micro-SUV in Nizamabad? We review its 185mm ground clearance, 6 standard airbags, and ₹6.13L starting price. Find out if it's right for you."
+seo_title: "Hyundai Exter 2026: Ground Clearance, Safety, Price"
+seo_description: "Exter 2026: 185mm ground clearance, 6 airbags standard, from ₹6.13L. Get your on-road price quote today at Prakash Hyundai."
 readTime: "8 min read"
 ---
 
