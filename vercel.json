@@ -34,6 +34,71 @@
   ],
   "redirects": [
     {
+      "source": "/blog/hyundai-i20-vs-toyota-glanza-maruti-baleno-2026",
+      "destination": "/blog/hyundai-i20-vs-maruti-baleno-vs-toyota-glanza-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-aura-vs-maruti-dzire-comparison-nizamabad",
+      "destination": "/blog/hyundai-aura-vs-maruti-dzire-nizamabad-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-venue-vs-tata-nexon-comparison-nizamabad",
+      "destination": "/blog/hyundai-venue-vs-tata-nexon-nizamabad-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-creta-vs-maruti-grand-vitara-comparison-nizamabad",
+      "destination": "/blog/hyundai-creta-vs-maruti-grand-vitara-nizamabad-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-verna-vs-maruti-ciaz-nizamabad-2026",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-exter-vs-maruti-fronx-vs-tata-punch-2026",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-creta-vs-kia-seltos-nizamabad-2026",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-creta-electric-vs-tata-nexon-ev-2026",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-alcazar-vs-kia-carens-nizamabad-2026",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-i20-vs-maruti-baleno-nizamabad-2026",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-book-test-drive-prakash-hyundai",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/summer-tips",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/safety-ratings",
+      "destination": "/locations/",
+      "permanent": true
+    },
+    {
       "source": "/blog/hyundai-cars-nirmal-2026",
       "destination": "/locations/",
       "permanent": true
