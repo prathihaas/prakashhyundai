@@ -119,6 +119,11 @@ const breadcrumbSchema = {
         <div class="flex justify-center gap-6 mt-6 text-sm text-gray-400 font-medium">
           <span>{displayDate}</span>
           {author && <span>By {author}</span>}
+          {post.data.updated && <span>Updated {new Date(post.data.updated).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' })}</span>}
+        </div>
+        <div class="mt-6 mx-auto max-w-2xl text-left bg-gray-50 border border-gray-100 rounded-2xl p-4 text-sm text-gray-600">
+          <p><strong class="text-gray-800">Who wrote this:</strong> the sales and service team at Prakash Hyundai, authorised Hyundai dealer in Nizamabad since 2008, 4.7★ from 2,915+ Google reviews, 9 showrooms across Nizamabad, Kamareddy and Adilabad districts.</p>
+          <p class="mt-1">Prices are checked against our current showroom price list on the "updated" date above; on-road figures vary by variant, insurance and RTO. Call <a href="tel:+919052110303" class="text-[#002C5F] font-bold">9052110303</a> for today's exact quote.</p>
         </div>
       </header>
 

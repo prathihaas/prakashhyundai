@@ -11,7 +11,7 @@ interface Props {
   noOrgSchema?: boolean;
 }
 
-const { title, description, canonical, image, ogType, noOrgSchema } = Astro.props;
+const { title, description, canonical, image, ogType, noOrgSchema, noindex } = Astro.props;
 
 const navLinks = [
   { label: "Cars",      href: "/#cars" },
@@ -57,7 +57,7 @@ const WA_HEADER = "https://wa.me/919052110303?text=Hi%2C%20I%20want%20to%20know%
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-52SXCPMR');</script>
     <!-- End Google Tag Manager -->
-    <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} noOrgSchema={noOrgSchema} />
+    <SEOHead title={title} description={description} canonical={canonical} image={image} ogType={ogType} noOrgSchema={noOrgSchema} noindex={noindex} />
   </head>
   <body class="bg-paper text-body font-sans antialiased flex flex-col min-h-screen">
     <!-- Google Tag Manager (noscript) -->
