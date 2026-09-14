@@ -223,6 +223,96 @@
       "source": "/kona-electric",
       "destination": "/cars/ioniq-5",
       "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-creta-vs-kia-seltos-nizamabad-2026/",
+      "destination": "/blog/creta-vs-seltos-2026-hyundai-vs-kia-comparison-telangana/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-book-test-drive-prakash-hyundai/",
+      "destination": "/blog/prakash-hyundai-nizamabad-trusted-dealer/",
+      "permanent": true
+    },
+    {
+      "source": "/cars/bodhan",
+      "destination": "/locations/bodhan/",
+      "permanent": true
+    },
+    {
+      "source": "/cars/bodhan/",
+      "destination": "/locations/bodhan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-alcazar-vs-kia-carens-nizamabad-2026/",
+      "destination": "/blog/hyundai-alcazar-review-nizamabad-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-armoor-2026/",
+      "destination": "/locations/armoor/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-banswada-2026/",
+      "destination": "/locations/banswada/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-bodhan-2026/",
+      "destination": "/locations/bodhan/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-kamareddy-2026/",
+      "destination": "/locations/kamareddy/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-adilabad-2026/",
+      "destination": "/locations/adilabad/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-nirmal-2026/",
+      "destination": "/blog/hyundai-cars-nizamabad-2026-complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-mancherial-2026/",
+      "destination": "/blog/hyundai-cars-nizamabad-2026-complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-cars-bhainsa-2026/",
+      "destination": "/blog/hyundai-cars-nizamabad-2026-complete-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-creta-electric-vs-tata-nexon-ev-2026/",
+      "destination": "/blog/hyundai-creta-electric-2026-nizamabad/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-exter-vs-maruti-fronx-vs-tata-punch-2026/",
+      "destination": "/blog/hyundai-exter-vs-tata-punch-comparison-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-i20-vs-maruti-baleno-nizamabad-2026/",
+      "destination": "/blog/hyundai-i20-vs-maruti-baleno-2026-comparison/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-i20-vs-toyota-glanza-maruti-baleno-2026/",
+      "destination": "/blog/hyundai-i20-vs-maruti-baleno-vs-toyota-glanza-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/hyundai-verna-vs-maruti-ciaz-nizamabad-2026/",
+      "destination": "/blog/hyundai-verna-2026-review-nizamabad/",
+      "permanent": true
     }
   ]
 }

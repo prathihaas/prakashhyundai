@@ -103,7 +103,7 @@ Waiting periods for popular models like the Creta can vary based on demand, spec
 
 ## Visit Prakash Hyundai, Nizamabad Today!
 
-Ready to experience the Hyundai Creta top model firsthand? Visit Prakash Hyundai, your trusted authorized dealer in Nizamabad. We also serve customers from <a href="/locations/armoor">Armoor</a>, <a href="/cars/bodhan">Bodhan</a>, Banswada, <a href="/locations/kamareddy">Kamareddy</a>, Adilabad, and Nirmal with the same commitment to <a href="/service">service</a> excellence. Our 4.7-star rating from over 2915 Google reviews speaks for itself.
+Ready to experience the Hyundai Creta top model firsthand? Visit Prakash Hyundai, your trusted authorized dealer in Nizamabad. We also serve customers from <a href="/locations/armoor">Armoor</a>, <a href="/locations/bodhan">Bodhan</a>, Banswada, <a href="/locations/kamareddy">Kamareddy</a>, Adilabad, and Nirmal with the same commitment to <a href="/service">service</a> excellence. Our 4.7-star rating from over 2915 Google reviews speaks for itself.
 
 We offer free home test drives, allowing you to experience the Creta's comfort and performance right from your doorstep. Our team is here to answer all your questions, provide a detailed price breakdown, and help you choose the perfect variant.
 

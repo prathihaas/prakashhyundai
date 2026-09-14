@@ -157,7 +157,7 @@ The Hyundai Creta Electric is available through Prakash Hyundai Nizamabad. Waiti
 ## Also Read
 
 - [Hyundai Creta 2026 Full Review — Best SUV in Nizamabad?](/blog/hyundai-creta-2026-review-nizamabad)
-- [Hyundai Creta Electric vs Tata Nexon EV 2026](/blog/hyundai-creta-electric-vs-tata-nexon-ev-2026)
+- [Hyundai Creta Electric vs Tata Nexon EV 2026](/blog/hyundai-creta-electric-2026-nizamabad)
 - [Hyundai Ioniq 5 Electric — Nizamabad 2026](/blog/hyundai-ioniq-5-electric-nizamabad-2026)
 - [Petrol vs Diesel vs CNG — Which Car to Buy in Nizamabad](/blog/petrol-vs-diesel-vs-cng-car-nizamabad-2026)
 
