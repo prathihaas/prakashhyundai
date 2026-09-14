@@ -11,7 +11,20 @@ export async function getStaticPaths() {
 const { car } = Astro.props;
 const { Content } = await car.render();
 
-const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052110303.`;
+const exLakh = (() => { const m = car.data.price.match(/[\d.]+/); return m ? parseFloat(m[0]) : 0; })();
+const onRoadLo = exLakh ? (exLakh * 1.10).toFixed(2) : null;
+const onRoadHi = exLakh ? (exLakh * 1.13).toFixed(2) : null;
+const carDescription = exLakh
+  ? `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, EMI from ₹8,500/mo. Free home test drive. Call 9052110303.`
+  : `Hyundai ${car.data.name} price in Nizamabad from Prakash Hyundai: on-road quote with RTO and insurance, EMI from ₹8,500/mo, free home test drive. Call 9052110303.`;
+const carFaq = exLakh ? {
+  "@context": "https://schema.org", "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": `What is the Hyundai ${car.data.name} on-road price in Nizamabad?`, "acceptedAnswer": { "@type": "Answer", "text": `Ex-showroom starts at ₹${exLakh} lakh; on-road in Nizamabad is roughly ₹${onRoadLo}–${onRoadHi} lakh after Telangana road tax and insurance (10–13% over ex-showroom). Call 9052110303 for today's exact variant quote.` } },
+    { "@type": "Question", "name": `What EMI can I get on the Hyundai ${car.data.name}?`, "acceptedAnswer": { "@type": "Answer", "text": "EMI starts from ₹8,500 per month through SBI, HDFC, Axis and ICICI with on-the-spot approval at Prakash Hyundai; zero down payment on select models." } },
+    { "@type": "Question", "name": `Can I test drive the ${car.data.name} at home?`, "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prakash Hyundai offers a free doorstep test drive across Nizamabad, Armoor, Bodhan, Banswada, Kamareddy and Adilabad. WhatsApp 9052110303 to book." } }
+  ]
+} : null;
 const priceMatch = car.data.price.match(/[\d.]+/);
 const numericPrice = priceMatch ? Math.round(parseFloat(priceMatch[0]) * 100000) : 0;
 const carPageUrl = `https://www.prakashhyundai.com/cars/${car.slug}/`;
@@ -61,6 +74,7 @@ const breadcrumbSchema = {
 >
   <script type="application/ld+json" set:html={JSON.stringify(carSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  {carFaq && <script type="application/ld+json" set:html={JSON.stringify(carFaq)} />}
 
   <div class="min-h-screen bg-gradient-to-b from-[#F5F6F7] to-white">
     <div class="container mx-auto px-6 pt-8">
@@ -124,6 +138,24 @@ const breadcrumbSchema = {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+    )}
+    {exLakh > 0 && (
+      <section class="container mx-auto px-6 py-12">
+        <div class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+          <h2 class="text-3xl font-bold text-[#000000] mb-6">Hyundai {car.data.name} on-road price in Nizamabad (estimate)</h2>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-gray-700">
+              <tbody>
+                <tr class="border-b border-gray-100"><th class="py-3 pr-4 font-semibold">Ex-showroom (from)</th><td class="py-3">₹{exLakh} lakh</td></tr>
+                <tr class="border-b border-gray-100"><th class="py-3 pr-4 font-semibold">Telangana road tax + insurance</th><td class="py-3">about 10–13% of ex-showroom</td></tr>
+                <tr class="border-b border-gray-100"><th class="py-3 pr-4 font-semibold">Estimated on-road (base variant)</th><td class="py-3 font-bold text-[#002C5F]">₹{onRoadLo} – ₹{onRoadHi} lakh</td></tr>
+                <tr><th class="py-3 pr-4 font-semibold">EMI</th><td class="py-3">from ₹8,500/month · SBI, HDFC, Axis, ICICI</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">Estimate for the base variant; higher variants, colours and accessories change the figure. Get the exact on-road quote for your variant on WhatsApp <a href="https://wa.me/919052110303" class="text-[#002C5F] font-semibold" target="_blank" rel="noopener noreferrer">9052110303</a>, or see <a href="/service/" class="text-[#002C5F] font-semibold">service and maintenance costs</a> and <a href="/locations/" class="text-[#002C5F] font-semibold">our showrooms</a>.</p>
         </div>
       </section>
     )}
