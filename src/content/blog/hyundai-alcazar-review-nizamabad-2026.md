@@ -2,7 +2,7 @@
 title: "Hyundai Alcazar Review — 7-Seater Family SUV for Telangana 2026"
 title_te: "హ్యుండాయ్ అల్కాజర్ రివ్యూ — తెలంగాణకు 7-సీటర్ ఫ్యామిలీ SUV 2026"
 date: "2026-02-17"
-updated: "2026-09-04"
+updated: "2026-09-14"
 author: "Prakash Hyundai Team"
 category: "Review"
 tags:
@@ -13,8 +13,8 @@ tags:
   - "Best 7 Seater Car"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Is the 2026 Hyundai Alcazar SUV or MPV? Our full review for Nizamabad families covers ground clearance, 7-seater space, mileage, and why it's perfect for Telangana roads."
-seo_title: "Alcazar 2026 Ground Clearance: Real Nizamabad Verdict"
-seo_description: "The 2026 Hyundai Alcazar provides excellent ground clearance for Telangana roads. Get your on-road price quote from Prakash Hyundai today."
+seo_title: "Hyundai Alcazar Ground Clearance 2026: 200 mm + Full Review"
+seo_description: "Hyundai Alcazar has 200 mm ground clearance. 2026 review: 7-seater space, boot with 3rd row folded, real mileage, on-road price and who should buy it."
 readTime: "9 min read"
 ---
 

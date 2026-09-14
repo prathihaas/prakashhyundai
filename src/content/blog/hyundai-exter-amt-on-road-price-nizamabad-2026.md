@@ -2,7 +2,7 @@
 title: "Exter AMT Price Nizamabad 2026: Rs 7.05L-10.45L On-Road"
 title_te: "ఎక్స్‌టర్ AMT ధర నిజామాబాద్ 2026: రూ. 7.05L-10.45L ఆన్-రోడ్"
 date: "2026-09-01"
-updated: "2026-09-13"
+updated: "2026-09-14"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:
@@ -14,8 +14,8 @@ tags:
   - "Prakash Hyundai"
 featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
 excerpt: "Looking for the Hyundai Exter AMT in Nizamabad? Get the real 2026 on-road price, including RTO, insurance, and financing options available right here at Prakash Hyundai. We offer free home test drives and EMIs from Rs"
-seo_title: "Exter AMT On-Road Price Nizamabad: Real 2026 Quote"
-seo_description: "The Hyundai Exter AMT on-road price in Nizamabad starts from Rs 6.13 Lakhs (Ex-showroom). Get your instant, personalized quote today!"
+seo_title: "Hyundai Exter AMT On-Road Price Nizamabad 2026 (All Variants)"
+seo_description: "Exter AMT on-road price in Nizamabad for every AMT variant with RTO, insurance and EMI from Rs 8,500/mo. Ex-showroom from Rs 6.13L. Get today’s exact quote."
 readTime: "8 min read"
 ---
 

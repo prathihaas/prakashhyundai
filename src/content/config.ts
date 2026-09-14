@@ -7,7 +7,8 @@ const blog = defineCollection({
   schema: z.object({
     title: z.string(),                          // English title — H1 and JSON-LD name
     title_te: z.string().optional(),            // Telugu title shown below H1
-    date: z.coerce.date(),                      // Accepts "YYYY-MM-DD" or YAML Date
+    date: z.coerce.date(),
+    updated: z.coerce.date().optional(),   // last content update — used for dateModified                      // Accepts "YYYY-MM-DD" or YAML Date
     author: z.string().optional(),              // Byline; falls back to site name in template
     category: z.string().default('General'),    // Category pill (Buying Guide, Tips, etc.)
     tags: z.array(z.string()).optional(),       // Keyword tags for internal linking

@@ -14,7 +14,7 @@ const { Content } = await car.render();
 const carDescription = `Buy ${car.data.name} in Nizamabad from Prakash Hyundai. ${car.data.tagline}. Ex-showroom price ${car.data.price}. Book a test drive or get the best quote today — call +91 9052110303.`;
 const priceMatch = car.data.price.match(/[\d.]+/);
 const numericPrice = priceMatch ? Math.round(parseFloat(priceMatch[0]) * 100000) : 0;
-const carPageUrl = `https://www.prakashhyundai.com/cars/${car.slug}`;
+const carPageUrl = `https://www.prakashhyundai.com/cars/${car.slug}/`;
 
 const carSchema = {
   "@context": "https://schema.org",
