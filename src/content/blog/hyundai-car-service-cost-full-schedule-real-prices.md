@@ -21,7 +21,7 @@ readTime: "10 min read"
 
 **For most Hyundai owners in Nizamabad, a standard periodic service at an authorized dealer like Prakash Hyundai typically ranges from Rs 2,500 to Rs 8,000, depending on the model, service interval, and specific parts replaced.** This covers essential checks and replacements to keep your car running smoothly and maintain its warranty.
 
-> ### TL;DR: Hyundai Service Costs in Nizamabad
+> ## TL;DR: Hyundai Service Costs in Nizamabad
 > *   **First 3 Services (1k, 10k, 20k km):** Often free for labour, only pay for consumables.
 > *   **Periodic Service (every 10,000 km or 1 year):** Essential for warranty and car health.
 > *   **Major Service (e.g., 40k, 80k km):** Involves more replacements, higher cost.

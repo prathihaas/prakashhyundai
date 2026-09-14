@@ -20,7 +20,7 @@ readTime: "6 min read"
 
 **The Hyundai Grand i10 Nios starts at Rs 5.92 Lakh ex-showroom as of July 2026, making the on-road price in Telangana roughly Rs 6.51 Lakh to Rs 6.69 Lakh.** We at Prakash Hyundai in Nizamabad offer this hatchback with EMIs starting from just Rs 8,500 per month, making it the most sensible first-car purchase for families navigating the busy streets of Nizamabad and nearby towns like Armoor and Kamareddy. 
 
-> ### TL;DR - Grand i10 Nios at a Glance
+> ## TL;DR - Grand i10 Nios at a Glance
 > * **Ex-showroom starting price:** Rs 5.92 Lakh
 > * **Estimated on-road Nizamabad:** Rs 6.51 Lakh - Rs 6.69 Lakh (10-13% tax + insurance)
 > * **EMI starting from:** Rs 8,500/month (SBI, HDFC, Axis, ICICI)

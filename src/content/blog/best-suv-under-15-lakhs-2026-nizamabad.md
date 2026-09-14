@@ -19,7 +19,7 @@ readTime: "10 min read"
 
 **For most Nizamabad buyers, the Hyundai Creta and Hyundai Venue offer the best blend of features, performance, and value in the SUV segment under ₹15 lakhs (ex-showroom as of August 2026). Their robust build, feature-packed interiors, and widespread service network make them stand out in our region.**
 
-> ### TL;DR: Top SUVs Under ₹15 Lakhs (Ex-Showroom)
+> ## TL;DR: Top SUVs Under ₹15 Lakhs (Ex-Showroom)
 > *   **Hyundai Creta:** Starts at ₹11.11 Lakhs. Excellent all-rounder, premium feel, strong resale.
 > *   **Hyundai Venue:** Starts at ₹7.94 Lakhs. Compact, agile, great for city and highway.
 > *   **Hyundai Exter:** Starts at ₹6.13 Lakhs. Micro-SUV, fantastic value, 6 airbags standard.

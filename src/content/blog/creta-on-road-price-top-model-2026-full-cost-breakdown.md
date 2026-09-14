@@ -19,7 +19,7 @@ readTime: "7 min read"
 
 **For 2026, the on-road price of the Hyundai Creta's top model in Nizamabad, Telangana, will likely range from Rs 22.00 Lakh to Rs 24.50 Lakh, depending on the specific variant (e.g., SX(O) Dual Tone Automatic) and current insurance policies. This includes ex-showroom cost, RTO charges, and comprehensive insurance.**
 
-> ### TL;DR: Creta Top Model On-Road Price Insights
+> ## TL;DR: Creta Top Model On-Road Price Insights
 > *   **Expected Range:** Rs 22.00 - 24.50 Lakh (Nizamabad, 2026)
 > *   **Key Components:** Ex-showroom price, RTO, Insurance, TCS, Fastag, Accessories.
 > *   **Financing:** EMI from Rs 8,500/month available via SBI, HDFC, Axis, ICICI.

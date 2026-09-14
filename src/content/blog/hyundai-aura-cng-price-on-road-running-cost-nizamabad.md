@@ -19,7 +19,7 @@ readTime: "8 min read"
 
 **Thinking about a Hyundai Aura CNG for your daily commutes in and around Nizamabad? The ex-showroom price for the Aura starts at Rs 6.30 Lakhs, with the CNG variants typically ranging from around Rs 8.2 Lakhs to Rs 9.5 Lakhs (ex-showroom). The on-road price in Telangana, including road tax and insurance, will be roughly 10-13% higher than the ex-showroom price, bringing it to approximately Rs 9 Lakhs to Rs 10.7 Lakhs as of August 2026. For today's exact figures, contact Prakash Hyundai, Nizamabad.**
 
-> ### TL;DR - Hyundai Aura CNG in Nizamabad
+> ## TL;DR - Hyundai Aura CNG in Nizamabad
 > *   **Ex-showroom Price:** Starts from Rs 8.2 Lakhs for CNG variants.
 > *   **On-Road Price (Nizamabad):** Roughly Rs 9 Lakhs - Rs 10.7 Lakhs (as of Aug 2026).
 > *   **Running Cost:** Significantly lower than petrol, especially with current CNG prices.

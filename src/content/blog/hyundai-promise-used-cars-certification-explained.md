@@ -20,7 +20,7 @@ readTime: "10 min read"
 
 **Considering a pre-owned vehicle? The Hyundai Promise certification for used cars ensures a thorough inspection, warranty, and transparent history, giving buyers in Nizamabad and surrounding areas like Armoor and Bodhan confidence in their purchase.**
 
-> ### TL;DR: Hyundai Promise Used Cars
+> ## TL;DR: Hyundai Promise Used Cars
 > *   **Certified Quality:** 147-point inspection by Hyundai technicians.
 > *   **Warranty:** Up to 1 year/20,000 km on engine and transmission.
 > *   **Free Services:** Two free periodic maintenance services.

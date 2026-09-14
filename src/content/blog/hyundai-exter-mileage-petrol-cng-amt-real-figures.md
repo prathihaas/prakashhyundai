@@ -20,7 +20,7 @@ readTime: "8 min read"
 
 **The Hyundai Exter offers impressive fuel efficiency, with the petrol manual delivering around 19.4 kmpl, the petrol AMT about 19.2 kmpl, and the CNG variant leading with approximately 27.1 km/kg in real-world conditions. These figures make the Exter an economical choice for daily commutes and long drives around Nizamabad.**
 
-> ### TL;DR - Hyundai Exter Mileage Highlights
+> ## TL;DR - Hyundai Exter Mileage Highlights
 > *   **Petrol Manual:** ~19.4 kmpl (real-world combined)
 > *   **Petrol AMT:** ~19.2 kmpl (real-world combined)
 > *   **CNG Manual:** ~27.1 km/kg (real-world combined)

@@ -20,7 +20,7 @@ readTime: "12 min read"
 
 **Finding the best car under 10 lakhs in India can feel like a treasure hunt, especially with so many excellent options available today. For most families in Nizamabad and surrounding areas like Kamareddy or Armoor, this budget range is the sweet spot, offering a perfect blend of features, fuel efficiency, and practicality without breaking the bank.**
 
-> ### TL;DR: Best Cars Under 10 Lakhs
+> ## TL;DR: Best Cars Under 10 Lakhs
 > *   **Hyundai Exter:** Best for safety (6 airbags standard), features, and SUV-like stance.
 > *   **Hyundai Grand i10 Nios:** Excellent city car, refined engine, good value.
 > *   **Maruti Suzuki Swift/Baleno:** Reliable, fuel-efficient, extensive service network.

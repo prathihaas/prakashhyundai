@@ -20,7 +20,7 @@ readTime: "8 min read"
 
 **Considering the Hyundai Creta E variant? As of August 2026, the Creta base model price (ex-showroom) starts around Rs 11.11 Lakhs. On-road in Nizamabad, expect this to be approximately Rs 12.22 Lakhs to Rs 12.55 Lakhs, depending on RTO and insurance specifics. While it offers the core Creta experience, you will be foregoing several comfort and convenience features found in higher trims.**
 
-> ### TL;DR: Creta E Variant Key Facts
+> ## TL;DR: Creta E Variant Key Facts
 > *   **Ex-showroom Price (August 2026):** Starts at Rs 11.11 Lakhs.
 > *   **On-road Price (Nizamabad):** Roughly Rs 12.22 - 12.55 Lakhs.
 > *   **What You Get:** Core Creta safety, engine, and spacious cabin.

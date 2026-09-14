@@ -19,7 +19,7 @@ readTime: "8 min read"
 
 **Finding a good quality used car in Nizamabad at a fair price is definitely possible, especially if you know what to look for. Expect prices to vary significantly based on the car's age, mileage, condition, and service history, but a well-maintained vehicle from a reliable brand like Hyundai can offer excellent value.**
 
-> ### TL;DR: Buying Pre-Owned in Nizamabad
+> ## TL;DR: Buying Pre-Owned in Nizamabad
 > *   **Fair Prices:** Depend on age, mileage, condition, and service records.
 > *   **Key Checks:** Engine, transmission, body, electronics, and documentation are crucial.
 > *   **Local Insight:** Demand for fuel-efficient and spacious models is high.

@@ -23,7 +23,7 @@ The on-road price of the Hyundai Exter AMT in Nizamabad ranges from approximatel
 
 **Considering the Hyundai Exter AMT for your daily drives in Nizamabad and surrounding areas like Armoor or Bodhan? This guide breaks down the real costs, what's included in the on-road price, and why the AMT variant is a smart choice for city traffic. We'll also cover financing options and common questions local buyers have.**
 
-> ### TL;DR: Hyundai Exter AMT in Nizamabad
+> ## TL;DR: Hyundai Exter AMT in Nizamabad
 > *   **On-Road Price (Sept 2026):** Rs 7.05 Lakhs - Rs 10.45 Lakhs (approx)
 > *   **Ex-showroom Starting Price:** Rs 6.13 Lakhs (for manual, AMT will be slightly higher)
 > *   **Key Advantage:** Easy driving in city traffic, good mileage.

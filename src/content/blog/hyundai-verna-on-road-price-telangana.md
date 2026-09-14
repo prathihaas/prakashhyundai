@@ -20,7 +20,7 @@ readTime: "8 min read"
 
 **The Hyundai Verna on-road price in Telangana for 2026 starts from approximately Rs 12.10 Lakhs and can go up to Rs 21.00 Lakhs, depending on the variant and city. This includes ex-showroom price, RTO charges, and insurance costs specific to Telangana.**
 
-> ### TL;DR: Hyundai Verna On-Road Price in Telangana
+> ## TL;DR: Hyundai Verna On-Road Price in Telangana
 > *   **Starting Price:** Around Rs 12.10 Lakhs (for base variant, as of August 2026).
 > *   **Key Components:** Ex-showroom price + RTO (Road Tax) + Insurance + Fastag/Logistics.
 > *   **RTO in Telangana:** Varies from 10% to 13% of the ex-showroom price, based on vehicle cost.
