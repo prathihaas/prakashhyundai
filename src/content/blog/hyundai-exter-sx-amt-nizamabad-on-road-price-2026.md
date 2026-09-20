@@ -2,6 +2,7 @@
 title: "Hyundai Exter SX AMT Nizamabad: ₹9.5L Verdict 2026"
 title_te: "హ్యుందాయ్ ఎక్స్‌టర్ SX AMT నిజామాబాద్: ₹9.5L తీర్పు 2026"
 date: "2026-09-16"
+updated: "2026-09-20"
 author: "Prakash Hyundai Team"
 category: "Buying Guide"
 tags:
@@ -11,9 +12,9 @@ tags:
   - "Compact SUV"
   - "Car Buying Guide"
 featured_image: "/images/blog/hyundai-exter-vs-maruti-fronx-vs-tata-punch-comparison-2026.jpg"
-excerpt: "Looking for the Hyundai Exter SX AMT in Nizamabad? We break down the on-road price, features, and what makes it a top choice for local families and daily commutes."
-seo_title: "Exter SX AMT Nizamabad On-Road Price: ₹9.5-9.8L (2026)"
-seo_description: "The Hyundai Exter SX AMT on-road price in Nizamabad is ₹9.5 Lakhs to ₹9.8 Lakhs as of September 2026; get today's exact quote and EMI options at Prakash."
+excerpt: "Looking for the Hyundai Exter SX AMT in Nizamabad? We break down the on-road price, features, and what makes it a top choice for local families and daily commutes. Get a free home test drive!"
+seo_title: "Exter SX AMT Nizamabad: 2026 Price Verdict"
+seo_description: "The Hyundai Exter SX AMT on-road price in Nizamabad for 2026 is here. Get your exact quote and EMI options from Rs 8,500/mo."
 readTime: "8 min read"
 ---
 
