@@ -52,6 +52,16 @@
   ],
   "redirects": [
     {
+      "source": "/blog/alcazar-ground-clearance-2026",
+      "destination": "/blog/hyundai-alcazar-review-nizamabad-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/alcazar-ground-clearance-2026/",
+      "destination": "/blog/hyundai-alcazar-review-nizamabad-2026/",
+      "permanent": true
+    },
+    {
       "source": "/blog/hyundai-i20-vs-toyota-glanza-maruti-baleno-2026",
       "destination": "/blog/hyundai-i20-vs-maruti-baleno-vs-toyota-glanza-2026/",
       "permanent": true

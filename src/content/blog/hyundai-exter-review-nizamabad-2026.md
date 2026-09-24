@@ -13,8 +13,8 @@ tags:
   - "Exter vs Punch"
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Is the Hyundai Exter 2026 the best micro-SUV in Nizamabad? We review its 185mm ground clearance, 6 standard airbags, and ₹6.13L starting price. Find out if it's right for you."
-seo_title: "Hyundai Exter 2026: Ground Clearance, Safety, Price"
-seo_description: "Exter 2026: 185mm ground clearance, 6 airbags standard, from ₹6.13L. Get your on-road price quote today at Prakash Hyundai."
+seo_title: "Hyundai Exter Review 2026: Safety, Mileage & Price"
+seo_description: "Hyundai Exter 2026 review for Nizamabad: 6 airbags standard, real mileage 16–18 km/l, vs Tata Punch, from ₹6.13L ex-showroom. Get your on-road quote."
 readTime: "8 min read"
 ---
 

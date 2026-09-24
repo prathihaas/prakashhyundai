@@ -14,8 +14,10 @@ const { Content } = await car.render();
 const exLakh = (() => { const m = car.data.price.match(/[\d.]+/); return m ? parseFloat(m[0]) : 0; })();
 const onRoadLo = exLakh ? (exLakh * 1.10).toFixed(2) : null;
 const onRoadHi = exLakh ? (exLakh * 1.13).toFixed(2) : null;
+const carDescFull = `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, EMI from ₹8,500/mo. Free home test drive. Call 9052110303.`;
+const carDescShort = `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, EMI from ₹8,500/mo. Free test drive: 9052110303.`;
 const carDescription = exLakh
-  ? `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, EMI from ₹8,500/mo. Free home test drive. Call 9052110303.`
+  ? (carDescFull.length > 155 ? carDescShort : carDescFull)
   : `Hyundai ${car.data.name} price in Nizamabad from Prakash Hyundai: on-road quote with RTO and insurance, EMI from ₹8,500/mo, free home test drive. Call 9052110303.`;
 const carFaq = exLakh ? {
   "@context": "https://schema.org", "@type": "FAQPage",

@@ -14,7 +14,7 @@ tags:
   - "Prakash Hyundai"
 featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
 excerpt: "Looking for the Hyundai Exter AMT in Nizamabad? Get the real 2026 on-road price, including RTO, insurance, and financing options available right here at Prakash Hyundai. We offer free home test drives and EMIs from Rs"
-seo_title: "Hyundai Exter AMT On-Road Price Nizamabad 2026 (All Variants)"
+seo_title: "Exter AMT On-Road Price in Nizamabad 2026 (All Variants)"
 seo_description: "Exter AMT on-road price in Nizamabad for every AMT variant with RTO, insurance and EMI from Rs 8,500/mo. Ex-showroom from Rs 6.13L. Get today’s exact quote."
 readTime: "8 min read"
 ---
