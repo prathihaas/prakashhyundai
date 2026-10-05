@@ -17,7 +17,7 @@ const PHONE = "tel:+919052110303";
 const assurances = [
   { text: "Authorised Hyundai dealer", href: PHONE, external: false },
   { text: "Free home test drive", href: `${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a free home test drive. [W-HP-TD]")}`, external: true },
-  { text: "Zero down payment EMI", href: `${WA}?text=${encodeURIComponent("Hi, I want to check EMI eligibility for a Hyundai car. [W-EMI]")}`, external: true },
+  { text: "EMI options", href: `${WA}?text=${encodeURIComponent("Hi, I want to check EMI eligibility for a Hyundai car. [W-EMI]")}`, external: true },
   { text: "Genuine parts & service", href: PHONE, external: false },
   { text: "Finance from all banks", href: `${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to know about finance options. [W-FIN]")}`, external: true },
   { text: "4.7 / 5 · 2,915+ Google reviews", href: "https://www.google.com/search?q=Prakash+Hyundai+Nizamabad+reviews", external: true },
@@ -39,7 +39,7 @@ const faqs = [
   { q: "Which Hyundai cars are available in Nizamabad?", a: "Prakash Hyundai stocks the full lineup — Creta, Venue, Exter, i20, Grand i10 Nios, Verna, Aura, Alcazar, i20 N-Line, Creta N-Line and Ioniq 5. All models available for test drive." },
   { q: "What is the on-road price of Hyundai Creta in Nizamabad?", a: "Hyundai Creta on-road price in Nizamabad ranges from ~₹12.5 lakh (base petrol) to ~₹22 lakh (top diesel). Call 9052110303 for exact current price and offers." },
   { q: "Does Prakash Hyundai offer home test drives?", a: "Yes! We offer free doorstep test drives across Nizamabad, Armoor, Bodhan, Banswada and surrounding areas. WhatsApp 9052110303 to book." },
-  { q: "What EMI options are available on Hyundai cars in Nizamabad?", a: "EMI available through SBI, HDFC, Axis and other banks. Zero down payment on select models. EMI starts from ₹8,500/month. Call 9052110303 for your quote." },
+  { q: "What EMI options are available on Hyundai cars in Nizamabad?", a: "EMI available through SBI, HDFC, Axis and other banks — ask us for today's figure. Call 9052110303 for your quote." },
   { q: "How many showrooms does Prakash Hyundai have?", a: "We have 9 showrooms across Nizamabad district — Nizamabad main, Armoor, Bodhan, Banswada, Kamareddy, Adilabad, Mancheriyal, Nirmal and Bhainsa." }
 ];
 
@@ -168,7 +168,7 @@ const faqSchema = {
     {
       "@type": "Question",
       "name": "What finance options are available for Hyundai cars in Nizamabad?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Prakash Hyundai offers car loans through SBI, HDFC, Axis, and other banks. EMI starts from ₹8,500/month on select models. Zero down payment schemes available. Call 9052110303 for your EMI quote." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Prakash Hyundai offers car loans through SBI, HDFC, Axis, and other banks. Call 9052110303 for today's EMI figure." }
     },
     {
       "@type": "Question",
@@ -224,8 +224,8 @@ const faqSchema = {
 
           <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-rule pt-6">
             <div>
-              <p class="text-2xl font-medium text-ink">₹8,500</p>
-              <p class="mt-0.5 text-xs text-body">Exter EMI, per month</p>
+              <p class="text-2xl font-medium text-ink">Bank EMI</p>
+              <p class="mt-0.5 text-xs text-body">SBI · HDFC · Axis · ICICI</p>
             </div>
             <div class="hidden sm:block h-10 w-px bg-rule" aria-hidden="true"></div>
             <div>
@@ -354,7 +354,7 @@ const faqSchema = {
           target="_blank" rel="noopener noreferrer" class="group border-t-2 border-hyundai-blue pt-6">
           <Clock size={26} strokeWidth={1.4} className="text-hyundai-blue" />
           <h2 class="mt-4 text-xl font-medium text-ink group-hover:text-hyundai-blue transition-colors duration-150">Fast delivery, easy finance</h2>
-          <p class="mt-2 text-sm leading-relaxed text-body">Loan approval in minutes through SBI, HDFC, Axis and others. Zero down payment on select models.</p>
+          <p class="mt-2 text-sm leading-relaxed text-body">EMI options through SBI, HDFC, Axis and others — ask us for today's figure.</p>
         </a>
         <a
           href={`${WA}?text=${encodeURIComponent("Hi Prakash Hyundai, I want to book a free home test drive. [W-HP-TD]")}`}

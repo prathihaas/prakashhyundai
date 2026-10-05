@@ -14,16 +14,16 @@ const { Content } = await car.render();
 const exLakh = (() => { const m = car.data.price.match(/[\d.]+/); return m ? parseFloat(m[0]) : 0; })();
 const onRoadLo = exLakh ? (exLakh * 1.10).toFixed(2) : null;
 const onRoadHi = exLakh ? (exLakh * 1.13).toFixed(2) : null;
-const carDescFull = `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, EMI from ₹8,500/mo. Free home test drive. Call 9052110303.`;
-const carDescShort = `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, EMI from ₹8,500/mo. Free test drive: 9052110303.`;
+const carDescFull = `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, bank EMI options. Free home test drive. Call 9052110303.`;
+const carDescShort = `Hyundai ${car.data.name} price in Nizamabad: ex-showroom from ₹${exLakh} lakh, on-road about ₹${onRoadLo}–${onRoadHi} lakh, bank EMI options. Free test drive: 9052110303.`;
 const carDescription = exLakh
   ? (carDescFull.length > 155 ? carDescShort : carDescFull)
-  : `Hyundai ${car.data.name} price in Nizamabad from Prakash Hyundai: on-road quote with RTO and insurance, EMI from ₹8,500/mo, free home test drive. Call 9052110303.`;
+  : `Hyundai ${car.data.name} price in Nizamabad from Prakash Hyundai: on-road quote with RTO and insurance, bank EMI options, free home test drive. Call 9052110303.`;
 const carFaq = exLakh ? {
   "@context": "https://schema.org", "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": `What is the Hyundai ${car.data.name} on-road price in Nizamabad?`, "acceptedAnswer": { "@type": "Answer", "text": `Ex-showroom starts at ₹${exLakh} lakh; on-road in Nizamabad is roughly ₹${onRoadLo}–${onRoadHi} lakh after Telangana road tax and insurance (10–13% over ex-showroom). Call 9052110303 for today's exact variant quote.` } },
-    { "@type": "Question", "name": `What EMI can I get on the Hyundai ${car.data.name}?`, "acceptedAnswer": { "@type": "Answer", "text": "EMI starts from ₹8,500 per month through SBI, HDFC, Axis and ICICI with on-the-spot approval at Prakash Hyundai." } },
+    { "@type": "Question", "name": `What EMI can I get on the Hyundai ${car.data.name}?`, "acceptedAnswer": { "@type": "Answer", "text": "EMI options are available through SBI, HDFC, Axis and ICICI at Prakash Hyundai. Call 9052110303 for today's EMI figure." } },
     { "@type": "Question", "name": `Can I test drive the ${car.data.name} at home?`, "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prakash Hyundai offers a free doorstep test drive across Nizamabad, Armoor, Bodhan, Banswada, Kamareddy and Adilabad. WhatsApp 9052110303 to book." } }
   ]
 } : null;
@@ -164,7 +164,7 @@ const breadcrumbSchema = {
                 <tr class="border-b border-gray-100"><th class="py-3 pr-4 font-semibold">Ex-showroom (from)</th><td class="py-3">₹{exLakh} lakh</td></tr>
                 <tr class="border-b border-gray-100"><th class="py-3 pr-4 font-semibold">Telangana road tax + insurance</th><td class="py-3">about 10–13% of ex-showroom</td></tr>
                 <tr class="border-b border-gray-100"><th class="py-3 pr-4 font-semibold">Estimated on-road (base variant)</th><td class="py-3 font-bold text-[#002C5F]">₹{onRoadLo} – ₹{onRoadHi} lakh</td></tr>
-                <tr><th class="py-3 pr-4 font-semibold">EMI</th><td class="py-3">from ₹8,500/month · SBI, HDFC, Axis, ICICI</td></tr>
+                <tr><th class="py-3 pr-4 font-semibold">EMI</th><td class="py-3">SBI, HDFC, Axis, ICICI · ask us for today's figure</td></tr>
               </tbody>
             </table>
           </div>
