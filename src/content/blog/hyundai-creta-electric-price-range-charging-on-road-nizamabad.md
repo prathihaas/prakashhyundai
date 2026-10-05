@@ -93,7 +93,7 @@ Hyundai's commitment to quality and innovation means the Creta Electric will be 
 
 ## Financing Your Hyundai Creta Electric: EMI Options
 
-Making your dream car a reality is easier with flexible financing options. At Prakash Hyundai, we partner with leading banks like SBI, HDFC, Axis, and ICICI to offer competitive interest rates and EMI plans. While specific EMIs for this electric SUV will depend on the final price, loan amount, tenure, and interest rate, you can typically expect EMIs to start from around ₹20,000 - ₹25,000 per month for a 5-7 year loan tenure, depending on your down payment. For example, our existing Hyundai models like the Grand i10 Nios start with EMIs from Rs 8,500/month, giving you an idea of our accessible financing.
+Making your dream car a reality is easier with flexible financing options. At Prakash Hyundai, we partner with leading banks like SBI, HDFC, Axis, and ICICI to offer competitive interest rates and EMI plans. While specific EMIs for this electric SUV will depend on the final price, loan amount, tenure, and interest rate, you can typically expect EMIs to start from around ₹20,000 - ₹25,000 per month for a 5-7 year loan tenure, depending on your down payment. For example, our existing Hyundai models like the Grand i10 Nios offer accessible financing options.
 
 We encourage you to visit our showroom in Nizamabad or call our finance experts. They can provide a personalized EMI calculation based on your eligibility and preferred down payment. We also serve customers from surrounding districts like Nirmal and Mancherial through our network of branches.
 

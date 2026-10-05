@@ -12,7 +12,7 @@ tags:
   - "car buying guide"
   - "affordable cars"
 featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
-excerpt: "Hunting for the best car under 10 lakhs in India? Our 2026 guide compares top Hyundai models like Venue & Exter, with prices starting from ₹6.13 Lakhs. Book a free test drive in Nizamabad today!"
+excerpt: "Hunting for the best car under 10 lakhs in India? Our 2026 guide compares top Hyundai models like Venue & Exter, with prices starting from ₹6.13 Lakhs. Explore down payment options and book a free test drive in Nizamabad today!"
 seo_title: "Best Car Under 10 Lakhs: Honest Verdict from Nizamabad"
 seo_description: "Our 2026 guide compares top cars under 10 lakhs. Discover why Hyundai Exter offers 6 airbags standard. Visit Prakash Hyundai."
 readTime: "12 min read"
@@ -122,7 +122,7 @@ Here's a quick look at some key features you can expect and compare across model
 
 When budgeting for the best car under 10 lakhs, remember the ex-showroom price is just the starting point. The on-road price in Telangana typically adds 10-13% for RTO, insurance, and other charges. For example, a car with an ex-showroom price of ₹8 lakhs might have an on-road price of around ₹8.8 to ₹9.04 lakhs in Nizamabad.
 
-At Prakash Hyundai, we make car ownership easy. We offer flexible EMI options starting from just ₹8,500/month, in partnership with leading banks like SBI, HDFC, Axis, and ICICI. Our finance team can help you find the best plan tailored to your needs.
+At Prakash Hyundai, we make car ownership easy. We offer flexible EMI options in partnership with leading banks like SBI, HDFC, Axis, and ICICI. Our finance team can help you find the best plan tailored to your needs, including various down payment options.
 
 ## Insider Tips for Buying Your Car in Nizamabad
 

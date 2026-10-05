@@ -92,7 +92,7 @@ Pricing is always a critical factor. Here's a general idea, but please remember 
 
 As you can see, the Baleno typically has a lower starting price and its higher variants also tend to be more affordably priced than comparable i20 variants. This initial cost advantage is a major reason for the Baleno's popularity.
 
-For a detailed quote including insurance, road tax, and any current offers, please visit Prakash Hyundai in Nizamabad or call us directly. We can also assist with financing options, with EMIs starting from just Rs 8,500/month through SBI, HDFC, Axis, and ICICI.
+For a detailed quote including insurance, road tax, and any current offers, please visit Prakash Hyundai in Nizamabad or call us directly. We can also assist with financing options through SBI, HDFC, Axis, and ICICI.
 
 ## After-Sales Service and Resale Value
 

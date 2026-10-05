@@ -103,7 +103,7 @@ At Prakash Hyundai, we pride ourselves on being the leading authorized Hyundai d
 When you visit us, you're not just buying a car; you're getting a complete ownership experience. We offer:
 
 *   **Free Home Test Drive:** Experience the Exter on your familiar routes before you decide.
-*   **Flexible Finance Options:** EMIs starting from just Rs 8,500/month with leading banks like SBI, HDFC, Axis, and ICICI.
+*   **Flexible Finance Options:** We offer finance options with leading banks like SBI, HDFC, Axis, and ICICI.
 *   **Genuine Advice:** Our team, having served customers from Nizamabad, Nirmal, Mancherial, and beyond, provides honest and specific guidance tailored to your driving needs and budget. For example, many customers looking for a compact SUV also consider the [Hyundai Venue](/cars/venue) or even the [Hyundai Creta](/cars/creta) if their budget allows, and we help them understand the differences in fuel economy and features.
 *   **After-Sales Support:** Our state-of-the-art service centres ensure your vehicle remains in top condition, maximizing its lifespan and efficiency.
 

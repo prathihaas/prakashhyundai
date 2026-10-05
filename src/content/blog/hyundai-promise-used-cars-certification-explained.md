@@ -94,7 +94,7 @@ Choosing a certified pre-owned vehicle from an authorized dealer like Prakash Hy
 
 *   **Trust and Reliability:** You're buying from a trusted source with a reputation for quality and customer service. Our 4.7-star rating from over 2915 Google reviews speaks volumes.
 *   **Expert Guidance:** Our sales team, experienced in both new and pre-owned vehicles, can guide you through the options, helping you find the perfect car for your needs and budget.
-*   **Financing Options:** We offer attractive EMI options starting from as low as Rs 8,500/month through leading banks like SBI, HDFC, Axis, and ICICI, making your purchase more affordable.
+*   **Financing Options:** We offer attractive EMI options through leading banks like SBI, HDFC, Axis, and ICICI, making your purchase more affordable.
 *   **Genuine Parts:** Any necessary repairs or replacements during the certification process are done using genuine Hyundai parts.
 *   **Convenience:** With branches in Armoor, Bodhan, Banswada, Kamareddy, and Adilabad, we offer easy access to sales and service across the region. You can find more about our service offerings here: [/service]
 
@@ -144,7 +144,7 @@ The warranty on a Hyundai Promise certified pre-owned car usually extends for up
 
 ### Can I get finance for a Hyundai Promise used car?
 
-Absolutely. Prakash Hyundai offers various financing options for certified pre-owned vehicles through partner banks like SBI, HDFC, Axis, and ICICI. Our team can help you explore competitive EMI plans, making it easier to afford your chosen certified pre-owned Hyundai. You can get EMIs from Rs 8,500/month depending on the car and loan tenure.
+Absolutely. Prakash Hyundai offers various financing options for certified pre-owned vehicles through partner banks like SBI, HDFC, Axis, and ICICI. Our team can help you explore competitive EMI plans, making it easier to afford your chosen certified pre-owned Hyundai. You can get EMIs depending on the car and loan tenure.
 
 ## Your Next Step Towards a Certified Pre-Owned Hyundai
 

@@ -66,7 +66,7 @@ This is perhaps the most critical step. Verify the Registration Certificate (RC)
 
 ## Why Choose Prakash Hyundai for Your Next Car?
 
-Whether you're looking for a new Hyundai or a certified pre-owned vehicle, Prakash Hyundai in Nizamabad is your trusted partner. We pride ourselves on transparency and customer satisfaction. With our 4.7-star rating from over 2915 Google reviews, you can be assured of a quality experience. We offer free home test drives, and our finance partners like SBI, HDFC, Axis, and ICICI provide EMIs starting from just Rs 8,500/month on new cars.
+Whether you're looking for a new Hyundai or a certified pre-owned vehicle, Prakash Hyundai in Nizamabad is your trusted partner. We pride ourselves on transparency and customer satisfaction. With our 4.7-star rating from over 2915 Google reviews, you can be assured of a quality experience. We offer free home test drives, and our finance partners like SBI, HDFC, Axis, and ICICI provide competitive EMI options on new cars.
 
 Our commitment extends beyond just sales. We have a robust <a href="/service">service network</a>, ensuring that your vehicle receives top-notch care throughout its lifespan. Our branches in <a href="/locations/armoor">Armoor</a>, Bodhan, Banswada, Kamareddy, and Adilabad make it convenient for customers across the region to access our services.
 

@@ -14,7 +14,7 @@ tags:
 featured_image: "/images/blog/hyundai-car-review-2026.jpg"
 excerpt: "Is the Hyundai Grand i10 Nios the best entry-level car in Nizamabad? Full review with specs, mileage, real-world performance, and value assessment. Find out its ground clearance and more!"
 seo_title: "Grand i10 NIOS Ground Clearance: Our Honest Review & Specs"
-seo_description: "The Grand i10 NIOS has ample ground clearance for city and highway. Get today's on-road price in Nizamabad or an EMI from Rs 8,500/mo. Book a test drive."
+seo_description: "The Grand i10 NIOS has ample ground clearance for city and highway. Get today's on-road price in Nizamabad or explore EMI options. Book a test drive."
 readTime: "7 min read"
 ---
 
@@ -154,7 +154,7 @@ The 165mm ground clearance handles normal city roads and speed breakers. Very ro
 
 ## On-Road Price in Nizamabad
 
-The Magna variant (₹6.85L ex-showroom) costs approximately **₹7.9–8.2 lakh on-road** in Telangana. With Hyundai Motor Finance, EMI starts at around ₹8,500–9,000/month on a 7-year loan.
+The Magna variant (₹6.85L ex-showroom) costs approximately **₹7.9–8.2 lakh on-road** in Telangana. With Hyundai Motor Finance, EMI options are available on a 7-year loan.
 
 ---
 

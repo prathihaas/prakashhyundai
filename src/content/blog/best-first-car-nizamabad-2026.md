@@ -12,9 +12,9 @@ tags:
   - "New Driver Car"
   - "First Car Telangana 2026"
 featured_image: "/images/blog/hyundai-cars-nizamabad-guide-2026.jpg"
-excerpt: "Looking for the Hyundai Exter SX AMT in Nizamabad? Get the real on-road price, EMI options from Rs 8,500/mo, and book a free home test drive with Prakash Hyundai, Nizamabad's trusted dealer."
+excerpt: "Looking for the Hyundai Exter SX AMT in Nizamabad? Get the real on-road price, EMI options, and book a free home test drive with Prakash Hyundai, Nizamabad's trusted dealer."
 seo_title: "Best First Car in Nizamabad 2026: Exter, Grand i10 Nios, i20"
-seo_description: "Buying your first car in Nizamabad? Exter, Grand i10 Nios and i20 compared on price, EMI from Rs 8,500/mo, mileage and service cost. Free home test drive."
+seo_description: "Buying your first car in Nizamabad? Exter, Grand i10 Nios and i20 compared on price, EMI options, mileage and service cost. Free home test drive."
 readTime: "8 min read"
 ---
 

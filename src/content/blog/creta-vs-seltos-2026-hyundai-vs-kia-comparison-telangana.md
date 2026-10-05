@@ -78,7 +78,7 @@ Hyundai cars generally hold better resale value than Kia in this region. A 3-yea
 If you live in Nizamabad or nearby towns like Armoor, Bodhan, or Kamareddy, the Creta is the obvious choice. You get:
 - **Local service** at Prakash Hyundai (4.7 stars, 2915+ reviews)
 - **Free home test drive** – we bring the car to your doorstep
-- **Easy EMI** from ₹8,500/month via SBI, HDFC, Axis, or ICICI
+- **Easy EMI options** via SBI, HDFC, Axis, or ICICI
 - **Wider service network** across Telangana
 
 If you're based in Hyderabad and have a Kia service center nearby, the Seltos is a worthy alternative. But for most buyers in our region, the Creta wins hands down.

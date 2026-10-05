@@ -22,7 +22,7 @@ readTime: "7 min read"
 > * **City Mileage:** 14.5 - 16.5 kmpl (Nizamabad city traffic)
 > * **Highway Mileage:** 19.5 - 21.8 kmpl (NH-44 Hyderabad-Nagpur highway)
 > * **Starting Price:** Rs 11.11L Ex-Showroom (Telangana on-road price is roughly ex-showroom + 10-13% for road tax and insurance; call for today's exact price)
-> * **Finance Option:** Easy EMIs starting from Rs 8,500/month via SBI, HDFC, Axis, or ICICI
+> * **Finance Option:** Easy EMIs via SBI, HDFC, Axis, or ICICI
 > * **Key Competitors:** Kia Seltos, Maruti Grand Vitara, Toyota Hyryder, Tata Nexon
 
 ## Real-World Creta Diesel Mileage: Nizamabad City vs NH-44 Highway
@@ -76,7 +76,7 @@ To keep your vehicle running at peak efficiency, we highly recommend regular per
 
 As of July 2026, the Hyundai Creta ex-showroom price starts at Rs 11.11L (call for today's exact price). The on-road price in Telangana typically includes an additional 10% to 13% for road tax, registration, and comprehensive insurance. 
 
-To make your purchase seamless, Prakash Hyundai has partnered with major financial institutions including SBI, HDFC, Axis, and ICICI Bank. We offer flexible car loans with low down payment schemes and monthly EMIs starting from just Rs 8,500/month depending on your eligibility and loan tenure.
+To make your purchase seamless, Prakash Hyundai has partnered with major financial institutions including SBI, HDFC, Axis, and ICICI Bank. We offer flexible car loans with various down payment options and competitive monthly EMIs depending on your eligibility and loan tenure.
 
 If you are exploring other options in our lineup, we also offer the compact [Hyundai Venue](/cars/venue) starting at Rs 7.94L ex-showroom, and the micro-SUV [Hyundai Exter](/cars/exter) starting at Rs 6.13L ex-showroom, which features 185mm ground clearance and 6 standard airbags.
 

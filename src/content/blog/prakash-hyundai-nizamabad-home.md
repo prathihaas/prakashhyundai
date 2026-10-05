@@ -22,7 +22,7 @@ readTime: "10 min read"
 > TL;DR: Why Prakash is your best choice in Nizamabad for a new car:
 > *   Authorized dealer with 8 branches across Telangana.
 > *   Competitive ex-showroom prices starting from Rs 5.92 Lakhs (Grand i10 Nios).
-> *   Flexible EMI options from Rs 8,500/month via major banks.
+> *   Flexible EMI options via major banks.
 > *   Free home test drive convenience across Nizamabad and nearby areas.
 > *   Exceptional customer service, backed by a 4.7-star Google rating.
 
@@ -55,7 +55,7 @@ We strive to make your car buying journey as smooth as possible. This includes o
 
 #### Flexible Finance Options
 
-We know financing is a crucial part of the purchase. Prakash offers attractive EMI options starting from just Rs 8,500/month, in partnership with leading banks like SBI, HDFC, Axis, and ICICI. Our finance team will help you find a plan that fits your budget, making your dream vehicle more accessible.
+We know financing is a crucial part of the purchase. Prakash offers attractive EMI options in partnership with leading banks like SBI, HDFC, Axis, and ICICI. Our finance team will help you find a plan that fits your budget, making your dream vehicle more accessible.
 
 ## Understanding On-Road Price and Model Variants in Nizamabad
 
@@ -81,7 +81,7 @@ Yes, Prakash offers the convenience of a free home test drive for customers in N
 
 ### What are the EMI options for buying a car from Prakash?
 
-Prakash provides attractive EMI options starting from Rs 8,500 per month, making car ownership more accessible. We have partnerships with leading banks like SBI, HDFC, Axis, and ICICI to offer flexible financing solutions tailored to your financial situation. Our finance experts can help you understand the various plans and choose the best one for your new vehicle.
+Prakash provides attractive EMI options, making car ownership more accessible. We have partnerships with leading banks like SBI, HDFC, Axis, and ICICI to offer flexible financing solutions tailored to your financial situation. Our finance experts can help you understand the various plans and choose the best one for your new vehicle.
 
 ### Where is Prakash located in Nizamabad, and what are its branches?
 

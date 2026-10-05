@@ -84,7 +84,7 @@ At our Nizamabad showroom, the question we hear most is about the comfort of the
 
 Worried about the upfront cost of the Creta's top variant? Don't be! Prakash Hyundai offers flexible EMI options to make your dream car accessible. We have strong partnerships with leading banks like SBI, HDFC, Axis, and ICICI, ensuring you get competitive interest rates and convenient repayment plans.
 
-While the exact EMI depends on your loan amount, tenure, and interest rate, you can expect EMIs for the Creta top model to start from approximately Rs 35,000 to Rs 45,000 per month for a typical 5-7 year loan period. We can even structure EMIs as low as Rs 8,500/month for certain entry-level Hyundai models, but for the Creta SX(O), expect it to be higher given the price point. Visit our finance desk for a personalized quote tailored to your budget.
+While the exact EMI depends on your loan amount, tenure, and interest rate, you can expect EMIs for the Creta top model to start from approximately Rs 35,000 to Rs 45,000 per month for a typical 5-7 year loan period.  Visit our finance desk for a personalized quote tailored to your budget.
 
 ## Why Buy Your Creta SX(O) from Prakash Hyundai, Nizamabad?
 
