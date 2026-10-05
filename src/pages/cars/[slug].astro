@@ -23,13 +23,24 @@ const carFaq = exLakh ? {
   "@context": "https://schema.org", "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": `What is the Hyundai ${car.data.name} on-road price in Nizamabad?`, "acceptedAnswer": { "@type": "Answer", "text": `Ex-showroom starts at ₹${exLakh} lakh; on-road in Nizamabad is roughly ₹${onRoadLo}–${onRoadHi} lakh after Telangana road tax and insurance (10–13% over ex-showroom). Call 9052110303 for today's exact variant quote.` } },
-    { "@type": "Question", "name": `What EMI can I get on the Hyundai ${car.data.name}?`, "acceptedAnswer": { "@type": "Answer", "text": "EMI starts from ₹8,500 per month through SBI, HDFC, Axis and ICICI with on-the-spot approval at Prakash Hyundai; zero down payment on select models." } },
+    { "@type": "Question", "name": `What EMI can I get on the Hyundai ${car.data.name}?`, "acceptedAnswer": { "@type": "Answer", "text": "EMI starts from ₹8,500 per month through SBI, HDFC, Axis and ICICI with on-the-spot approval at Prakash Hyundai." } },
     { "@type": "Question", "name": `Can I test drive the ${car.data.name} at home?`, "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prakash Hyundai offers a free doorstep test drive across Nizamabad, Armoor, Bodhan, Banswada, Kamareddy and Adilabad. WhatsApp 9052110303 to book." } }
   ]
 } : null;
 const priceMatch = car.data.price.match(/[\d.]+/);
 const numericPrice = priceMatch ? Math.round(parseFloat(priceMatch[0]) * 100000) : 0;
 const carPageUrl = `https://www.prakashhyundai.com/cars/${car.slug}/`;
+
+// Only claim a validity window when a human has checked the price: checked date + 90 days.
+const priceChecked = car.data.price_checked;
+const priceValidUntil = priceChecked
+  ? new Date(Date.parse(`${priceChecked}T00:00:00Z`) + 90 * 86400000).toISOString().slice(0, 10)
+  : null;
+// "2026-10-05" -> "5 Oct 2026"
+const fmtDay = (iso: string) => {
+  const [y, m, d] = iso.split('-').map(Number);
+  return `${d} ${['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][m - 1]} ${y}`;
+};
 
 const carSchema = {
   "@context": "https://schema.org",
@@ -44,8 +55,7 @@ const carSchema = {
     "@type": "Offer",
     "priceCurrency": "INR",
     "price": numericPrice,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
+    ...(priceValidUntil ? { "priceValidUntil": priceValidUntil } : {}),
     "itemCondition": "https://schema.org/NewCondition",
     "url": carPageUrl,
     "seller": {
@@ -97,6 +107,7 @@ const breadcrumbSchema = {
             <span class="text-sm text-gray-500 uppercase font-semibold">Starting From (Ex-Showroom Nizamabad)</span>
           </div>
           <p class="text-3xl font-bold text-[#002C5F]">{car.data.price}</p>
+          {priceChecked && <p class="text-sm text-gray-500">Ex-showroom price checked on {fmtDay(priceChecked)}. Prices change; confirm today's figure with us.</p>}
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
             <a href={`https://wa.me/919052110303?text=${encodeURIComponent(`Hi Prakash Hyundai, I want today's best price for Hyundai ${car.data.name} in Nizamabad with EMI options. [W-CAR]`)}`}
               target="_blank" rel="noopener noreferrer"
