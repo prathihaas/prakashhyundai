@@ -48,7 +48,7 @@ Here is the detailed breakdown of the Alcazar lineup. As of July 2026, the start
 
 In the last two years, the shift towards 7-seater SUVs in Nizamabad and Armoor has been massive. Joint families, as well as buyers in the agriculture and education sectors who frequently travel to Hyderabad or Basara, need a vehicle that offers space, comfort, and highway stability. 
 
-The Alcazar fills the gap between compact SUVs and expensive MPVs. If you compare it to a Toyota Innova or even the Maruti Grand Vitara, the Alcazar gives you premium features like a 10.25-inch digital cluster, Bose sound system, and ventilated front seats at a much more competitive price point. We have customers from Kamareddy and Bodhan who specifically drive down to our Nizamabad showroom because they know they get transparent pricing and immediate delivery. 
+The Alcazar fills the gap between compact SUVs and expensive MPVs. If you compare it to a Toyota Innova or even the Maruti Grand Vitara, the Alcazar gives you premium features like a 10.25-inch digital cluster, Bose sound system, and ventilated front seats at a much more competitive price point. 
 
 If you are upgrading from a smaller car and want to understand the size difference, check out our [Creta comparison page](/cars/creta) to see how the Alcazar extends the Creta platform into a proper 3-row family SUV.
 
@@ -85,7 +85,7 @@ You can also learn more about our Armoor branch operations at [Prakash Hyundai A
 
 ## After-Sales Service and Maintenance Costs
 
-A common question we get from fleet owners and large families is about maintenance. Hyundai's service network is one of the most widespread in India. Regular service for the Alcazar is surprisingly affordable when you opt for our standard service packages at the time of purchase. 
+Hyundai's service network is one of the most widespread in India. Regular service for the Alcazar is surprisingly affordable when you opt for our standard service packages at the time of purchase. 
 
 Routine maintenance involves oil changes, filter replacements, and standard checks. With genuine Hyundai parts, your running costs remain predictable. We also offer roadside assistance packages so that if you are travelling late at night from Nizamabad to Mancherial or Adilabad, you are never stranded. 
 

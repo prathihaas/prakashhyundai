@@ -98,7 +98,7 @@ The XUV700 AX7 AWD diesel is arguably the best performance value in India's SUV 
 
 ## The Service Reality Test
 
-The question to ask: "Where will I service my car for the next 8 years?"
+
 
 **If you live in:** Adilabad, Mancherial, Nirmal, Bhainsa, Bodhan, Banswada, Armoor, or Kamareddy:
 - Prakash Hyundai has a branch in or near your town

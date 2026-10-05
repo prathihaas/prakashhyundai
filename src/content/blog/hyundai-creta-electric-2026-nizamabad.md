@@ -131,7 +131,7 @@ For most Nizamabad buyers, the **Creta Electric is the more accessible EV choice
 
 ## Should You Wait or Buy Petrol Creta Now?
 
-This is the key question many Nizamabad buyers are asking.
+This is a key question many buyers are asking.
 
 **Buy Creta Electric now if:**
 - You have home charging capability

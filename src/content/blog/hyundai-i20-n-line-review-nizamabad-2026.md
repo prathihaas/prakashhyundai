@@ -71,7 +71,7 @@ Driving the i20 N-Line is the highlight. The 1.0L 3-cylinder turbo (same engine 
 - **Less body roll** — noticeable in quick lane changes on NH44
 - **More communicative steering** — you feel the road more
 
-On the road between Nizamabad and Armoor, which has several pleasant curves, the i20 N-Line is genuinely rewarding. In city traffic, the responsive throttle and quick DCT make it feel playful.
+
 
 The dual exhaust note is sporty without being antisocial — a pleasant burble on acceleration that fades at highway speeds.
 

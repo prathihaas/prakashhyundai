@@ -76,7 +76,7 @@ This is Hyundai's traditional strength. The Grand i10 Nios rides more comfortabl
 
 The Swift's suspension is firmer — tuned for a more sporty feel. Younger drivers love this; families and elders may find it less comfortable over long distances.
 
-For Nizamabad to Hyderabad drives on NH44, the Nios is noticeably more relaxed in the cabin.
+
 
 **Advantage: Grand i10 Nios** (more comfortable for families and longer trips)
 

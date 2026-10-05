@@ -57,7 +57,7 @@ The Grand i10 Nios Magna+ (approximately ₹7.10L ex-showroom) comes with rear A
 The Hyundai Grand i10 Nios has noticeably better noise, vibration, and harshness control than both Tiago and Tigor:
 - Cabin insulation reduces road and wind noise
 - Engine noise intrusion is lower at highway speeds
-- Dashboard plastics feel more solid — fewer rattles over time
+- Dashboard plastics feel more solid.
 
 The Tiago and Tigor use thinner cabin liners and softer dashboard plastics that can develop squeaks and rattles faster on Nizamabad's roads.
 

@@ -111,7 +111,7 @@ The diesel is particularly popular among Nizamabad-based business owners who use
 - **Ventilated front seats**
 - **8-speaker Bose sound system**
 
-The entertainment system in the Alcazar is genuinely excellent — on a Nizamabad to Hyderabad drive, the Bose audio makes the journey enjoyable for all passengers.
+The entertainment system in the Alcazar is genuinely excellent — the Bose audio can make journeys enjoyable for all passengers.
 
 ---
 

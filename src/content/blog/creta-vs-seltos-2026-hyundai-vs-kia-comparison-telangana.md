@@ -49,7 +49,7 @@ Both SUVs share the same platform and engines:
 - **1.5L CRDi Diesel** (115 PS) – torquey, great for highway runs.
 - **1.5L Turbo GDi Petrol** (160 PS) – available on Creta N Line and Seltos GT Line. Seltos also offers this in lower trims.
 
-For Telangana roads — from the smooth Hyderabad highway to the rougher patches near Kamareddy — both handle well. But Creta's suspension is slightly softer, making it more comfortable for passengers on uneven stretches.
+For Telangana roads, both handle well. But Creta's suspension is slightly softer, making it more comfortable for passengers on uneven stretches.
 
 ## Features: Which SUV Offers More?
 

@@ -66,7 +66,7 @@ The Mahindra Scorpio N is the more relevant comparison. It's popular in North Te
 Scorpio N petrol (2.0L turbo): 14.1 km/l ARAI
 Scorpio N diesel (2.2L): 14.5 km/l ARAI
 
-For a Nizamabad buyer doing the NH44 route to Hyderabad (180km round trip) twice a week:
+
 - Scorpio N diesel: ~25 litres per round trip at 14.5 km/l = ₹2,250/round trip (₹90/litre diesel)
 - Hyundai Creta diesel: ~17 litres per round trip at 21.4 km/l = ₹1,530/round trip
 
@@ -138,7 +138,7 @@ For buyers who genuinely need off-road capability, Scorpio N makes sense. For ev
 Mahindra XUV300 was discontinued in 2024. It is only available in the used car market. For new car buyers in Nizamabad, the Hyundai Creta is the direct competitor in this segment.
 
 **Q: Which has better mileage — Creta or Scorpio N?**
-Hyundai Creta diesel delivers 21.4 km/l ARAI vs Scorpio N diesel's 14.5 km/l. In real-world Nizamabad highway driving, Creta returns 19–22 km/l vs Scorpio N's 13–15 km/l. Creta's fuel efficiency advantage is substantial.
+Hyundai Creta diesel delivers 21.4 km/l ARAI vs Scorpio N diesel's 14.5 km/l. In real-world highway driving, Creta often returns higher mileage than the Scorpio N. Creta's fuel efficiency advantage is substantial.
 
 **Q: What is the on-road price of Hyundai Creta in Nizamabad 2026?**
 Hyundai Creta on-road price starts at approximately ₹12.85 lakh for the base petrol. Diesel SX variant is approximately ₹19 lakh. Call Prakash Hyundai at 9052110303 for exact pricing.

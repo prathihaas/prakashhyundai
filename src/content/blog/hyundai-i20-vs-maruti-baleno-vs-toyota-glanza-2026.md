@@ -145,7 +145,7 @@ Hyundai i20 on-road price in Nizamabad starts at approximately ₹8.30 lakh for 
 Yes. Hyundai i20 comes with a sunroof from the Sportz variant (approximately ₹9.27L ex-showroom). Maruti Baleno has sunroof only on the ZXi+ (₹9.5L+). Toyota Glanza has no sunroof option.
 
 **Q: Which hatchback has the best mileage — i20, Baleno, or Glanza?**
-Maruti Baleno and Toyota Glanza both deliver 22.35 km/l ARAI. Hyundai i20 delivers 20.35 km/l ARAI. In real-world Nizamabad city driving, both return approximately 14–16 km/l.
+Maruti Baleno and Toyota Glanza both deliver 22.35 km/l ARAI. Hyundai i20 delivers 20.35 km/l ARAI. In real-world city driving, both return approximately 14–16 km/l.
 
 ---
 

@@ -64,13 +64,13 @@ The Grand i10 Nios has the best rear legroom in the segment — a crucial advant
 
 ### 3. Build Quality and NVH
 
-The Grand i10 Nios has noticeably better cabin insulation (NVH — Noise, Vibration, Harshness) than both the Tiago and Swift. On Nizamabad's mix of smooth highways and rough rural roads, the i10 Nios feels more composed and quieter at speed.
+The Grand i10 Nios has noticeably better cabin insulation (NVH — Noise, Vibration, Harshness) than both the Tiago and Swift. The i10 Nios feels more composed and quieter at speed.
 
 The Swift has a sportier feel but cabin insulation is mediocre. The Tiago uses thinner plastics throughout — the dashboard and door panels feel noticeably cheaper compared to the i10 Nios.
 
 ### 4. Larger Touchscreen
 
-Grand i10 Nios has an 8-inch touchscreen vs. 7-inch in Swift and Tiago. While this seems minor, the larger display is noticeably easier to use for navigation on Nizamabad–Hyderabad highway drives.
+Grand i10 Nios has an 8-inch touchscreen vs. 7-inch in Swift and Tiago. While this seems minor, the larger display is noticeably easier to use for navigation.
 
 ---
 

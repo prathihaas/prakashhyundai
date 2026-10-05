@@ -64,7 +64,7 @@ The 528-litre boot is the most practical in its class — ideal for families who
 
 The 1.5L turbo petrol with 160 PS is the highlight of the Verna. It is the most powerful naturally aspirated equivalent in the mid-size sedan segment. 0-100 km/h in 8.4 seconds — genuinely quick.
 
-On NH44, the turbo Verna overtakes effortlessly and cruises at 120 km/h without strain. This engine transforms the Verna from a practical choice into a driver's car.
+
 
 **Real-world mileage (turbo):** 13–15 km/l city, 16–18 km/l highway
 
@@ -166,7 +166,7 @@ The Hyundai Verna 2026 is the most impressive sedan available in Nizamabad. Its 
 
 The 2026 Hyundai Verna features a ground clearance of 165mm, which is standard for a mid-size sedan. This clearance is perfectly adequate for navigating the well-maintained roads within Nizamabad city and on highways like NH44. However, it's important to consider your typical driving conditions.
 
-While 165mm provides a stable and comfortable ride on paved surfaces, it is less than what you would find in most SUVs. For instance, the Hyundai Exter offers 185mm and the Alcazar boasts 200mm of ground clearance. This difference becomes significant if your daily commute or frequent travels involve rough rural roads, unpaved village paths, or areas with large speed breakers. For our customers in more rural mandals around Bodhan or Armoor who often encounter challenging road conditions, an SUV might be a more practical choice to avoid scraping the undercarriage. If your driving is primarily within Nizamabad and on highways, the Verna's 165mm ground clearance will not be an issue, ensuring a smooth and confident driving experience.
+While 165mm provides a stable and comfortable ride on paved surfaces, it is less than what you would find in most SUVs. For instance, the Hyundai Exter offers 185mm and the Alcazar boasts 200mm of ground clearance. This difference becomes significant if your daily commute or frequent travels involve rough rural roads, unpaved village paths, or areas with large speed breakers. For those who often encounter challenging road conditions, an SUV might be a more practical choice to avoid scraping the undercarriage. If your driving is primarily within city limits and on highways, the Verna's 165mm ground clearance will not be an issue, ensuring a smooth and confident driving experience.
 
 ## Hyundai Verna 2026 Price in Nizamabad
 

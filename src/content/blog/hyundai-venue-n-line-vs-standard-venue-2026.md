@@ -76,9 +76,9 @@ At comparable feature levels, the N-Line costs approximately **₹2.5–3L more*
 
 ## Ride Quality Comparison
 
-**Standard Venue:** Comfortable, well-absorbed ride. Handles Nizamabad's city roads and rough patches smoothly. Rear passengers comfortable even on longer trips.
+**Standard Venue:** Comfortable, well-absorbed ride. Handles city roads and rough patches smoothly. Rear passengers comfortable even on longer trips.
 
-**Venue N-Line:** Noticeably firmer. More responsive through corners. Less compliant over rough patches. On the smooth stretches of NH44, it is fine. On rough village roads near Bodhan or Armoor, the additional firmness becomes apparent.
+**Venue N-Line:** Noticeably firmer. More responsive through corners. Less compliant over rough patches. On smooth roads, it is fine. On rough roads, the additional firmness becomes apparent.
 
 **For families:** The standard Venue's comfortable ride is often preferred when rear passengers are elderly or children on long trips.
 

@@ -55,7 +55,7 @@ This is where the comparison ends for most Nizamabad buyers. Kia's service infra
 Prakash Hyundai operates 9 branches across North Telangana — Nizamabad, Adilabad, Armoor, Kamareddy, Banswada, Bhainsa, Mancherial, Nirmal, and Bodhan. Your Hyundai Venue gets serviced within the district. No 360km round trips for a simple service.
 
 Over 5 years of ownership, that service travel difference translates to:
-- 8–10 service visits = 8–10 saved round trips to Hyderabad
+
 - ~₹1,000–1,500 per trip in fuel + time cost
 - **Estimated savings: ₹12,000–15,000 over 5 years**
 
